@@ -3,7 +3,7 @@ resources:
     type: image
     integration: DockerHub
     source:
-      name: "library/nginx"
+      name: "library/mongo"
       isPull: false
       tag: latest
 
