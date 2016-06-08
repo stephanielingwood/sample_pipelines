@@ -9,7 +9,7 @@ resources:
 
   - name: myEcsCluster
     type: ecsCluster
-    integration: pranay-ecs
+    integration: AWS
     source:
       name : "test-cluster" #name of the cluster we are deploying
       region: "us-west-2"
