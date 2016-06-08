@@ -1,5 +1,5 @@
 resources:
-  - name: nginx-image
+  - name: mongo-image
     type: image
     integration: DockerHub
     source:
