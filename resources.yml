@@ -7,6 +7,14 @@ resources:
       isPull: false
       tag: latest
 
+  - name: nginx-dev-params
+    type: params
+    source:
+      params: 
+        API_URL: http://localhost
+        DB_URL: 127.0.0.1:27017
+        foo: bar
+
   - name: myEcsCluster
     type: ecsCluster
     integration: AWS
