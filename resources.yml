@@ -1,7 +1,7 @@
 resources:
   - name: nginx-image
     type: image
-    integration: pranay-docker
+    integration: DockerHub
     source:
       name: "library/nginx"
       isPull: false
