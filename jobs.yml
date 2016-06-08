@@ -2,7 +2,7 @@ jobs:
   - name: generate-manifest
     type: manifest
     steps:
-      - GET nginx-image
+      - GET mongo-image
 
   - name: deploy-service
     type: ecsDeploy
