@@ -1,7 +1,7 @@
 resources:
   - name: nginx-image
     type: image
-    integration: "trriplejay docker hub"
+    integration: "stephDocker"
     source:
       name: "library/nginx"
       isPull: false
