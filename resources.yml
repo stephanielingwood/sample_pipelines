@@ -14,6 +14,7 @@ resources:
         API_URL: http://localhost
         DB_URL: 127.0.0.1:27017
         foo: bar
+        four: 4
 
   - name: myEcsCluster
     type: ecsCluster
