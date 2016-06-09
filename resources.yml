@@ -5,7 +5,7 @@ resources:
     source:
       name: "library/nginx"
       isPull: false
-      tag: thistag
+      tag: thistag2
   
   - name: busybox-image
     type: image
@@ -13,7 +13,7 @@ resources:
     source:
       name: "library/busybox"
       isPull: false
-      tag: ubuntu
+      tag: latest
 
   - name: ecsCluster
     type: ecsCluster
