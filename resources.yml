@@ -19,6 +19,6 @@ resources:
     type: params
     source:
       params:
-        foo: bar
+        foo: bar2
         api_url: https://api.shippable.com
       
