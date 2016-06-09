@@ -18,6 +18,6 @@ resources:
     type: params
     source:
       params:
-        foo: bar
+        foo: barsdfs
         api_url: https://api.shippable.com
       
