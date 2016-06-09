@@ -9,10 +9,10 @@ resources:
 
   - name: myEcsCluster
     type: ecsCluster
-    integration: "shippable demo ecs"
+    integration: "stephAWS"
     source:
-      name : "trriplejay-test" #name of the cluster we are deploying
-      region: "us-west-2"
+      name : "ECSCluster" #name of the cluster we are deploying
+      region: "us-east-1"
   
   - name: myEcsParams #test once more 
     type: params
