@@ -15,6 +15,7 @@ resources:
       region: "us-east-1"
   
   - name: myEcsParams #test once more 
+    integration: "stephAWS"
     type: params
     source:
       params:
