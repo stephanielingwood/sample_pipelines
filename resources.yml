@@ -9,6 +9,7 @@ resources:
 
   - name: myEcsParams
     type: params
+    integration: AWS
     source:
       params: 
         API_URL: http://localhost
