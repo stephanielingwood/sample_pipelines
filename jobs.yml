@@ -1,5 +1,5 @@
 jobs:
-  - name: generate-manifest
+  - name: generate-mongo-image-manifest
     type: manifest
     steps:
       - GET mongo-image
