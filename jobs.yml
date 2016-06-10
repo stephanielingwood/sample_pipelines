@@ -3,7 +3,7 @@ jobs:
     type: manifest
     integration: stephDocker #workaround for bug requiring everything to have an integration
     steps:
-      - GET busybox-image
+      - GET nginx-image
       - GET myEcsParams
 
   - name: deploy-service
@@ -12,7 +12,6 @@ jobs:
     steps:
       - GET generate-manifest
       - GET ecsCluster
-      - GET myReplicas
 
   # - name: multi-manifest
   #   type: manifest
