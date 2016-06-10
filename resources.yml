@@ -13,7 +13,7 @@ resources:
     source:
       name: "library/busybox"
       isPull: false
-      tag: ubuntu
+      tag: latest
 
   - name: ecsCluster
     type: ecsCluster
@@ -27,6 +27,6 @@ resources:
     type: params
     source:
       params:
-        foo: bar2
+        foo: bar3
         api_url: https://api.shippable.com
       
