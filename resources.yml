@@ -30,3 +30,8 @@ resources:
         foo: bar4
         api_url: https://api.shippable.com
       
+  - name: myReplicas #test once more 
+    integration: "stephAWS"
+    type: replicas
+    source:
+      count: 2a
