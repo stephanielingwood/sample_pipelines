@@ -13,7 +13,7 @@ resources:
     source:
       name: "library/busybox"
       isPull: false
-      tag: latest
+      tag: ubuntu
 
   - name: ecsCluster
     type: ecsCluster
