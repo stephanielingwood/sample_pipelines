@@ -11,6 +11,7 @@ jobs:
     integration: stephDocker #workaround for bug requiring everything to have an integration
     steps:
       - GET generate-manifest
+      - GET ecsCluster
       - GET myReplicas
 
   # - name: multi-manifest
