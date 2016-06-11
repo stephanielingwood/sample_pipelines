@@ -12,7 +12,7 @@ jobs:
     steps:
       - GET another-manifest
       - GET ecsCluster
-      # - GET myReplicas
+      - GET myReplicas
       
   - name: DCL-deploy-service
     type: dclDeploy
