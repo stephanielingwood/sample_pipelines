@@ -12,7 +12,7 @@ jobs:
     steps:
       - GET another-manifest
       - GET ecsCluster
-      - GET myReplicas
+      # - GET myReplicas
 
   # - name: multi-manifest
   #   type: manifest
