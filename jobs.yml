@@ -13,6 +13,14 @@ jobs:
       - GET another-manifest
       - GET ecsCluster
       # - GET myReplicas
+      
+  - name: DCL-deploy-service
+    type: dclDeploy
+    integration: stephDocker #workaround for bug requiring everything to have an integration
+    steps:
+      - GET yet-another-manifest
+      - GET dclCluster
+      - GET myReplicas
 
   # - name: multi-manifest
   #   type: manifest
@@ -27,4 +35,11 @@ jobs:
     integration: stephDocker #workaround for bug requiring everything to have an integration
     steps:
       - GET busybox-image
+      # - GET myEcsParams
+      
+  - name: yet-another-manifest
+    type: manifest
+    integration: stephDocker #workaround for bug requiring everything to have an integration
+    steps:
+      - GET scratch-image
       # - GET myEcsParams
