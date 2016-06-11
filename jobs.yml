@@ -18,7 +18,7 @@ jobs:
     type: dclDeploy
     integration: stephDocker #workaround for bug requiring everything to have an integration
     steps:
-      - GET yet-another-manifest
+      - GET another-manifest
       - GET dclCluster
       - GET myReplicas
 
