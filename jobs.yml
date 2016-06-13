@@ -4,7 +4,7 @@ jobs:
     steps:
       - GET: mongo-image
 
-  - name: generate-mongo-image-manifest-4
+  - name: generate-mongo-image-manifest-5
     type: manifest
     steps:
       - GET: mongo-image
