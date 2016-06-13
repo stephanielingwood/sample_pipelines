@@ -5,7 +5,7 @@ jobs:
     steps:
       - GET: nginx-image
       - GET: myEcsParams
-      - GET: myReplicas
+      # - GET: myReplicas
 
   - name: deploy-service
     type: ecsDeploy
@@ -13,7 +13,7 @@ jobs:
     steps:
       - GET: generate-manifest
       - GET: ecsCluster
-      - GET: anotherReplicas
+      # - GET: anotherReplicas
       
   # - name: DCL-deploy-service
   #   type: dclDeploy
