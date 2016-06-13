@@ -41,7 +41,7 @@ resources:
     type: params
     source:
       params:
-        foo: bar4
+        foo: bar3
         api_url: https://api.shippable.com
       
   - name: myReplicas #test once more 
