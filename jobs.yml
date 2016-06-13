@@ -8,7 +8,7 @@ jobs:
   - name: deploy-service
     type: ecsDeploy
     steps:
-      - GET: generate-manifest
+      - GET: generate-mongo-image-manifest-3
       - GET: myEcsCluster
 
   - name: deploy-service-2
