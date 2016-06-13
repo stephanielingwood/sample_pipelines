@@ -10,10 +10,9 @@ jobs:
     type: ecsDeploy
     integration: stephDocker #workaround for bug requiring everything to have an integration
     steps:
-      - GET: another-manifest
+      - GET: generate-manifest
       - GET: ecsCluster
       - GET: myReplicas
-      
       
   # - name: DCL-deploy-service
   #   type: dclDeploy
