@@ -16,7 +16,6 @@ resources:
         DB_URL: 127.0.0.1:27017
         foo: bar
         four: 4
-        five: 5
 
   - name: myEcsCluster
     type: ecsCluster
