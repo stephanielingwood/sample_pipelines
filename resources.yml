@@ -23,3 +23,10 @@ resources:
     source:
       name : "test-cluster" #name of the cluster we are deploying
       region: "us-west-2"
+
+   - name: myOtherEcsCluster
+    type: ecsCluster
+    integration: AWS
+    source:
+      name : "Cluster"
+      region: "us-west-2"
