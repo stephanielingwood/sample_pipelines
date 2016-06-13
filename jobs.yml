@@ -10,3 +10,9 @@ jobs:
     steps:
       - GET: generate-manifest
       - GET: myEcsCluster
+
+  - name: deploy-service-2
+    type: ecsDeploy
+    steps:
+      - GET: deploy-service
+      - GET: myOtherEcsCluster
