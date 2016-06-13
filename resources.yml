@@ -11,9 +11,7 @@ resources:
     type: params
     integration: AWS
     source:
-      params: 
-        API_URL: http://localhost
-        DB_URL: 127.0.0.1:27017
+      params:
         foo: bar
         four: 4
 
