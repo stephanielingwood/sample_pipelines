@@ -19,6 +19,5 @@ jobs:
   - name: deploy-service-2
     type: ecsDeploy
     steps:
-      - GET: deploy-service
-      - GET: myOtherEcsCluster
-      - GET: myEcsParams
+      - GET: generate-mongo-image-manifest-3
+      - GET: myEcsCluster
