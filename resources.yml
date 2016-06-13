@@ -15,13 +15,13 @@ resources:
       isPull: false
       tag: ubuntu
       
-  - name: scratch-image
-    type: image
-    integration: "stephDocker"
-    source:
-      name: "library/scratch"
-      isPull: false
-      tag: latest
+  # - name: scratch-image
+  #   type: image
+  #   integration: "stephDocker"
+  #   source:
+  #     name: "library/scratch"
+  #     isPull: false
+  #     tag: latest
 
   - name: ecsCluster
     type: ecsCluster
