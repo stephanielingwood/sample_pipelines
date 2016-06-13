@@ -13,7 +13,7 @@ resources:
     source:
       params:
         foo: bar
-        four: 4
+        four: 16
 
   - name: myEcsCluster
     type: ecsCluster
