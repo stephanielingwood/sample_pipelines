@@ -5,7 +5,7 @@ resources:
     source:
       name: "library/nginx"
       isPull: false
-      tag: tag1
+      tag: latest
   
   - name: busybox-image
     type: image
