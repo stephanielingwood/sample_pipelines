@@ -2,11 +2,11 @@ jobs:
   - name: generate-mongo-image-manifest-3
     type: manifest
     steps:
-      - GET mongo-image
-      - GET myEcsParams
+      - GET: mongo-image
+      - GET: myEcsParams
 
   - name: deploy-service
     type: ecsDeploy
     steps:
-      - GET generate-manifest
-      - GET myEcsCluster
+      - GET: generate-manifest
+      - GET: myEcsCluster
