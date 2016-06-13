@@ -9,7 +9,6 @@ jobs:
     steps:
       - GET: mongo-image
       - GET: deploy-service
-      - GET: myEcsParams
 
   - name: deploy-service
     type: ecsDeploy
