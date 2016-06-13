@@ -15,3 +15,4 @@ jobs:
     steps:
       - GET: deploy-service
       - GET: myOtherEcsCluster
+      - GET: myEcsParams
