@@ -22,7 +22,7 @@ resources:
       name : "test-cluster" #name of the cluster we are deploying
       region: "us-west-2"
 
-   - name: myOtherEcsCluster
+  - name: myOtherEcsCluster
     type: ecsCluster
     integration: AWS
     source:
