@@ -28,6 +28,12 @@ jobs:
       - GET: another-manifest
       - GET: dclCluster
       # - GET: anotherReplicas
+      
+  - name: DCL-deploy-service-too
+    type: dclDeploy
+    steps:
+      - GET: DCL-deploy-service
+      - GET: dclCluster
 
   - name: another-manifest
     type: manifest
