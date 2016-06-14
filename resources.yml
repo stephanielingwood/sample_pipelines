@@ -28,3 +28,9 @@ resources:
     source:
       name : "Cluster"
       region: "us-west-2"
+
+  - name: myDclCluster
+    type: dclCluster
+    integration: DockerCloud
+    source:
+      name : "DockerCloudCluster"
