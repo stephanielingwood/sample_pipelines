@@ -67,6 +67,6 @@ resources:
     integration: "stephAWS"
     type: replicas
     source:
-      count: 5
+      count: 6
       
   
