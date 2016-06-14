@@ -23,4 +23,4 @@ jobs:
       - GET: generate-mongo-image-manifest-3
       - GET: myDclCluster
  #     - GET: myEcsParams
-      - GET: myOtherEcsParams
+#      - GET: myOtherEcsParams
