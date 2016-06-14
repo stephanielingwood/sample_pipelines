@@ -18,8 +18,8 @@ jobs:
 #      - GET: myEcsCluster
 
   - name: deploy-service-5
-    type: ecsDeploy
+    type: dclDeploy
     steps:
       - GET: generate-mongo-image-manifest-3
-      - GET: myEcsCluster
+      - GET: myDclCluster
       - GET: myOtherEcsParams
