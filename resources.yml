@@ -14,6 +14,14 @@ resources:
       params:
         foo: bar
         four: 16
+  
+  - name: myOtherEcsParams
+    type: params
+    integration: AWS
+    source:
+      params:
+        four: 4
+        five: 5
 
   - name: myEcsCluster
     type: ecsCluster
