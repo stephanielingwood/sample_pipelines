@@ -34,7 +34,7 @@ jobs:
     steps:
       - GET: dcl-deploy-service-four
       - GET: dclCluster
-      - GET: anotherReplicas
+      # - GET: anotherReplicas
 
   - name: another-manifest
     type: manifest
