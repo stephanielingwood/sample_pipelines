@@ -12,7 +12,7 @@ jobs:
       - GET: generate-manifest
       - GET: ecsCluster
       # - GET: anotherReplicas
-      - GET: moreParams
+      # - GET: moreParams
       - GET: kickstarter
       
   - name: deploy-service-too
