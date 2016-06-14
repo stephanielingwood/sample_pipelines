@@ -22,14 +22,14 @@ jobs:
       - GET: ecsCluster
       - GET: yetMoreReplicas
       
-  - name: DCL-deploy-service
+  - name: DCL-deploy-service2
     type: dclDeploy
     steps:
       - GET: another-manifest
       - GET: dclCluster
       # - GET: anotherReplicas
       
-  - name: DCL-deploy-service-too
+  - name: DCL-deploy-service2-too
     type: dclDeploy
     steps:
       - GET: DCL-deploy-service
