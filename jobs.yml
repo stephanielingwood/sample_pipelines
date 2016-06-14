@@ -15,6 +15,14 @@ jobs:
       - GET: ecsCluster
       - GET: anotherReplicas
       
+  - name: deploy-service-too
+    type: ecsDeploy
+    integration: stephDocker #workaround for bug requiring everything to have an integration
+    steps:
+      - GET: deploy-service
+      - GET: test-cluster
+      - GET: yetMoreReplicas
+      
   # - name: DCL-deploy-service
   #   type: dclDeploy
   #   integration: stephDocker #workaround for bug requiring everything to have an integration
