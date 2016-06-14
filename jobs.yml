@@ -21,5 +21,5 @@ jobs:
     type: ecsDeploy
     steps:
       - GET: generate-mongo-image-manifest-3
-      - GET: myEcsCluster
+      - GET: myOtherEcsCluster
       - GET: myOtherEcsParams
