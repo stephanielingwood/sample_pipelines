@@ -29,12 +29,12 @@ jobs:
       - GET: dclCluster
       - GET: anotherReplicas
       
-  - name: dcl-deploy-service-yet-again
+  - name: dcl-deploy-service-for-real
     type: dclDeploy
     steps:
       - GET: dcl-deploy-service-four
       - GET: dclCluster
-      # - GET: anotherReplicas
+      - GET: anotherReplicas
 
   - name: another-manifest
     type: manifest
