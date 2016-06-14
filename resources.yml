@@ -77,4 +77,8 @@ resources:
     source:
       count: 82
       
-  
+  - name: kickstarter
+    # integration: "stephAWS"
+    type: kickStart
+    source:
+      counter: 1
