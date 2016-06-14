@@ -81,4 +81,4 @@ resources:
     # integration: "stephAWS"
     type: kickStart
     source:
-      counter: 1
+      counter: 2
