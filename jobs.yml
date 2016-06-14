@@ -25,7 +25,7 @@ jobs:
     steps:
       - GET: another-manifest
       - GET: dclCluster
-      - GET: myReplicas
+      - GET: yetMoreReplicas
 
   - name: another-manifest
     type: manifest
