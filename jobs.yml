@@ -1,7 +1,6 @@
 jobs:
   - name: generate-manifest
     type: manifest
-    integration: stephDocker #workaround for bug requiring everything to have an integration
     steps:
       - GET: nginx-image
       - GET: myEcsParams
@@ -9,7 +8,6 @@ jobs:
 
   - name: deploy-service
     type: ecsDeploy
-    integration: stephDocker #workaround for bug requiring everything to have an integration
     steps:
       - GET: generate-manifest
       - GET: ecsCluster
@@ -17,7 +15,6 @@ jobs:
       
   - name: deploy-service-too
     type: ecsDeploy
-    integration: stephDocker #workaround for bug requiring everything to have an integration
     steps:
       - GET: deploy-service
       - GET: ecsCluster
@@ -25,7 +22,6 @@ jobs:
       
   # - name: DCL-deploy-service
   #   type: dclDeploy
-  #   integration: stephDocker #workaround for bug requiring everything to have an integration
   #   steps:
   #     - GET another-manifest
   #     - GET dclCluster
@@ -33,7 +29,6 @@ jobs:
 
   # - name: multi-manifest
   #   type: manifest
-  #   integration: stephDocker #workaround for bug requiring everything to have an integration
   #   steps:
   #     - GET busybox-image
   #     - GET myEcsParams
@@ -41,14 +36,12 @@ jobs:
 
   # - name: another-manifest
   #   type: manifest
-  #   integration: stephDocker #workaround for bug requiring everything to have an integration
   #   steps:
   #     - GET busybox-image
       # - GET myEcsParams
       
   # - name: yet-another-manifest
   #   type: manifest
-  #   integration: stephDocker #workaround for bug requiring everything to have an integration
   #   steps:
   #     - GET scratch-image
       # - GET myEcsParams
