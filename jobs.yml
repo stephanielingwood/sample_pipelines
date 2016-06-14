@@ -26,13 +26,13 @@ jobs:
     type: dclDeploy
     steps:
       - GET: another-manifest
-      - GET: ecsCluster
+      - GET: dclCluster
       - GET: anotherReplicas
       
   - name: dcl-deploy-service-for-real
     type: dclDeploy
     steps:
-      - GET: dcl-deploy-service-four
+      - GET: deploy-service
       - GET: dclCluster
       # - GET: anotherReplicas
 
