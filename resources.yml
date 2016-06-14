@@ -50,6 +50,14 @@ resources:
       params:
         foo: bar3
         api_url: https://api.shippable.com
+        
+  - name: moreParams
+    integration: "stephAWS"
+    type: params
+    source:
+      params:
+        another: params
+        more: params
       
   - name: myReplicas
     # integration: "stephAWS"
