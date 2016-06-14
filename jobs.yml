@@ -21,4 +21,3 @@ jobs:
     type: dclDeploy
     steps:
       - GET: generate-mongo-image-manifest-3
-      - GET: myDclCluster
