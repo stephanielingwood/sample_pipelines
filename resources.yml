@@ -30,6 +30,13 @@ resources:
       name : "ECSCluster" #name of the cluster we are deploying
       region: "us-east-1"
       
+  - name: test-cluster
+    type: ecsCluster
+    integration: "stephAWS"
+    source:
+      name : "test-cluster" #name of the cluster we are deploying
+      region: "us-east-1"
+      
   - name: dclCluster
     type: dclCluster
     integration: "dclAidan"
@@ -55,5 +62,11 @@ resources:
     type: replicas
     source:
       count: 4
+      
+  - name: yetMoreReplicas #test once more 
+    integration: "stephAWS"
+    type: replicas
+    source:
+      count: 6
       
   
