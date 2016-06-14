@@ -12,6 +12,7 @@ jobs:
       - GET: generate-manifest
       - GET: ecsCluster
       - GET: anotherReplicas
+      - GET: moreParams
       
   - name: deploy-service-too
     type: ecsDeploy
