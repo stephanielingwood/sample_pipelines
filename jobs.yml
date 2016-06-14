@@ -23,7 +23,7 @@ jobs:
       - GET: generate-mongo-image-manifest-3
       - GET: myEcsCluster
 
-  - name: deploy-service-5
+  - name: deploy-service-4
     type: ecsDeploy
     steps:
       - GET: deploy-service-3
