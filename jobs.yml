@@ -21,7 +21,7 @@ jobs:
     steps:
       - GET: deploy-service
       - GET: test-cluster
-      - GET: yetMoreReplicas
+      # - GET: yetMoreReplicas
       
   # - name: DCL-deploy-service
   #   type: dclDeploy
