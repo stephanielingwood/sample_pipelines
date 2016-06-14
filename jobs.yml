@@ -20,7 +20,7 @@ jobs:
     integration: stephDocker #workaround for bug requiring everything to have an integration
     steps:
       - GET: deploy-service
-      - GET: test-cluster
+      - GET: ecsCluster
       - GET: yetMoreReplicas
       
   # - name: DCL-deploy-service
