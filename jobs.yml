@@ -29,10 +29,10 @@ jobs:
       - GET: dclCluster
       # - GET: anotherReplicas
       
-  - name: DCL-deploy-service2-too
+  - name: DCL-deploy-service-too
     type: dclDeploy
     steps:
-      - GET: DCL-deploy-service
+      - GET: DCL-deploy-service2
       - GET: dclCluster
       # - GET: anotherReplicas
 
