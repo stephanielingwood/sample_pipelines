@@ -20,28 +20,28 @@ jobs:
       - GET: ecsCluster
       - GET: yetMoreReplicas
       
-  # - name: DCL-deploy-service
-  #   type: dclDeploy
-  #   steps:
-  #     - GET another-manifest
-  #     - GET dclCluster
-  #     - GET myReplicas
+  - name: DCL-deploy-service
+    type: dclDeploy
+    steps:
+      - GET: another-manifest
+      - GET: dclCluster
+      - GET: myReplicas
 
+  - name: another-manifest
+    type: manifest
+    steps:
+      - GET: busybox-image
+      - GET: myEcsParams
+      
   # - name: multi-manifest
   #   type: manifest
   #   steps:
-  #     - GET busybox-image
-  #     - GET myEcsParams
-  #     - GET generate-manifest
-
-  # - name: another-manifest
-  #   type: manifest
-  #   steps:
-  #     - GET busybox-image
-      # - GET myEcsParams
+  #     - GET: busybox-image
+  #     - GET: myEcsParams
+  #     - GET: generate-manifest
       
   # - name: yet-another-manifest
   #   type: manifest
   #   steps:
-  #     - GET scratch-image
-      # - GET myEcsParams
+  #     - GET: scratch-image
+      # - GET: myEcsParams
