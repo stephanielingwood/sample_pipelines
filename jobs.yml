@@ -30,11 +30,11 @@ jobs:
       # - GET: anotherReplicas
       - GET: myEcsParams
       
-  - name: dcl-deploy-service-for-real
-    type: dclDeploy
-    steps:
-      - GET: deploy-service
-      - GET: dclCluster
+  # - name: dcl-deploy-service-for-real
+  #   type: dclDeploy
+  #   steps:
+  #     - GET: deploy-service
+  #     - GET: dclCluster
       # - GET: anotherReplicas
 
   - name: another-manifest
