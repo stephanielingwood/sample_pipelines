@@ -42,6 +42,6 @@ jobs:
       - GET: generate-mongo-image-manifest-6
       - GET: myEcsCluster
   #    - GET: myReplicas
-  #    - GET: deploy-service-7
+      - GET: deploy-service-7
   #    - GET: myEcsParams
  #     - GET: myOtherEcsParams
