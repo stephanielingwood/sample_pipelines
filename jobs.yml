@@ -9,6 +9,7 @@ jobs:
     type: manifest
     steps:
       - GET: mongo-image
+      - GET: myReplicas
 #      - GET: deploy-service
 
  # - name: deploy-service
