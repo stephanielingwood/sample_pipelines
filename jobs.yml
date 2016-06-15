@@ -18,7 +18,7 @@ jobs:
   - name: deploy-service-too
     type: ecsDeploy
     steps:
-      - GET: deploy-service
+      - GET: dcl-deploy-service-four
       - GET: ecsCluster
       - GET: yetMoreReplicas
       
