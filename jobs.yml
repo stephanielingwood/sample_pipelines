@@ -41,7 +41,7 @@ jobs:
     steps:
       - GET: generate-mongo-image-manifest-6
       - GET: myEcsCluster
-  #    - GET: myReplicas
+      - GET: myReplicas
   #    - GET: deploy-service-7
   #    - GET: myEcsParams
  #     - GET: myOtherEcsParams
