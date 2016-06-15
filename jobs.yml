@@ -22,5 +22,5 @@ jobs:
     steps:
       - GET: generate-mongo-image-manifest-6
       - GET: myDclCluster
- #     - GET: myEcsParams
+      - GET: myEcsParams
  #     - GET: myOtherEcsParams
