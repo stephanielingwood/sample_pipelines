@@ -27,7 +27,7 @@ jobs:
     steps:
       - GET: another-manifest
       - GET: dclCluster
-      - GET: anotherReplicas
+      # - GET: anotherReplicas
       - GET: myEcsParams
       
   - name: dcl-deploy-service-for-real
@@ -35,13 +35,14 @@ jobs:
     steps:
       - GET: deploy-service
       - GET: dclCluster
-      - GET: anotherReplicas
+      # - GET: anotherReplicas
 
   - name: another-manifest
     type: manifest
     steps:
       - GET: busybox-image
       - GET: myEcsParams
+      - GET: yetMoreReplicas
       
   # - name: multi-manifest
   #   type: manifest
