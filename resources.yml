@@ -22,6 +22,11 @@ resources:
       params:
         four: 4
         five: 5
+        
+  - name: myReplicas
+    type: replicas
+    source:
+      count: 4
 
   - name: myEcsCluster
     type: ecsCluster
