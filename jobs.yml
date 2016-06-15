@@ -33,5 +33,5 @@ jobs:
       - GET: myEcsCluster
       - GET: myReplicas
       - GET: deploy-service-7
-    #  - GET: myEcsParams
+      - GET: myEcsParams
  #     - GET: myOtherEcsParams
