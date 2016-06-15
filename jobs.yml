@@ -36,12 +36,12 @@ jobs:
       - GET: myEcsParams
  #     - GET: myOtherEcsParams
  
-  - name: deploy-service-9
+  - name: deploy-service-10
     type: ecsDeploy
     steps:
       - GET: generate-mongo-image-manifest-6
       - GET: myEcsCluster
-      - GET: myReplicas
+  #    - GET: myReplicas
   #    - GET: deploy-service-7
   #    - GET: myEcsParams
  #     - GET: myOtherEcsParams
