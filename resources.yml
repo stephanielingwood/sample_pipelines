@@ -75,7 +75,7 @@ resources:
     # integration: "stephAWS"
     type: replicas
     source:
-      count: 82
+      count: 6
       
   - name: kickstarter
     # integration: "stephAWS"
