@@ -45,5 +45,5 @@ jobs:
    #   - GET: myOtherDockerOptions
    #   - GET: myReplicas
    #   - GET: deploy-service-7
-   #   - GET: myEcsParams
+      - GET: myEcsParams
       - GET: myOtherEcsParams
