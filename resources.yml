@@ -24,7 +24,7 @@ resources:
         five: 5
         
     
-  - name: myDockerOptions
+  - name: myOtherDockerOptions
     type: dockerOptions
     integration: AWS
     source:
