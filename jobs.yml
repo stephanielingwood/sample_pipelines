@@ -23,7 +23,7 @@ jobs:
       - GET: another-manifest
       - GET: ecsCluster
       - GET: anotherReplicas
-      # - GET: moreParams
+      - GET: moreParams
       - GET: myOverrideOpts
       
   - name: dcl-deploy-service-four
