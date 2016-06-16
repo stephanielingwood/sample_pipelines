@@ -30,7 +30,6 @@ resources:
     source:
       memory: 64
       cpu-shares: 256
-      test: "test"
         
   - name: myReplicas
     type: replicas
