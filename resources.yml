@@ -77,6 +77,16 @@ resources:
     source:
       count: 7
       
+  - name: ecsDockerOpts
+    type: dockerOptions
+    source:
+      memory: 333
+      
+  - name: myOverrideOpts
+    type: dockerOptions
+    source:
+      memory: 667
+      
   - name: kickstarter
     # integration: "stephAWS"
     type: kickStart
