@@ -29,7 +29,7 @@ resources:
     integration: AWS
     source:
       memory: 128
-      cpu-shares: 128
+      cpu-shares: 256
   #    portMappings:
   #      - 80:80
         
