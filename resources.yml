@@ -25,7 +25,7 @@ resources:
         
     
   - name: myDockerOptions
-    type: params
+    type: dockerOptions
     integration: AWS
     source:
       memory: 64
