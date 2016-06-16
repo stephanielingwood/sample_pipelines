@@ -5,6 +5,7 @@ jobs:
       - GET: nginx-image
       - GET: myEcsParams
       - GET: myReplicas
+      - GET: ecsDockerOpts
 
   - name: deploy-service
     type: ecsDeploy
@@ -22,7 +23,8 @@ jobs:
       - GET: another-manifest
       - GET: ecsCluster
       - GET: anotherReplicas
-      - GET: myEcsParams
+      - GET: moreParams
+      - GET: myOverrideOpts
       
   - name: dcl-deploy-service-four
     type: dclDeploy
