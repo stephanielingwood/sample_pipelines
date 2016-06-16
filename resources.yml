@@ -30,6 +30,7 @@ resources:
     source:
       memory: 64
       cpu-shares: 256
+      test: "test"
       portMappings:
         - 80:80
         - "120:1"
