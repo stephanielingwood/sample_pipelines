@@ -23,6 +23,16 @@ resources:
         four: 4
         five: 5
         
+    
+  - name: myDockerOptions
+    type: params
+    integration: AWS
+    source:
+      memory: 64
+   #   cpu-shares: 256
+  #    portMappings:
+  #      - 80:80
+        
   - name: myReplicas
     type: replicas
     source:
