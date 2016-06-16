@@ -30,8 +30,8 @@ resources:
     source:
       memory: 64
       cpu-shares: 256
-  #    portMappings:
-  #      - 80:80
+      portMappings:
+        - 80:80
         
   - name: myReplicas
     type: replicas
