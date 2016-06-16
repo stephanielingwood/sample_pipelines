@@ -28,7 +28,7 @@ jobs:
     steps:
       - GET: another-manifest
       - GET: dclCluster
-      # - GET: anotherReplicas
+      - GET: yetMoreReplicas
       - GET: myEcsParams
       
   # - name: dcl-deploy-service-for-real
