@@ -46,4 +46,4 @@ jobs:
    #   - GET: myReplicas
    #   - GET: deploy-service-7
       - GET: myEcsParams
-      - GET: myOtherEcsParams
+   #   - GET: myOtherEcsParams
