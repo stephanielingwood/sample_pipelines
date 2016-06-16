@@ -32,8 +32,6 @@ resources:
       cpu-shares: 256
       test: "test"
       net: none
-      portMappings:
-        - 80:80
         
   - name: myReplicas
     type: replicas
