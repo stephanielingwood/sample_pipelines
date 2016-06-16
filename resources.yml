@@ -34,7 +34,7 @@ resources:
       net: none
       portMappings:
         - 80:80
-        - 80:80
+        - 10:80
         
   - name: myReplicas
     type: replicas
