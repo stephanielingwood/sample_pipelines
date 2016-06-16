@@ -34,7 +34,6 @@ resources:
       net: none
       portMappings:
         - 80:80
-        - "120:1"
         
   - name: myReplicas
     type: replicas
