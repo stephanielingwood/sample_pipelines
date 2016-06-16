@@ -5,7 +5,7 @@ resources:
     source:
       name: "library/mongo"
       isPull: false
-      tag: latest
+      tag: "1.2.3"
 
   - name: myEcsParams
     type: params
