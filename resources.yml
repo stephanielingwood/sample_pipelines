@@ -51,13 +51,13 @@ resources:
         foo: bar3
         api_url: https://api.shippable.com
         
-  - name: moreParams
-    integration: "stephAWS"
-    type: params
-    source:
-      params:
-        another: params
-        more: params
+  # - name: moreParams
+  #   integration: "stephAWS"
+  #   type: params
+  #   source:
+  #     params:
+  #       another: params
+  #       more: params
       
   - name: myReplicas
     # integration: "stephAWS"
@@ -77,15 +77,15 @@ resources:
     source:
       count: 7
       
-  - name: ecsDockerOpts
-    type: dockerOptions
-    source:
-      memory: 333
+  # - name: ecsDockerOpts
+  #   type: dockerOptions
+  #   source:
+  #     memory: 333
       
-  - name: myOverrideOpts
-    type: dockerOptions
-    source:
-      memory: 667
+  # - name: myOverrideOpts
+  #   type: dockerOptions
+  #   source:
+  #     memory: 667
       
   - name: kickstarter
     # integration: "stephAWS"
