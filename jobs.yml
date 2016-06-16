@@ -11,6 +11,7 @@ jobs:
       - GET: mongo-image
 #      - GET: myReplicas
 #      - GET: deploy-service
+      - GET: myOtherDockerOptions
 
  # - name: deploy-service
 #    type: ecsDeploy
