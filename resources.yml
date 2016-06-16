@@ -31,7 +31,6 @@ resources:
       memory: 64
       cpu-shares: 256
       test: "test"
-      net: host
         
   - name: myReplicas
     type: replicas
