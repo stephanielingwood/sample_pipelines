@@ -69,7 +69,7 @@ resources:
     # integration: "stephAWS"
     type: replicas
     source:
-      count: 8
+      count: 9
       
   - name: yetMoreReplicas
     # integration: "stephAWS"
