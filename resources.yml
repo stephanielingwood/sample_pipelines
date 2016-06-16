@@ -28,7 +28,7 @@ resources:
     type: dockerOptions
     integration: AWS
     source:
-      memory: 128
+      memory: 64
       cpu-shares: 256
   #    portMappings:
   #      - 80:80
