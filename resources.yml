@@ -21,7 +21,7 @@ resources:
     source:
       params:
         four: 4
-  #      five: 5
+        five: 5
         
   - name: myReplicas
     type: replicas
