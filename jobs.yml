@@ -22,6 +22,7 @@ jobs:
       - GET: another-manifest
       - GET: ecsCluster
       - GET: anotherReplicas
+      - GET: myEcsParams
       
   - name: dcl-deploy-service-four
     type: dclDeploy
