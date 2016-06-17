@@ -15,6 +15,7 @@ jobs:
       # - GET: anotherReplicas
       # - GET: moreParams
       - GET: kickstarter
+      - PUT: nginx-image
       
   - name: deploy-service-too
     type: ecsDeploy
