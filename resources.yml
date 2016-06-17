@@ -5,7 +5,7 @@ resources:
     source:
       name: "library/nginx"
       isPull: false
-      tag: latest2
+      tag: latest
   
   - name: busybox-image
     type: image
@@ -91,4 +91,4 @@ resources:
     # integration: "stephAWS"
     type: kickStart
     source:
-      counter: 2
+      counter: 3
