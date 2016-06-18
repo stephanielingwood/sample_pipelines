@@ -93,7 +93,7 @@ resources:
     source:
       counter: 3
   
-  - name: sample_python
+  - name: samplePython
     type: gitRepo
     integration: stephGithub
     source:
