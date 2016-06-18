@@ -92,3 +92,10 @@ resources:
     type: kickStart
     source:
       counter: 3
+  
+  - name: sample_python
+    type: gitRepo
+    integration: stephGithub
+    source:
+      name: "stephanielingwood/sample_python"
+      branch: "noMatrix"
