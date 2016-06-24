@@ -1,28 +1,28 @@
 jobs:
-  - name: manifest1
-    type: manifest
-    steps:
-      - GET: nginx-image
-      - GET: params1
-      - GET: replicas1
-      - GET: dockerOptions1
+  # - name: manifest1
+  #   type: manifest
+  #   steps:
+  #     - GET: nginx-image
+  #     - GET: params1
+  #     - GET: replicas1
+  #     - GET: dockerOptions1
       
-  - name: manifest2
-    type: manifest
-    steps:
-      - GET: busybox-image
+  # - name: manifest2
+  #   type: manifest
+  #   steps:
+  #     - GET: busybox-image
       # - GET: params2
       # - GET: replicas2
 
-  - name: ecs-service1
-    type: ecsDeploy
-    steps:
+  # - name: ecs-service1
+  #   type: ecsDeploy
+  #   steps:
       # - GET: manifest1
-      - GET: ecsCluster
+      # - GET: ecsCluster
       # - GET: replicas2
       # - GET: params2
       # - GET: dockerOptions2
-      - GET: kickstarter
+      # - GET: kickstarter
       # - PUT: nginx-image
       
   # - name: ecs-service2
