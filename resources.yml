@@ -43,7 +43,7 @@ resources:
   #   source:
   #     name : "DockerCloudCluster" #name of the cluster we are deploying
   
-  - name: myEcsParams
+  - name: params1
     integration: "stephAWS"
     type: params
     source:
@@ -51,7 +51,7 @@ resources:
         foo: bar3
         api_url: https://api.shippable.com
         
-  - name: someMoreParams
+  - name: params2
     integration: "stephAWS"
     type: params
     source:
@@ -59,30 +59,30 @@ resources:
         another: params
         more: params
       
-  - name: myReplicas
+  - name: replicas1
     # integration: "stephAWS"
     type: replicas
     source:
       count: 2
   
-  - name: anotherReplicas
+  - name: replicas2
     # integration: "stephAWS"
     type: replicas
     source:
       count: 5
       
-  - name: yetMoreReplicas
+  - name: replicas3
     # integration: "stephAWS"
     type: replicas
     source:
       count: 7
       
-  - name: ecsDockerOpts2
+  - name: dockerOptions1
     type: dockerOptions
     source:
       memory: 333
       
-  - name: myOverrideOpts2
+  - name: dockerOptions2
     type: dockerOptions
     source:
       memory: 667
@@ -93,9 +93,9 @@ resources:
     source:
       counter: 3
   
-  - name: samplePython
-    type: gitRepo
-    integration: stephGithub
-    source:
-      name: "stephanielingwood/sample_python"
-      branch: "master"
+  # - name: samplePython
+  #   type: gitRepo
+  #   integration: stephGithub
+  #   source:
+  #     name: "stephanielingwood/sample_python"
+  #     branch: "master"
