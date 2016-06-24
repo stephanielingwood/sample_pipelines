@@ -1,5 +1,5 @@
 jobs:
-  - name: manifest1
+  - name: my-manifest1
     type: manifest
     steps:
       - GET: nginx-image
@@ -7,17 +7,17 @@ jobs:
       # - GET: replicas1
       # - GET: dockerOptions1
       
-  # - name: manifest2
+  # - name: my-manifest2
   #   type: manifest
   #   steps:
   #     - GET: busybox-image
       # - GET: params2
       # - GET: replicas2
 
-  # - name: ecs-service1
+  # - name: my-ecs-service1
   #   type: ecsDeploy
   #   steps:
-      # - GET: manifest1
+      # - GET: my-manifest1
       # - GET: ecsCluster
       # - GET: replicas2
       # - GET: params2
@@ -29,7 +29,7 @@ jobs:
   #   type: ecsDeploy
   #   steps:
   #     - GET: ecs-service1
-  #     - GET: manifest2
+  #     - GET: my-manifest2
   #     - GET: ecsCluster
   #     - GET: replicas3
       # - GET: params3
