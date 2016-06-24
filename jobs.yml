@@ -4,7 +4,7 @@ jobs:
     steps:
       - GET: nginx-image
       # - GET: params1
-      # - GET: replicas1
+      - GET: replicas1
       # - GET: dockerOptions1
       
   # - name: my-manifest2
