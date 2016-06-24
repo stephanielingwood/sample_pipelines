@@ -37,11 +37,11 @@ resources:
       name : "test-cluster" #name of the cluster we are deploying
       region: "us-east-1"
       
-  - name: dclCluster
-    type: dclCluster
-    integration: "dclAidan"
-    source:
-      name : "DockerCloudCluster" #name of the cluster we are deploying
+  # - name: dclCluster
+  #   type: dclCluster
+  #   integration: "dclAidan"
+  #   source:
+  #     name : "DockerCloudCluster" #name of the cluster we are deploying
   
   - name: myEcsParams
     integration: "stephAWS"
