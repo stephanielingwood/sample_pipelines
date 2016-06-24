@@ -27,13 +27,13 @@ jobs:
       # - GET: someMoreParams
       # - GET: myOverrideOpts2
       
-  - name: dcl-deploy-service-four
-    type: dclDeploy
-    steps:
-      - GET: another-manifest
-      - GET: dclCluster
-      - GET: yetMoreReplicas
-      - GET: myEcsParams
+  # - name: dcl-deploy-service-four
+  #   type: dclDeploy
+  #   steps:
+  #     - GET: another-manifest
+  #     - GET: dclCluster
+  #     - GET: yetMoreReplicas
+  #     - GET: myEcsParams
       
   # - name: dcl-deploy-service-for-real
   #   type: dclDeploy
