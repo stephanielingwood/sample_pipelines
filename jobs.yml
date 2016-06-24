@@ -28,7 +28,7 @@ jobs:
   - name: ecs-service2
     type: ecsDeploy
     steps:
-      - GET: deploy-service
+      - GET: ecs-service1
       - GET: manifest2
       - GET: ecsCluster
       - GET: replicas3
