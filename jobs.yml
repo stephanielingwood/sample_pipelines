@@ -21,8 +21,8 @@ jobs:
       - GET: my-manifest2
       - GET: ecsCluster
       - GET: replicas2
-        # applyTo: 
-        #   - my-manifest2
+        applyTo: 
+          - my-manifest2
       # - GET: params2
       # - GET: dockerOptions2
       # - GET: kickstarter
