@@ -19,7 +19,7 @@ jobs:
     steps:
       - GET: my-manifest1
       - GET: ecsCluster
-      # - GET: replicas2
+      - GET: replicas2
       # - GET: params2
       # - GET: dockerOptions2
       # - GET: kickstarter
