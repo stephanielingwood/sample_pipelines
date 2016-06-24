@@ -1,66 +1,51 @@
 jobs:
-  - name: generate-manifest
+  - name: manifest1
     type: manifest
     steps:
       - GET: nginx-image
-      - GET: myEcsParams
-      - GET: myReplicas
-      - GET: ecsDockerOpts2
-
-  - name: deploy-service
-    type: ecsDeploy
-    steps:
-      - GET: generate-manifest
-      - GET: ecsCluster
-      # - GET: anotherReplicas
-      # - GET: moreParams
-      - GET: kickstarter
-      - PUT: nginx-image
+      - GET: params1
+      - GET: replicas1
+      - GET: dockerOptions1
       
-  - name: deploy-service-too
-    type: ecsDeploy
-    steps:
-      - GET: deploy-service
-      - GET: another-manifest
-      - GET: ecsCluster
-      - GET: anotherReplicas
-      # - GET: someMoreParams
-      # - GET: myOverrideOpts2
-      
-  # - name: dcl-deploy-service-four
-  #   type: dclDeploy
-  #   steps:
-  #     - GET: another-manifest
-  #     - GET: dclCluster
-  #     - GET: yetMoreReplicas
-  #     - GET: myEcsParams
-      
-  # - name: dcl-deploy-service-for-real
-  #   type: dclDeploy
-  #   steps:
-  #     - GET: deploy-service
-  #     - GET: dclCluster
-      # - GET: anotherReplicas
-
-  - name: another-manifest
+  - name: manifest2
     type: manifest
     steps:
       - GET: busybox-image
-      - GET: myEcsParams
-      - GET: yetMoreReplicas
+      # - GET: params2
+      # - GET: replicas2
+
+  - name: ecs-service1
+    type: ecsDeploy
+    steps:
+      - GET: manifest1
+      - GET: ecsCluster
+      # - GET: replicas2
+      # - GET: params2
+      # - GET: dockerOptions2
+      - GET: kickstarter
+      # - PUT: nginx-image
       
-  # - name: multi-manifest
-  #   type: manifest
-  #   steps:
-  #     - GET: busybox-image
-  #     - GET: myEcsParams
-  #     - GET: generate-manifest
+  - name: ecs-service2
+    type: ecsDeploy
+    steps:
+      - GET: deploy-service
+      - GET: manifest2
+      - GET: ecsCluster
+      - GET: replicas3
+      # - GET: params3
+      # - GET: dockerOptions3
       
-  # - name: yet-another-manifest
-  #   type: manifest
+  # - name: dcl-service1
+  #   type: dclDeploy
   #   steps:
-  #     - GET: scratch-image
-      # - GET: myEcsParams
+  #     - GET: manifest2
+  #     - GET: dclCluster
+      
+  # - name: dcl-service2
+  #   type: dclDeploy
+  #   steps:
+  #     - GET: dcl-service1
+  #     - GET: dclCluster
       
   # - name: run-sample_python
   #   type: runCI
