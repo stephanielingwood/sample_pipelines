@@ -17,7 +17,7 @@ jobs:
   - name: ecs-service1
     type: ecsDeploy
     steps:
-      - GET: manifest1
+      # - GET: manifest1
       - GET: ecsCluster
       # - GET: replicas2
       # - GET: params2
@@ -25,13 +25,13 @@ jobs:
       - GET: kickstarter
       # - PUT: nginx-image
       
-  - name: ecs-service2
-    type: ecsDeploy
-    steps:
-      - GET: ecs-service1
-      - GET: manifest2
-      - GET: ecsCluster
-      - GET: replicas3
+  # - name: ecs-service2
+  #   type: ecsDeploy
+  #   steps:
+  #     - GET: ecs-service1
+  #     - GET: manifest2
+  #     - GET: ecsCluster
+  #     - GET: replicas3
       # - GET: params3
       # - GET: dockerOptions3
       
