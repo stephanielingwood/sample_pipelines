@@ -7,10 +7,10 @@ jobs:
       - GET: replicas1
       # - GET: dockerOptions1
       
-  # - name: my-manifest2
-  #   type: manifest
-  #   steps:
-  #     - GET: busybox-image
+  - name: my-manifest2
+    type: manifest
+    steps:
+      - GET: busybox-image
       # - GET: params2
       # - GET: replicas2
 
@@ -18,8 +18,11 @@ jobs:
     type: ecsDeploy
     steps:
       - GET: my-manifest1
+      - GET: my-manifest2
       - GET: ecsCluster
       - GET: replicas2
+        applyTo: 
+          - my-manifest2
       # - GET: params2
       # - GET: dockerOptions2
       # - GET: kickstarter
