@@ -62,8 +62,8 @@ jobs:
   #     - GET: scratch-image
       # - GET: myEcsParams
       
-  - name: run-sample_python
-    type: runCI
-    steps:
-      - GET: sample_python
-      - PUT: nginx-image
+  # - name: run-sample_python
+  #   type: runCI
+  #   steps:
+  #     - GET: sample_python
+  #     - PUT: nginx-image
