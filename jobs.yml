@@ -21,7 +21,7 @@ jobs:
       - GET: my-manifest2
       - GET: ecsCluster
       - GET: replicas2
-        applyTo: 
+        # applyTo: 
           # - my-manifest3
       # - GET: params2
       # - GET: dockerOptions2
