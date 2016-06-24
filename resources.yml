@@ -58,6 +58,14 @@ resources:
       params:
         another: params
         more: params
+        
+  - name: params3
+    integration: "stephAWS"
+    type: params
+    source:
+      params:
+        var: mystring
+        anothervar: anotherstring
       
   - name: replicas1
     # integration: "stephAWS"
@@ -80,12 +88,17 @@ resources:
   - name: dockerOptions1
     type: dockerOptions
     source:
-      memory: 333
+      memory: 111
       
   - name: dockerOptions2
     type: dockerOptions
     source:
-      memory: 667
+      memory: 222
+      
+  - name: dockerOptions3
+    type: dockerOptions
+    source:
+      memory: 333
       
   - name: kickstarter
     # integration: "stephAWS"
