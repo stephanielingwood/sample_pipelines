@@ -26,10 +26,10 @@ jobs:
       #     - my-manifest2
       - GET: params2
         applyTo:
-          - nginx-image
+          - not-an-image
       - GET: dockerOptions2
         applyTo:
-          - nginx-image
+          - not-an-image
       # - GET: kickstarter
       # - PUT: nginx-image
       
