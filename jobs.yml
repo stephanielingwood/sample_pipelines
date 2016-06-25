@@ -25,7 +25,11 @@ jobs:
       #     - my-manifest1
       #     - my-manifest2
       - GET: params2
+        applyTo:
+          - nginx-image
       - GET: dockerOptions2
+        applyTo:
+          - nginx-image
       # - GET: kickstarter
       # - PUT: nginx-image
       
