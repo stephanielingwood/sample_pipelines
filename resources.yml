@@ -99,6 +99,11 @@ resources:
     type: dockerOptions
     source:
       memory: 333
+  
+  - name: version1
+    type: version
+    source: 
+      base: "1.0.123"
       
   - name: kickstarter
     # integration: "stephAWS"
