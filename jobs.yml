@@ -63,5 +63,7 @@ jobs:
   
   - name: release1
     type: release
+    options:
+      action: patch
     steps:
-      - GET: replicas2
+      - GET: version1
