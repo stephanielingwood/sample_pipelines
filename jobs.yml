@@ -64,4 +64,4 @@ jobs:
   - name: release1
     type: release
     steps:
-      GET: replicas2
+      - GET: replicas2
