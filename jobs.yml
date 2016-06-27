@@ -64,6 +64,6 @@ jobs:
   - name: release1
     type: release
     options:
-      action: minor
+      action: patch
     steps:
       - GET: version1
