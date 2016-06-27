@@ -60,3 +60,8 @@ jobs:
   #   steps:
   #     - GET: sample_python
   #     - PUT: nginx-image
+  
+  - name: release1
+    type: release
+    steps:
+      GET: replicas1
