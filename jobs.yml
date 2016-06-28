@@ -20,7 +20,7 @@ jobs:
       # - GET: my-manifest1
       # - GET: my-manifest2
       - GET: release1
-      # - GET: ecsCluster
+      - GET: ecsCluster
       # - GET: replicas2
       #   applyTo: 
       #     - my-manifest1
