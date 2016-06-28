@@ -19,7 +19,7 @@ jobs:
     steps:
       # - GET: my-manifest1
       # - GET: my-manifest2
-      - GET: release1
+      - GET: release3
       - GET: ecsCluster
       # - GET: replicas2
       #   applyTo: 
