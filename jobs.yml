@@ -70,9 +70,9 @@ jobs:
   #     - GET: version3
   #     - GET: my-manifest2
 
-  # - name: release3
-  #   type: release
-  #   options:
-  #     action: minor
-  #   steps:
-  #     - GET: version4
+  - name: release3
+    type: release
+    options:
+      action: minor
+    steps:
+      - GET: version4
