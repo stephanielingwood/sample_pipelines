@@ -17,8 +17,9 @@ jobs:
   - name: my-ecs-service1
     type: ecsDeploy
     steps:
-      - GET: my-manifest1
-      - GET: my-manifest2
+      # - GET: my-manifest1
+      # - GET: my-manifest2
+      - GET: release1
       - GET: ecsCluster
       # - GET: replicas2
       #   applyTo: 
@@ -67,3 +68,4 @@ jobs:
       action: patch
     steps:
       - GET: version1
+      - GET: manifest2
