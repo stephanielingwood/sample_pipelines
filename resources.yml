@@ -104,6 +104,11 @@ resources:
     type: version
     source: 
       base: "1.0.124"
+
+  - name: version4
+    type: version
+    source: 
+      base: "1.0.124"
       
   - name: kickstarter
     # integration: "stephAWS"
