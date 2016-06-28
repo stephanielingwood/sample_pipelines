@@ -73,6 +73,6 @@ jobs:
   - name: release3
     type: release
     options:
-      action: minor
+      action: patch
     steps:
       - GET: version3
