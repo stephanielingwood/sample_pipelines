@@ -67,5 +67,5 @@ jobs:
     options:
       action: patch
     steps:
-      - GET: version1
+      - GET: version2
       - GET: manifest2
