@@ -69,3 +69,11 @@ jobs:
     steps:
       - GET: version3
       - GET: my-manifest2
+
+  - name: release2
+    type: release
+    options:
+      action: minor
+    steps:
+      - GET: version4
+      - GET: my-manifest2
