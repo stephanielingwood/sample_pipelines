@@ -75,4 +75,4 @@ jobs:
     options:
       action: minor
     steps:
-      - GET: version3
+      - GET: version4
