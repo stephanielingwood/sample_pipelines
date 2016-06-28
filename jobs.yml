@@ -25,7 +25,7 @@ jobs:
       #   applyTo: 
       #     - my-manifest1
       #     - my-manifest2
-      - GET: params1
+      - GET: params2
         # applyTo:
         #   - not-an-image
       - GET: dockerOptions2
