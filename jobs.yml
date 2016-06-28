@@ -68,4 +68,4 @@ jobs:
       action: patch
     steps:
       - GET: version3
-      - GET: manifest2
+      - GET: my-manifest2
