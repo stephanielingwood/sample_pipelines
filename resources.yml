@@ -100,7 +100,7 @@ resources:
     source:
       memory: 333
   
-  - name: version2
+  - name: version3
     type: version
     source: 
       base: "1.0.124"
