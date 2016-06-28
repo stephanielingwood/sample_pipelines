@@ -65,7 +65,7 @@ jobs:
   - name: release1
     type: release
     options:
-      action: patch
+      action: minor
     steps:
       - GET: version3
       - GET: my-manifest2
