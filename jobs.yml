@@ -19,7 +19,7 @@ jobs:
     steps:
       - GET: my-manifest1
       # - GET: my-manifest2
-      - GET: release3
+      - GET: release1
       # - GET: ecsCluster
       - GET: replicas2
       #   applyTo: 
@@ -62,13 +62,13 @@ jobs:
   #     - GET: sample_python
   #     - PUT: nginx-image
   
-  # - name: release1
-  #   type: release
-  #   options:
-  #     action: minor
-  #   steps:
-  #     - GET: version3
-  #     - GET: my-manifest2
+  - name: release1
+    type: release
+    options:
+      action: minor
+    steps:
+      - GET: version3
+      - GET: my-manifest2
 
   - name: release3
     type: release
