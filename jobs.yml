@@ -1,5 +1,5 @@
 jobs:
-  - name: my-manifest1
+  - name: manifest1
     type: manifest
     steps:
       - GET: nginx-image
