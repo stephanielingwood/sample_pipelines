@@ -1,5 +1,5 @@
 jobs:
-  - name: new-manifest1
+  - name: a-manifest1
     type: manifest
     steps:
       - GET: busybox-image
