@@ -3,7 +3,7 @@ jobs:
     type: manifest
     steps:
       - GET: busybox-image
-      # - GET: params1
+      - GET: params1
       # - GET: replicas1
       # - GET: dockerOptions1
       
