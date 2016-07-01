@@ -2,7 +2,7 @@ jobs:
   - name: a-manifest1
     type: manifest
     steps:
-      - GET: busybox-image
+      - GET: nginx-image
       # - GET: params1
       # - GET: replicas1
       # - GET: dockerOptions1
