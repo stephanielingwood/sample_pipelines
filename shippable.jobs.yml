@@ -7,7 +7,7 @@ jobs:
       # - GET: replicas1
       # - GET: dockerOptions1
       
-  - name: b-manifest2
+  - name: b-manifest3
     type: manifest
     steps:
       - GET: params1
