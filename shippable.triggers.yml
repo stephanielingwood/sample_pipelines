@@ -1,10 +1,10 @@
 triggers:
-  - name: trigger1
+  - name: trigger-1
     type: trigger
     source:
       count: 2
       
-  - name: trigger2
+  - name: trigger-2
     type: trigger
     source:
     count: 1
