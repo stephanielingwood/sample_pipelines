@@ -2,9 +2,9 @@ triggers:
   - name: trigger-1
     type: trigger
     source:
-      count: 2
+      counter: 2
       
   - name: trigger-2
     type: trigger
     source:
-    count: 1
+    counter: 1
