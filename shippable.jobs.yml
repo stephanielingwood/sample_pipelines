@@ -7,10 +7,10 @@ jobs:
       # - GET: replicas1
       # - GET: dockerOptions1
       
-  # - name: my-manifest2
-  #   type: manifest
-  #   steps:
-  #     - GET: busybox-image
+  - name: b-manifest2
+    type: manifest
+    steps:
+      - GET: busybox-image
       # - GET: params2
       # - GET: replicas2
 
