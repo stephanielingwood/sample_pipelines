@@ -10,7 +10,7 @@ jobs:
   - name: b-manifest2
     type: manifest
     steps:
-      - GET: busybox-image
+      - GET: params1
       # - GET: params2
       # - GET: replicas2
 
