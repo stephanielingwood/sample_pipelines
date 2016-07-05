@@ -1,6 +1,6 @@
 triggers:
-  - name: trigger1
-    type: params
+  - name: params1
+    type: trigger
     source:
       counter: 2
       
