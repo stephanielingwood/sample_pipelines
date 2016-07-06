@@ -7,15 +7,10 @@ jobs:
       # - GET: replicas1
       # - GET: dockerOptions1
 
-  - name: b-manifest7
-    type: ecsDeploy
-    steps:
-      - GET: params1
-
   - name: b-manifest8
     type: manifest
     steps:
-      - GET: params1
+      - GET: params2
       # - GET: params2
       # - GET: replicas2
 
