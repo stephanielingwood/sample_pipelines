@@ -10,7 +10,7 @@ jobs:
   - name: b-manifest8
     type: manifest
     steps:
-      - GET: params1
+      - GET: params2
       # - GET: params2
       # - GET: replicas2
 
