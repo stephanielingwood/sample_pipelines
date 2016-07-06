@@ -7,7 +7,7 @@ jobs:
       # - GET: replicas1
       # - GET: dockerOptions1
 
-  - name: dockerOptions2
+  - name: dockerOptions1
     type: manifest
     steps:
       - GET: nginx-image
