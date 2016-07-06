@@ -4,6 +4,7 @@ jobs:
     steps:
       - GET: nginx-image
       - GET: params2
+      - GET: trigger1
       # - GET: replicas1
       # - GET: dockerOptions1
 
