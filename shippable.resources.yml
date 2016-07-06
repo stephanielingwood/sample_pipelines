@@ -85,11 +85,11 @@ resources:
     source:
       count: 7
       
-  - name: b-manifest1
+  - name: replicas4
     # integration: "stephAWS"
     type: replicas
     source:
-      count: 6
+      count: 14    
 
   - name: dockerOptions1
     type: dockerOptions
