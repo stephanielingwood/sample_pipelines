@@ -10,9 +10,8 @@ jobs:
   - name: b-manifest8
     type: manifest
     steps:
-      - GET: params1
       # - GET: params2
-      # - GET: replicas2
+      - GET: replicas2
 
   # - name: my-ecs-service1
   #   type: ecsDeploy
