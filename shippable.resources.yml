@@ -84,6 +84,12 @@ resources:
     type: replicas
     source:
       count: 7
+      
+  - name: replicas4
+    # integration: "stephAWS"
+    type: replicas
+    source:
+      count: 7    
 
   - name: dockerOptions1
     type: dockerOptions
