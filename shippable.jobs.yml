@@ -1,17 +1,12 @@
 jobs:
   - name: b-manifest1
-    type: manifest
+    type: ecsDeploy
     steps:
       - GET: nginx-image
       - GET: params1
       # - GET: replicas1
       # - GET: dockerOptions1
-      
-  - name: b-manifest1
-    type: manifest
-    steps:
-      - GET: nginx-image      
-      
+
   - name: b-manifest7
     type: manifest
     steps:
