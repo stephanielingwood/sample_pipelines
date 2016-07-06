@@ -11,7 +11,7 @@ jobs:
     type: manifest
     steps:
       - GET: nginx-image
-      - GET: params2
+      - GET: replicas1
 
   - name: b-manifest7
     type: manifest
