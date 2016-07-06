@@ -22,9 +22,14 @@ jobs:
   - name: b-manifest10
     type: manifest
     steps:
-      - GET paramsDoesntExist
+      - GET: paramsDoesntExist
       - GET: nginx-image
 
+  - name: replicas3
+    type: manifest
+    steps:
+      - GET: paramsDoesntExist
+      - GET: nginx-image
 
   # - name: my-ecs-service1
   #   type: ecsDeploy
