@@ -22,7 +22,7 @@ jobs:
   - name: b-manifest10
     type: manifest
     steps:
-      - GET: paramsDoesntExist
+      - GET paramsDoesntExist
       - GET: nginx-image
 
 
