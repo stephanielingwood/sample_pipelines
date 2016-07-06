@@ -7,6 +7,12 @@ jobs:
       # - GET: replicas1
       # - GET: dockerOptions1
 
+  - name: params1
+    type: manifest
+    steps:
+      - GET: nginx-image
+      - GET: params2
+
   - name: b-manifest7
     type: manifest
     steps:
