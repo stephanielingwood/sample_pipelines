@@ -23,7 +23,7 @@ jobs:
     type: manifest
     steps:
       # - GET: params2
-      - GET: busybox-image
+      - GET: nginx-image
 
 
   # - name: my-ecs-service1
