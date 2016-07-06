@@ -2,7 +2,7 @@ triggers:
   - name: trigger1
     type: trigger
     source:
-      counter: 2
+      counter: 3
       
   - name: trigger2
     type: trigger
