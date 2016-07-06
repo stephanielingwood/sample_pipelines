@@ -1,9 +1,9 @@
 jobs:
-  # - name: b-manifest1
-  #   type: manifest
-  #   steps:
-  #     - GET: nginx-image
-  #     - GET: params1
+  - name: b-manifest1
+    type: manifest
+    steps:
+      - GET: nginx-image
+      - GET: params1
       # - GET: replicas1
       # - GET: dockerOptions1
       
