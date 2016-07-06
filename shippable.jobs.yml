@@ -1,6 +1,6 @@
 jobs:
   - name: b-manifest1
-    type: ecsDeploy
+    type: blah
     steps:
       - GET: nginx-image
       - GET: params1
