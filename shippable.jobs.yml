@@ -19,10 +19,10 @@ jobs:
       # - GET: params2
       - GET: replicas3
 
-  # - name: b-manifest10
-  #   type: manifest
-  #   steps:
-  #     - GET: nginx-image
+  - name: b-manifest10
+    type: manifest
+    steps:
+      - GET: nginx-image
 
   # - name: my-ecs-service1
   #   type: ecsDeploy
