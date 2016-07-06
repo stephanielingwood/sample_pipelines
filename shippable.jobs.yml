@@ -11,6 +11,12 @@ jobs:
     type: manifest
     steps:
       # - GET: params2
+      - GET: replicas2
+
+  - name: b-manifest9
+    type: manifest
+    steps:
+      # - GET: params2
       - GET: replicas3
 
   # - name: my-ecs-service1
