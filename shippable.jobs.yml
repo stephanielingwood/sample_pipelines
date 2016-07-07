@@ -13,7 +13,7 @@ jobs:
     steps:
       # - GET: params2
       - GET: b-manifest1
-      - GET: replicas2
+      - GET: replicas1
 
   - name: b-manifest9
     type: manifest
