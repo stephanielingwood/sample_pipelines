@@ -7,5 +7,5 @@ triggers:
   - name: trigger2
     type: trigger
     source:
-      counter: 1
+      counter: 2
       
