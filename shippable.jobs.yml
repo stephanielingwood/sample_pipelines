@@ -14,7 +14,7 @@ jobs:
       # - GET: params2
       # - GET: b-manifest1
       - GET: replicas1
-      - GET: b-manifest9
+      - GET: b-manifest10
 
   - name: b-manifest9
     type: manifest
