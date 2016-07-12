@@ -33,6 +33,7 @@ jobs:
     steps:
       - GET: b-manifest1
       - GET: dockerOptions1
+      - GET: triggerGKE
 
   # - name: my-ecs-service1
   #   type: ecsDeploy
