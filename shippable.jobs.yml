@@ -28,9 +28,10 @@ jobs:
     steps:
       - GET: nginx-image
 
-  - name: my-gke-cluster
-    type: gkeCluster
+  - name: gke-cluster
+    type: gkeDeploy
     steps:
+      - GET: gkeCluster
       - GET: b-manifest1
       - GET: dockerOptions1
       - GET: triggerGKE
