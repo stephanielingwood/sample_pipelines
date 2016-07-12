@@ -12,4 +12,4 @@ triggers:
   - name: triggerGKE
     type: trigger
     source:
-      counter: 6
+      counter: 7
