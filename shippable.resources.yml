@@ -130,9 +130,9 @@ resources:
     source:
       counter: 3
   
-  # - name: samplePython
-  #   type: gitRepo
-  #   integration: stephGithub
-  #   source:
-  #     name: "stephanielingwood/sample_python"
-  #     branch: "master"
+  - name: samplePython
+    type: gitRepo
+    integration: stephGithub
+    source:
+      name: "stephanielingwood/sample_python"
+      branch: "master"
