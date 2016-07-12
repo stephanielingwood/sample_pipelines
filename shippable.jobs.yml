@@ -23,7 +23,7 @@ jobs:
       # - GET: params2
       - GET: replicas3
 
-  - name: c-manifest5
+  - name: c-manifest6
     type: manifest
     steps:
       - GET: nginx-image
