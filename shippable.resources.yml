@@ -37,6 +37,13 @@ resources:
       name : "test-cluster" #name of the cluster we are deploying
       region: "us-east-1"
       
+  - name: gkeCluster
+    type: gkeCluster
+    integration: "stephGKE"
+    source:
+      name : "steph-cluster-1" #name of the cluster we are deploying
+      region: "us-central1-a"    
+      
   # - name: dclCluster
   #   type: dclCluster
   #   integration: "dclAidan"
