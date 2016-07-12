@@ -9,3 +9,7 @@ triggers:
     source:
       counter: 8
       
+  - name: triggerGKE
+    type: trigger
+    source:
+      counter: 1   
