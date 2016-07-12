@@ -28,8 +28,8 @@ jobs:
     steps:
       - GET: nginx-image
 
-  - name: gke-cluster
-    type: gkeDeploy
+  - name: my-gke-cluster
+    type: gkeCluster
     steps:
       - GET: b-manifest1
       - GET: dockerOptions1
