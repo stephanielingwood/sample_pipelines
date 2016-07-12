@@ -28,6 +28,12 @@ jobs:
     steps:
       - GET: nginx-image
 
+  - name: gke-cluster
+    type: gkeDeploy
+    steps:
+      - GET: b-manifest1
+      - GET: dockerOptions1
+
   # - name: my-ecs-service1
   #   type: ecsDeploy
   #   steps:
