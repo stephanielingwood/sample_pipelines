@@ -101,7 +101,7 @@ resources:
   - name: dockerOptions1
     type: dockerOptions
     source:
-      memory: 110
+      memory: 109
       cpuShares: 2
       
   - name: dockerOptions2
