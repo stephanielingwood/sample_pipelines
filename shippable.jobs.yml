@@ -101,7 +101,7 @@ jobs:
     options:
       action: major
     steps:
-      - GET: version3
+      - GET: version4
       - GET: b-manifest1
       - GET: triggerRelease1
 
