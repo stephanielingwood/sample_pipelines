@@ -22,7 +22,7 @@ triggers:
   - name: triggerRelease1
     type: trigger
     source:
-      counter: 1
+      counter: 2
   
   - name: triggerSamplePythonCI
     type: trigger
