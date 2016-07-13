@@ -12,7 +12,7 @@ triggers:
   - name: triggerGKE
     type: trigger
     source:
-      counter: 23
+      counter: 22
   
   - name: triggerECS
     type: trigger
