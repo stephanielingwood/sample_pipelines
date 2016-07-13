@@ -135,4 +135,4 @@ resources:
     integration: stephGithub
     source:
       name: "stephanielingwood/sample_python"
-      branch: "master"
+      branch: "nomatrix"
