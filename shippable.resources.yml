@@ -90,7 +90,7 @@ resources:
     # integration: "stephAWS"
     type: replicas
     source:
-      count: 7
+      count: 5
       
   - name: replicas4
     # integration: "stephAWS"
