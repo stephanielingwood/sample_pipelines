@@ -25,7 +25,7 @@ resources:
 
   - name: ecsCluster
     type: ecsCluster
-    # integration: "stephAWS"
+    integration: "stephAWS"
     source:
       name : "ECSCluster" #name of the cluster we are deploying
       region: "us-east-1"
