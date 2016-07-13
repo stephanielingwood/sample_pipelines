@@ -111,3 +111,10 @@ jobs:
   #     action: minor
   #   steps:
   #     - GET: version3
+
+  - name: shSamplePython
+    type: runSh
+    steps:
+      GET: samplePython
+      TASK:
+        - script: ls
