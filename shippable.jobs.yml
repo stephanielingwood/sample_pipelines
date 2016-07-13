@@ -112,7 +112,7 @@ jobs:
   #   steps:
   #     - GET: version3
 
-  - name: shSamplePython
+  - name: sh-sample-python
     type: runSh
     steps:
       GET: samplePython
