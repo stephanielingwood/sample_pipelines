@@ -12,7 +12,7 @@ triggers:
   - name: triggerGKE
     type: trigger
     source:
-      counter: 18
+      counter: 19
   
   - name: triggerSamplePythonCI
     type: trigger
