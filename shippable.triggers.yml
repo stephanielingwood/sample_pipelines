@@ -13,3 +13,8 @@ triggers:
     type: trigger
     source:
       counter: 16
+  
+  - name: triggerSamplePythonCI
+    type: trigger
+    source:
+      counter: 1
