@@ -103,6 +103,7 @@ jobs:
     steps:
       - GET: version3
       - GET: b-manifest1
+      - GET: triggerRelease1
 
   # - name: release3
   #   type: release
