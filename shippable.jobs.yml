@@ -42,7 +42,7 @@ jobs:
     steps:
       - GET: gkeCluster
       - GET: b-manifest1
-      - GET: dockerOptions1
+      # - GET: dockerOptions1
       - GET: triggerGKE
 
   - name: ecs-service1
