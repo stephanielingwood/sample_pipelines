@@ -28,7 +28,7 @@ jobs:
     steps:
       - GET: nginx-image
 
-  - name: samplePython
+  - name: samplePythonJob
     type: runCI
     steps:
       - GET: samplePython
