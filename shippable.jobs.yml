@@ -99,7 +99,7 @@ jobs:
   - name: release1
     type: release
     options:
-      action: major
+      action: patch
     steps:
       - GET: version4
       - GET: b-manifest1
