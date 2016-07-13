@@ -50,7 +50,7 @@ jobs:
     options:
       deployMethod: upgrade
     steps:
-      - GET: my-manifest1
+      - GET: b-manifest1
       # - GET: my-manifest2
       # - GET: release1
       - GET: ecsCluster
