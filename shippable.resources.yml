@@ -28,7 +28,7 @@ resources:
     integration: "stephAWS"
     source:
       name : "ECSCluster" #name of the cluster we are deploying
-      region: "us-east-1"
+      region: "us-east-2"
       
   - name: test-cluster
     type: ecsCluster
