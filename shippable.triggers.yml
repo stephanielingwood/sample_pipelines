@@ -17,4 +17,4 @@ triggers:
   - name: triggerSamplePythonCI
     type: trigger
     source:
-      counter: 3
+      counter: 4
