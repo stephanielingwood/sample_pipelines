@@ -19,6 +19,11 @@ triggers:
     source:
       counter: 4
   
+  - name: triggerRelease1
+    type: trigger
+    source:
+      counter: 1
+  
   - name: triggerSamplePythonCI
     type: trigger
     source:
