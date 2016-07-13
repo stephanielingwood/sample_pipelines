@@ -96,7 +96,7 @@ resources:
     # integration: "stephAWS"
     type: replicas
     source:
-      count: 7    
+      count: 6
 
   - name: dockerOptions1
     type: dockerOptions
