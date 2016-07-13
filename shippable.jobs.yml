@@ -96,13 +96,13 @@ jobs:
   #     - GET: sample_python
   #     - PUT: nginx-image
   
-  # - name: release1
-  #   type: release
-  #   options:
-  #     action: minor
-  #   steps:
-  #     - GET: version3
-  #     - GET: my-manifest2
+  - name: release1
+    type: release
+    options:
+      action: major
+    steps:
+      - GET: version3
+      - GET: b-manifest1
 
   # - name: release3
   #   type: release
