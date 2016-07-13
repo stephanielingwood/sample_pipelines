@@ -38,7 +38,7 @@ jobs:
   - name: gke-cluster
     type: gkeDeploy
     options:
-      - deployMethod: blueGreen
+      deployMethod: blueGreen
     steps:
       - GET: gkeCluster
       - GET: b-manifest1
