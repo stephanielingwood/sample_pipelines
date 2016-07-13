@@ -55,7 +55,7 @@ jobs:
       # - GET: release1
       - GET: ecsCluster
       - GET: triggerECS
-      - GET: replicas2
+      # - GET: replicas2
       #   applyTo: 
       #     - my-manifest1
       #     - my-manifest2
