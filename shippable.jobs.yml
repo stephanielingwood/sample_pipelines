@@ -45,23 +45,26 @@ jobs:
       - GET: dockerOptions1
       - GET: triggerGKE
 
-  # - name: my-ecs-service1
-  #   type: ecsDeploy
-  #   steps:
-  #     - GET: my-manifest1
+  - name: ecs-service1
+    type: ecsDeploy
+    options:
+      deployMethod: upgrade
+    steps:
+      - GET: my-manifest1
       # - GET: my-manifest2
       # - GET: release1
-      # - GET: ecsCluster
+      - GET: ecsCluster
+      - GET: triggerECS
       # - GET: replicas2
       #   applyTo: 
       #     - my-manifest1
       #     - my-manifest2
       # - GET: params1
-        # applyTo:
-        #   - not-an-image
+      #   applyTo:
+      #     - not-an-image
       # - GET: dockerOptions2
-        # applyTo:
-        #   - not-an-image
+      #   applyTo:
+      #     - not-an-image
       # - GET: kickstarter
       # - PUT: nginx-image
       
