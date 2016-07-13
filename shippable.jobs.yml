@@ -28,11 +28,11 @@ jobs:
     steps:
       - GET: nginx-image
 
-  - name: samplePythonJob
-    type: runCI
-    steps:
-      - GET: samplePython
-      - GET: triggerSamplePythonCI
+  # - name: samplePythonJob
+  #   type: runCI
+  #   steps:
+  #     - GET: samplePython
+  #     - GET: triggerSamplePythonCI
 
 
   - name: gke-cluster
