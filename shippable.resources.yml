@@ -2,58 +2,61 @@ resources:
   - name: nginx-image
     type: image
     integration: "stephDocker"
-    source:
-      name: "library/nginx"
+    pointer:
+      sourceName: "library/nginx"
       isPull: false
-      tag: latest
+    initialVersion:
+      versionName: latest
   
   - name: busybox-image
     type: image
     integration: "stephDocker"
-    source:
-      name: "library/busybox"
+    pointer:
+      sourceName: "library/busybox"
       isPull: false
-      tag: ubuntu
+    initialVersion:
+      versionName: ubuntu
       
   # - name: scratch-image
   #   type: image
   #   integration: "stephDocker"
-  #   source:
-  #     name: "library/scratch"
+  #   pointer:
+  #     sourceName: "library/scratch"
   #     isPull: false
-  #     tag: latest
+      # initialVersion:
+      #   versionName: latest
 
   - name: ecsCluster
     type: ecsCluster
     integration: "stephAWS"
-    source:
-      name : "ECSCluster" #name of the cluster we are deploying
+    pointer:
+      sourceName : "ECSCluster" #name of the cluster we are deploying
       region: "us-east-1"
       
   - name: test-cluster
     type: ecsCluster
     integration: "stephAWS"
-    source:
-      name : "test-cluster" #name of the cluster we are deploying
+    pointer:
+      sourceName : "test-cluster" #name of the cluster we are deploying
       region: "us-east-1"
       
   - name: gkeCluster
     type: gkeCluster
     integration: "stephGKE"
-    source:
-      name : "steph-cluster-1" #name of the cluster we are deploying
+    pointer:
+      sourceName : "steph-cluster-1" #name of the cluster we are deploying
       region: "us-central1-a"    
       
   # - name: dclCluster
   #   type: dclCluster
   #   integration: "dclAidan"
-  #   source:
-  #     name : "DockerCloudCluster" #name of the cluster we are deploying
+  #   pointer:
+  #     sourceName : "DockerCloudCluster" #name of the cluster we are deploying
   
   - name: params1
     integration: "stephAWS"
     type: params
-    source:
+    pointer:
       params:
         foo: bar3
         api_url: https://api.shippable.com
@@ -61,7 +64,7 @@ resources:
   - name: params2
     integration: "stephAWS"
     type: params
-    source:
+    pointer:
       params:
         another: params
         more: params
@@ -69,7 +72,7 @@ resources:
   - name: params3
     integration: "stephAWS"
     type: params
-    source:
+    pointer:
       params:
         var: mystring
         anothervar: anotherstring
@@ -77,62 +80,62 @@ resources:
   - name: replicas1
     # integration: "stephAWS"
     type: replicas
-    source:
+    pointer:
       count: 3
   
   - name: replicas2
     # integration: "stephAWS"
     type: replicas
-    source:
+    pointer:
       count: 4
       
   - name: replicas3
     # integration: "stephAWS"
     type: replicas
-    source:
+    pointer:
       count: 5
       
   - name: replicas4
     # integration: "stephAWS"
     type: replicas
-    source:
+    pointer:
       count: 6
 
   - name: dockerOptions1
     type: dockerOptions
-    source:
+    pointer:
       memory: 113
       cpuShares: 1
       
   - name: dockerOptions2
     type: dockerOptions
-    source:
+    pointer:
       memory: 222
       
   - name: dockerOptions3
     type: dockerOptions
-    source:
+    pointer:
       memory: 333
   
   - name: version3
     type: version
-    source: 
-      base: "1.0.124"
-
+    initialVersion:
+      versionName: "1.0.124"
+      
   - name: version4
     type: version
-    source: 
-      base: "1.0.124"
+    initialVersion:
+      versionName: "1.0.124"
       
   - name: kickstarter
     # integration: "stephAWS"
     type: kickStart
-    source:
+    pointer:
       counter: 3
   
   - name: samplePython
     type: gitRepo
     integration: stephGithub
-    source:
+    pointer:
       name: "stephanielingwood/sample_python"
       branch: "master"
