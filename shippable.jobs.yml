@@ -14,7 +14,7 @@ jobs:
       # - GET: params2
       # - GET: b-manifest1
       # - GET: replicas2
-      - GET: b-manifest1
+      - GET: busybox-image
       - GET: trigger1
 
   - name: b-manifest9
@@ -37,13 +37,19 @@ jobs:
 
   - name: gke-cluster
     type: gkeDeploy
-    options:
-      deployMethod: blueGreen
+    # options:
+    #   deployMethod: blueGreen
     steps:
       - GET: gkeCluster
       - GET: b-manifest1
-      # - GET: dockerOptions1
+      - GET: b-manifest8
+      - GET: params1
+        applyTo: nginx-image
+      - GET: params2
+        applyTo: b-manifest8
+      - GET: params3
       - GET: triggerGKE
+        # - GET: dockerOptions1
 
   - name: ecs-service1
     type: ecsDeploy
@@ -51,7 +57,7 @@ jobs:
     #   deployMethod: upgrade
     steps:
       - GET: b-manifest1
-      - GET: b-manifest2
+      - GET: b-manifest8
       # - GET: release1
       - GET: ecsCluster
       - GET: triggerECS
