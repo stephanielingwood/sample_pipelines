@@ -3,7 +3,7 @@ jobs:
     type: manifest
     steps:
       - GET: nginx-image
-      - GET: trigger2
+      - GET: triggerb1
       # - GET: doesntExist
       # - GET: replicas1
       # - GET: dockerOptions1
@@ -15,7 +15,7 @@ jobs:
       # - GET: b-manifest1
       # - GET: replicas2
       - GET: busybox-image
-      - GET: trigger1
+      - GET: triggerb8
 
   - name: b-manifest9
     type: manifest
