@@ -43,15 +43,15 @@ jobs:
       - GET: gkeCluster
       - GET: b-manifest1
       - GET: b-manifest8
-      - GET: params1
+      - GET: dockerOptions1
         applyTo: 
           - nginx-image
-      - GET: params2
+      - GET: dockerOptions2
         applyTo: 
           - b-manifest8
-      - GET: params3
+      - GET: dockerOptions3
       - GET: triggerGKE
-      - GET: dockerOptions1
+      - GET: params1
 
   - name: ecs-service1
     type: ecsDeploy
