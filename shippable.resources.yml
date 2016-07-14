@@ -6,7 +6,7 @@ resources:
       sourceName: "library/nginx"
       isPull: false
     initialVersion:
-      versionName: latest
+      versionName: master.10
   
   - name: busybox-image
     type: image
