@@ -55,22 +55,22 @@ resources:
     type: params
     pointer:
       params:
-        foo: bar3
-        api_url: https://api.shippable.com
+        foo: nginx
+        api_url: nginx
         
   - name: params2
     type: params
     pointer:
       params:
-        another: params
-        more: params
+        another: busybox
+        more: busybox
         
   - name: params3
     type: params
     pointer:
       params:
-        var: mystring
-        anothervar: anotherstring
+        var: both
+        anothervar: both
       
   - name: replicas1
     type: replicas
