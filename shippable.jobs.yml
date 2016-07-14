@@ -47,21 +47,21 @@ jobs:
 
   - name: ecs-service1
     type: ecsDeploy
-    options:
-      deployMethod: upgrade
+    # options:
+    #   deployMethod: upgrade
     steps:
       - GET: b-manifest1
-      # - GET: my-manifest2
+      - GET: b-manifest2
       # - GET: release1
       - GET: ecsCluster
       - GET: triggerECS
       - GET: replicas2
-      #   applyTo: 
-      #     - my-manifest1
+        applyTo: 
+          - b-manifest1
       #     - my-manifest2
-      # - GET: params1
-      #   applyTo:
-      #     - not-an-image
+      - GET: params1
+        applyTo:
+          - nginx-image
       # - GET: dockerOptions2
       #   applyTo:
       #     - not-an-image
