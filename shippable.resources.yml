@@ -137,5 +137,5 @@ resources:
     type: gitRepo
     integration: stephGithub
     pointer:
-      name: "stephanielingwood/sample_python"
+      sourceName: "stephanielingwood/sample_python"
       branch: "master"
