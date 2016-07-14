@@ -52,7 +52,6 @@ resources:
   #     sourceName : "DockerCloudCluster" #name of the cluster we are deploying
   
   - name: params1
-    integration: "stephAWS"
     type: params
     pointer:
       params:
@@ -60,7 +59,6 @@ resources:
         api_url: https://api.shippable.com
         
   - name: params2
-    integration: "stephAWS"
     type: params
     pointer:
       params:
@@ -68,7 +66,6 @@ resources:
         more: params
         
   - name: params3
-    integration: "stephAWS"
     type: params
     pointer:
       params:
@@ -76,25 +73,21 @@ resources:
         anothervar: anotherstring
       
   - name: replicas1
-    # integration: "stephAWS"
     type: replicas
     pointer:
       count: 3
   
   - name: replicas2
-    # integration: "stephAWS"
     type: replicas
     pointer:
       count: 4
       
   - name: replicas3
-    # integration: "stephAWS"
     type: replicas
     pointer:
       count: 5
       
   - name: replicas4
-    # integration: "stephAWS"
     type: replicas
     pointer:
       count: 6
@@ -126,7 +119,6 @@ resources:
       versionName: "1.0.124"
       
   - name: kickstarter
-    # integration: "stephAWS"
     type: kickStart
     pointer:
       counter: 3
