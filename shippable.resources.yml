@@ -4,9 +4,9 @@ resources:
     integration: "stephDocker2"
     pointer:
       sourceName: "library/nginx"
-      isPull: false
+      isPull: true
     initialVersion:
-      versionName: master.10
+      versionName: latest
   
   - name: busybox-image
     type: image
