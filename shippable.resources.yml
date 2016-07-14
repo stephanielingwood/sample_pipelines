@@ -96,7 +96,6 @@ resources:
     type: dockerOptions
     pointer:
       memory: 113
-      cpuShares: 1
       
   - name: dockerOptions2
     type: dockerOptions
@@ -106,7 +105,7 @@ resources:
   - name: dockerOptions3
     type: dockerOptions
     pointer:
-      memory: 333
+      cpuShares: 1
   
   - name: version3
     type: version
