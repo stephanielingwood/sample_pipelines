@@ -44,9 +44,11 @@ jobs:
       - GET: b-manifest1
       - GET: b-manifest8
       - GET: params1
-        applyTo: nginx-image
+        applyTo: 
+          - nginx-image
       - GET: params2
-        applyTo: b-manifest8
+        applyTo: 
+          - b-manifest8
       - GET: params3
       - GET: triggerGKE
       # - GET: dockerOptions1
