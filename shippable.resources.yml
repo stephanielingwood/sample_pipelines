@@ -1,7 +1,7 @@
 resources:
   - name: nginx-image
     type: image
-    integration: "stephDocker2"
+    integration: "stephDocker"
     pointer:
       sourceName: "library/nginx"
     initialVersion:
