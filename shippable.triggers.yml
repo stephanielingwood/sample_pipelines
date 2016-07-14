@@ -4,7 +4,7 @@ triggers:
     pointer:
       counter: 8
       
-  - name: triggerb2
+  - name: triggerb8
     type: trigger
     pointer:
       counter: 8
