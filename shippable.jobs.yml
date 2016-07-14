@@ -62,7 +62,7 @@ jobs:
       - GET: params1
         applyTo:
           - nginx-image
-      # - GET: dockerOptions2
+      - GET: dockerOptions2
       #   applyTo:
       #     - not-an-image
       # - GET: kickstarter
