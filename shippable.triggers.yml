@@ -1,30 +1,30 @@
 triggers:
   - name: trigger1
     type: trigger
-    source:
+    pointer:
       counter: 8
       
   - name: trigger2
     type: trigger
-    source:
+    pointer:
       counter: 8
       
   - name: triggerGKE
     type: trigger
-    source:
+    pointer:
       counter: 22
   
   - name: triggerECS
     type: trigger
-    source:
+    pointer:
       counter: 8
   
   - name: triggerRelease1
     type: trigger
-    source:
+    pointer:
       counter: 5
   
   - name: triggerSamplePythonCI
     type: trigger
-    source:
+    pointer:
       counter: 7
