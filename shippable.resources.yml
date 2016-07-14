@@ -4,7 +4,6 @@ resources:
     integration: "stephDocker2"
     pointer:
       sourceName: "library/nginx"
-      isPull: true
     initialVersion:
       versionName: latest
   
@@ -13,7 +12,6 @@ resources:
     integration: "stephDocker"
     pointer:
       sourceName: "library/busybox"
-      isPull: false
     initialVersion:
       versionName: ubuntu
       
