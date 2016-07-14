@@ -49,7 +49,7 @@ jobs:
         applyTo: b-manifest8
       - GET: params3
       - GET: triggerGKE
-      - GET: dockerOptions1
+      # - GET: dockerOptions1
 
   - name: ecs-service1
     type: ecsDeploy
