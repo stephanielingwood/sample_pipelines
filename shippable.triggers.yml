@@ -12,7 +12,7 @@ triggers:
   - name: triggerGKE
     type: trigger
     pointer:
-      counter: 30
+      counter: 31
   
   - name: triggerECS
     type: trigger
