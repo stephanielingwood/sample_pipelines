@@ -43,7 +43,7 @@ resources:
     integration: "stephGKE"
     pointer:
       sourceName : "steph-cluster-1" #name of the cluster we are deploying
-      # region: "us-central1-a"    
+      region: "us-central1-a"    
       
   - name: tritonCluster
     type: tripubCluster
