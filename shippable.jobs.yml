@@ -75,6 +75,13 @@ jobs:
       #     - not-an-image
       # - GET: kickstarter
       # - PUT: nginx-image
+  
+    - name: tripubDeploy
+      type: tripubDeploy
+      steps:
+        - GET: b-manifest1
+        - GET: ecsCluster
+          GET: triggerTripub
       
   # - name: ecs-service2
   #   type: ecsDeploy
