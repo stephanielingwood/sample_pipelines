@@ -35,7 +35,7 @@ jobs:
   #     - GET: triggerSamplePythonCI
 
 
-  - name: gke-cluster
+  - name: gkeDeploy
     type: gkeDeploy
     # options:
     #   deployMethod: blueGreen
