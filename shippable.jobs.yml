@@ -98,11 +98,12 @@ jobs:
   #     - GET: dcl-service1
   #     - GET: dclCluster
       
-  # - name: run-sample_python
-  #   type: runCI
-  #   steps:
-  #     - GET: sample_python
-  #     - PUT: nginx-image
+  - name: run-sample_python
+    type: runCI
+    steps:
+      - GET: sample_python
+      # - PUT: nginx-image
+      - GET: triggerSamplePythonCI
   
   - name: release1
     type: release
