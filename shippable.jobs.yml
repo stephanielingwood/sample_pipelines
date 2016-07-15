@@ -7,6 +7,7 @@ jobs:
       # - GET: doesntExist
       # - GET: replicas1
       # - GET: dockerOptions1
+      - TASK: managed
 
   - name: b-manifest8
     type: manifest
@@ -16,17 +17,20 @@ jobs:
       # - GET: replicas2
       - GET: busybox-image
       - GET: triggerb8
+      - TASK: managed      
 
   - name: b-manifest9
     type: manifest
     steps:
       # - GET: params2
       - GET: replicas3
+      - TASK: managed
 
   - name: c-manifest8
     type: manifest
     steps:
       - GET: nginx-image
+      - TASK: managed
 
   # - name: samplePythonJob
   #   type: runCI
@@ -43,8 +47,6 @@ jobs:
       - GET: gkeCluster
       - GET: b-manifest1
       - GET: b-manifest8
-      - TASK: managed
-        deployMethod: upgrade
       # - GET: params1
       #   applyTo: 
       #     - nginx-image
@@ -54,6 +56,8 @@ jobs:
       # - GET: params3
       - GET: triggerGKE
       # - GET: dockerOptions1
+      - TASK: managed
+        deployMethod: upgrade
 
   - name: ecs-service1
     type: ecsDeploy
@@ -77,6 +81,7 @@ jobs:
       #     - not-an-image
       # - GET: kickstarter
       # - PUT: nginx-image
+      - TASK: managed
   
   - name: tripubDeploy
     type: tripubDeploy
@@ -84,6 +89,7 @@ jobs:
       - GET: b-manifest8
       - GET: ecsCluster
       - GET: triggerTripub
+      - TASK: managed
       
   # - name: ecs-service2
   #   type: ecsDeploy
@@ -94,18 +100,21 @@ jobs:
   #     - GET: replicas3
       # - GET: params3
       # - GET: dockerOptions3
+      # - TASK: managed
       
   # - name: dcl-service1
   #   type: dclDeploy
   #   steps:
   #     - GET: manifest2
   #     - GET: dclCluster
+  #     - TASK: managed
       
   # - name: dcl-service2
   #   type: dclDeploy
   #   steps:
   #     - GET: dcl-service1
   #     - GET: dclCluster
+  #     - TASK: managed
       
   # - name: run-sample_python
   #   type: runCI
@@ -113,6 +122,7 @@ jobs:
   #     - GET: samplePython
   #     # - PUT: nginx-image
   #     - GET: triggerSamplePythonCI
+  #     - TASK: managed
   
   - name: release1
     type: release
@@ -122,6 +132,7 @@ jobs:
       - GET: version3
       - GET: b-manifest1
       - GET: triggerRelease1
+      - TASK: managed
 
   # - name: release3
   #   type: release
@@ -129,10 +140,11 @@ jobs:
   #     action: minor
   #   steps:
   #     - GET: version3
+  #     - TASK: managed
 
   # - name: sh-sample-python
   #   type: runSh
   #   steps:
   #     GET: samplePython
-  #     TASK:
-  #       - script: ls
+  #     TASK: managed
+  #       script: ls
