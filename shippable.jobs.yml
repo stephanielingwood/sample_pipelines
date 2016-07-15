@@ -79,7 +79,7 @@ jobs:
     - name: tripubDeploy
       type: tripubDeploy
       steps:
-        - GET: b-manifest1
+        - GET: b-manifest8
         - GET: ecsCluster
           GET: triggerTripub
       
