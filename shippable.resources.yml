@@ -58,7 +58,7 @@ resources:
     pointer:
       params:
         foo: nginx
-        api_url: nginx
+        api_url: nginx2
         
   - name: params2
     type: params
@@ -134,6 +134,6 @@ resources:
   - name: sampleNode
     type: gitRepo
     integration: stephGithub
-    pointer:
-      sourceName: "stephanielingwood/sample_node"
-      branch: "master"
+    # pointer:
+    #   sourceName: "stephanielingwood/sample_node"
+    #   branch: "master"
