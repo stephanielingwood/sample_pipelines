@@ -57,7 +57,7 @@ jobs:
       - GET: triggerGKE
       - GET: dockerOptions1
       - TASK: managed
-        deployMethod: upgrade
+        # deployMethod: upgrade
 
   - name: ecs-service1
     type: ecsDeploy
