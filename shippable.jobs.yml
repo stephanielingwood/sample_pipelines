@@ -101,7 +101,7 @@ jobs:
   - name: run-sample_python
     type: runCI
     steps:
-      - GET: sample_python
+      - GET: samplePython
       # - PUT: nginx-image
       - GET: triggerSamplePythonCI
   
