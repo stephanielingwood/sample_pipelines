@@ -93,7 +93,7 @@ resources:
   - name: replicas4
     type: replicas
     version:
-      count: 6
+      count: 4
 
   - name: dockerOptions1
     type: dockerOptions
