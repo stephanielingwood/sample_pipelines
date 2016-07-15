@@ -43,6 +43,8 @@ jobs:
       - GET: gkeCluster
       - GET: b-manifest1
       - GET: b-manifest8
+      - TASK: managed
+        deployMethod: upgrade
       # - GET: params1
       #   applyTo: 
       #     - nginx-image
