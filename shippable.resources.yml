@@ -45,6 +45,12 @@ resources:
       sourceName : "steph-cluster-1" #name of the cluster we are deploying
       # region: "us-central1-a"    
       
+  - name: tritonCluster
+    type: tripubCluster
+    integration: "stephTriton"
+    pointer:
+      region: "us-east-1"          
+      
   # - name: dclCluster
   #   type: dclCluster
   #   integration: "dclAidan"
