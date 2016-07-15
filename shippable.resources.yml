@@ -55,7 +55,7 @@ resources:
   
   - name: params1
     type: params
-    pointer:
+    version:
       params:
         foo: nginx
         api_url: nginx2
