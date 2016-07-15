@@ -43,7 +43,6 @@ resources:
     integration: "stephGKE"
     pointer:
       sourceName : "steph-cluster-1" #name of the cluster we are deploying
-    version:
       region: "us-central1-a"    
       
   # - name: dclCluster
