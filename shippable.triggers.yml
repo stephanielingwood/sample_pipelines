@@ -22,9 +22,9 @@ triggers:
   - name: triggerRelease1
     type: trigger
     pointer:
-      counter: 6
+      counter: 5
   
   - name: triggerSamplePythonCI
     type: trigger
     pointer:
-      counter: 8
+      counter: 9
