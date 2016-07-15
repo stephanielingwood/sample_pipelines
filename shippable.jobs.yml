@@ -51,7 +51,7 @@ jobs:
           - b-manifest8
       - GET: params3
       - GET: triggerGKE
-      # - GET: params1
+      - GET: params1
 
   - name: ecs-service1
     type: ecsDeploy
