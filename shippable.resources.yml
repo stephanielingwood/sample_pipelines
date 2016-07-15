@@ -82,7 +82,7 @@ resources:
   - name: replicas2
     type: replicas
     version:
-      count: 4
+      count: 5
       
   - name: replicas3
     type: replicas
