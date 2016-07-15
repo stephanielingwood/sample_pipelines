@@ -81,7 +81,7 @@ jobs:
       steps:
         - GET: b-manifest8
         - GET: ecsCluster
-          GET: triggerTripub
+        - GET: triggerTripub
       
   # - name: ecs-service2
   #   type: ecsDeploy
