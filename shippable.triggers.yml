@@ -27,4 +27,4 @@ triggers:
   - name: triggerSamplePythonCI
     type: trigger
     pointer:
-      counter: 9
+      counter: 7
