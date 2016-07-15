@@ -39,13 +39,13 @@ resources:
     version:
       region: "us-east-1"
       
-  # - name: gkeCluster
-  #   type: gkeCluster
-  #   integration: "stephGKE"
-  #   pointer:
-  #     sourceName : "steph-cluster-1" #name of the cluster we are deploying
-  #   version:
-  #     region: "us-central1-a"    
+  - name: gkeCluster
+    type: gkeCluster
+    integration: "stephGKE"
+    pointer:
+      sourceName : "steph-cluster-1" #name of the cluster we are deploying
+    version:
+      region: "us-central1-a"    
       
   # - name: dclCluster
   #   type: dclCluster
