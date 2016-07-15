@@ -29,7 +29,6 @@ resources:
     integration: "stephAWS"
     pointer:
       sourceName : "ECSCluster" #name of the cluster we are deploying
-    version:
       region: "us-east-1"
       
   - name: test-cluster
