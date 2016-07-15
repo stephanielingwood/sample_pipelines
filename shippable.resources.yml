@@ -4,7 +4,7 @@ resources:
     integration: "stephDocker"
     pointer:
       sourceName: "library/nginx"
-    initialVersion:
+    seed:
       versionName: latest
   
   - name: busybox-image
@@ -12,7 +12,7 @@ resources:
     integration: "stephDocker"
     pointer:
       sourceName: "library/busybox"
-    initialVersion:
+    seed:
       versionName: ubuntu
       
   # - name: scratch-image
@@ -21,7 +21,7 @@ resources:
   #   pointer:
   #     sourceName: "library/scratch"
   #     isPull: false
-      # initialVersion:
+      # seed:
       #   versionName: latest
 
   - name: ecsCluster
@@ -36,6 +36,7 @@ resources:
     integration: "stephAWS"
     pointer:
       sourceName : "test-cluster" #name of the cluster we are deploying
+    version:
       region: "us-east-1"
       
   - name: gkeCluster
@@ -43,6 +44,7 @@ resources:
     integration: "stephGKE"
     pointer:
       sourceName : "steph-cluster-1" #name of the cluster we are deploying
+    version:
       region: "us-central1-a"    
       
   # - name: dclCluster
@@ -60,67 +62,67 @@ resources:
         
   - name: params2
     type: params
-    pointer:
+    version:
       params:
         another: busybox
         more: busybox
         
   - name: params3
     type: params
-    pointer:
+    version:
       params:
         var: both
         anothervar: both
       
   - name: replicas1
     type: replicas
-    pointer:
+    version:
       count: 3
   
   - name: replicas2
     type: replicas
-    pointer:
+    version:
       count: 4
       
   - name: replicas3
     type: replicas
-    pointer:
+    version:
       count: 5
       
   - name: replicas4
     type: replicas
-    pointer:
+    version:
       count: 6
 
   - name: dockerOptions1
     type: dockerOptions
-    pointer:
+    version:
       memory: 113
       
   - name: dockerOptions2
     type: dockerOptions
-    pointer:
+    version:
       memory: 222
       
   - name: dockerOptions3
     type: dockerOptions
-    pointer:
+    version:
       cpuShares: 1
   
   - name: version3
     type: version
-    initialVersion:
+    seed:
       versionName: "1.0.124"
       
   - name: version4
     type: version
-    initialVersion:
+    seed:
       versionName: "1.0.124"
       
-  - name: kickstarter
-    type: kickStart
-    pointer:
-      counter: 3
+  # - name: kickstarter
+  #   type: kickStart
+  #   pointer:
+  #     counter: 3
   
   - name: samplePython
     type: gitRepo
@@ -128,3 +130,10 @@ resources:
     pointer:
       sourceName: "stephanielingwood/sample_python"
       branch: "master"
+      
+  - name: sampleNode
+    type: gitRepo
+    integration: stephGithub
+    # pointer:
+    #   sourceName: "stephanielingwood/sample_node"
+    #   branch: "master"
