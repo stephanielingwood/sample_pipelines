@@ -43,13 +43,13 @@ jobs:
       - GET: gkeCluster
       - GET: b-manifest1
       - GET: b-manifest8
-      - GET: dockerOptions1
+      - GET: params1
         applyTo: 
           - nginx-image
-      - GET: dockerOptions2
+      - GET: params2
         applyTo: 
           - b-manifest8
-      - GET: dockerOptions3
+      - GET: params3
       - GET: triggerGKE
       # - GET: params1
 
