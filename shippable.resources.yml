@@ -36,7 +36,6 @@ resources:
     integration: "stephAWS"
     pointer:
       sourceName : "test-cluster" #name of the cluster we are deploying
-    version:
       region: "us-east-1"
       
   - name: gkeCluster
