@@ -28,3 +28,8 @@ triggers:
     type: trigger
     pointer:
       counter: 7
+      
+  - name: triggerTripub
+    type: trigger
+    pointer:
+      counter: 1
