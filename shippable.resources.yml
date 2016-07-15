@@ -134,6 +134,6 @@ resources:
   - name: sampleNode
     type: gitRepo
     integration: stephGithub
-    pointer:
-      sourceName: "stephanielingwood/sample_node"
-      branch: "master"
+    # pointer:
+    #   sourceName: "stephanielingwood/sample_node"
+    #   branch: "master"
