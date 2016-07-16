@@ -78,7 +78,7 @@ jobs:
       # - GET: kickstarter
       # - PUT: nginx-image
       - TASK: managed
-        # deployMethod: upgrade
+        deployMethod: upgrade
   
   - name: tripubDeploy
     type: tripubDeploy
