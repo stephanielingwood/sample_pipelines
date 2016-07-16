@@ -44,7 +44,7 @@ jobs:
     steps:
       - GET: gkeCluster
       - GET: b-manifest1
-      - GET: b-manifest8
+      # - GET: b-manifest8
       # - GET: params1
       #   applyTo: 
       #     - nginx-image
@@ -53,7 +53,7 @@ jobs:
       #     - b-manifest8
       # - GET: params3
       - GET: triggerGKE
-      - GET: dockerOptions1
+      # - GET: dockerOptions1
       - TASK: managed
         deployMethod: upgrade
 
