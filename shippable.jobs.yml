@@ -128,7 +128,7 @@ jobs:
       - GET: b-manifest1
       - GET: triggerRelease1
       - TASK: managed
-        # bump: major
+        bump: major
 
   # - name: release3
   #   type: release
