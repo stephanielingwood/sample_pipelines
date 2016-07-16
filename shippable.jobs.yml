@@ -65,7 +65,7 @@ jobs:
       # - GET: release1
       - GET: ecsCluster
       - GET: triggerECS
-      # - GET: replicas2
+      - GET: replicas2
       #   applyTo: 
       #     - b-manifest1
       #     - my-manifest2
@@ -78,7 +78,7 @@ jobs:
       # - GET: kickstarter
       # - PUT: nginx-image
       - TASK: managed
-        deployMethod: upgrade
+        # deployMethod: upgrade
   
   - name: tripubDeploy
     type: tripubDeploy
