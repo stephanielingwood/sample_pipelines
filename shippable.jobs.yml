@@ -57,7 +57,7 @@ jobs:
       - TASK: managed
         deployMethod: upgrade
 
-  - name: ecs-service1
+  - name: ecsDeploy
     type: ecsDeploy
     steps:
       - GET: b-manifest1
