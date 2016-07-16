@@ -17,7 +17,7 @@ triggers:
   - name: triggerECS
     type: trigger
     pointer:
-      counter: 27
+      counter: 28
   
   - name: triggerRelease1
     type: trigger
