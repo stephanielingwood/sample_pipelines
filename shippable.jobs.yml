@@ -1,146 +1,126 @@
 jobs:
-  - name: b-manifest1
+  - name: manifest1
     type: manifest
     steps:
-      - GET: nginx-image
-      - GET: triggerb1
-      # - GET: doesntExist
-      # - GET: replicas1
-      # - GET: dockerOptions1
+      - IN: nginx-image
+      - IN: trigger1
+      # - IN: replicas1
+      # - IN: dockerOptions1
       - TASK: managed
 
-  - name: b-manifest8
+  - name: manifest2
     type: manifest
     steps:
-      # - GET: params2
-      # - GET: b-manifest1
-      # - GET: replicas2
-      - GET: busybox-image
-      - GET: triggerb8
+      # - IN: params2
+      # - IN: manifest1
+      # - IN: replicas2
+      - IN: busybox-image
+      - IN: trigger2
       - TASK: managed      
-
-  - name: b-manifest9
-    type: manifest
-    steps:
-      # - GET: params2
-      - GET: replicas3
-      - TASK: managed
-
-  - name: c-manifest8
-    type: manifest
-    steps:
-      - GET: nginx-image
-      - TASK: managed
 
   # - name: samplePythonJob
   #   type: runCI
   #   steps:
-  #     - GET: samplePython
-  #     - GET: triggerSamplePythonCI
-
+  #     - IN: samplePython
+  #     - IN: triggerSamplePythonCI
 
   - name: gkeDeploy
     type: gkeDeploy
     steps:
-      - GET: gkeCluster
-      - GET: b-manifest1
-      # - GET: b-manifest8
-      # - GET: params1
+      - IN: gkeCluster
+      - IN: manifest1
+      # - IN: manifest2
+      # - IN: params1
       #   applyTo: 
       #     - nginx-image
-      # - GET: params2
+      # - IN: params2
       #   applyTo: 
-      #     - b-manifest8
-      # - GET: params3
-      - GET: triggerGKE
-      # - GET: dockerOptions1
+      #     - manifest2
+      # - IN: params3
+      - IN: triggerGKE
+      # - IN: dockerOptions1
       - TASK: managed
         deployMethod: upgrade
 
   - name: ecsDeploy
     type: ecsDeploy
     steps:
-      - GET: b-manifest1
-      # - GET: b-manifest8
-      # - GET: release1
-      - GET: ecsCluster
-      - GET: triggerECS
-      # - GET: replicas2
+      - IN: manifest1
+      # - IN: manifest2
+      # - IN: release1
+      - IN: ecsCluster
+      - IN: triggerECS
+      # - IN: replicas2
       #   applyTo: 
-      #     - b-manifest1
-      #     - my-manifest2
-      # - GET: params1
+      #     - manifest1
+      #     - manifest2
+      # - IN: params1
       #   applyTo:
       #     - nginx-image
-      # - GET: dockerOptions2
-      #   applyTo:
-      #     - not-an-image
-      # - GET: kickstarter
-      # - PUT: nginx-image
+      # - IN: dockerOptions2
+      # - OUT: nginx-image
       - TASK: managed
         deployMethod: upgrade
   
   - name: tripubDeploy
     type: tripubDeploy
     steps:
-      - GET: b-manifest8
-      - GET: ecsCluster
-      - GET: triggerTripub
+      - IN: manifest2
+      - IN: ecsCluster
+      - IN: triggerTripub
       - TASK: managed
       
   # - name: ecs-service2
   #   type: ecsDeploy
   #   steps:
-  #     - GET: ecs-service1
-  #     - GET: my-manifest2
-  #     - GET: ecsCluster
-  #     - GET: replicas3
-      # - GET: params3
-      # - GET: dockerOptions3
+  #     - IN: ecs-service1
+  #     - IN: manifest2
+  #     - IN: ecsCluster
+  #     - IN: replicas3
+      # - IN: params3
+      # - IN: dockerOptions3
       # - TASK: managed
       
   # - name: dcl-service1
   #   type: dclDeploy
   #   steps:
-  #     - GET: manifest2
-  #     - GET: dclCluster
+  #     - IN: manifest2
+  #     - IN: dclCluster
   #     - TASK: managed
       
   # - name: dcl-service2
   #   type: dclDeploy
   #   steps:
-  #     - GET: dcl-service1
-  #     - GET: dclCluster
+  #     - IN: dcl-service1
+  #     - IN: dclCluster
   #     - TASK: managed
       
   # - name: run-sample_python
   #   type: runCI
   #   steps:
-  #     - GET: samplePython
-  #     # - PUT: nginx-image
-  #     - GET: triggerSamplePythonCI
+  #     - IN: samplePython
+  #     # - OUT: nginx-image
+  #     - IN: triggerSamplePythonCI
   #     - TASK: managed
   
   - name: release1
     type: release
     steps:
-      - GET: version3
-      - GET: b-manifest1
-      - GET: triggerRelease1
+      - IN: version3
+      - IN: manifest1
+      - IN: triggerRelease1
       - TASK: managed
         # bump: major
 
   # - name: release3
   #   type: release
-  #   options:
-  #     action: minor
   #   steps:
-  #     - GET: version3
+  #     - IN: version3
   #     - TASK: managed
 
   # - name: sh-sample-python
   #   type: runSh
   #   steps:
-  #     GET: samplePython
+  #     IN: samplePython
   #     TASK: managed
   #       script: ls
