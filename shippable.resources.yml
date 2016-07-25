@@ -25,34 +25,34 @@ resources:
       #   versionName: latest
 
   - name: ecsCluster
-    type: ecsCluster
+    type: cluster
     integration: "stephAWS"
     pointer:
       sourceName : "ECSCluster" #name of the cluster we are deploying
       region: "us-east-1"
       
   - name: test-cluster
-    type: ecsCluster
+    type: cluster
     integration: "stephAWS"
     pointer:
       sourceName : "test-cluster" #name of the cluster we are deploying
       region: "us-east-1"
       
   - name: gkeCluster
-    type: gkeCluster
+    type: cluster
     integration: "stephGKE"
     pointer:
       sourceName : "steph-cluster-1" #name of the cluster we are deploying
       region: "us-central1-a"    
       
   - name: tritonCluster
-    type: tripubCluster
+    type: cluster
     integration: "stephTriton"
     pointer:
       region: "us-east-1"          
       
   # - name: dclCluster
-  #   type: dclCluster
+  #   type: cluster
   #   integration: "dclAidan"
   #   pointer:
   #     sourceName : "DockerCloudCluster" #name of the cluster we are deploying
