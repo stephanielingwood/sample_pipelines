@@ -24,32 +24,32 @@ resources:
       # seed:
       #   versionName: latest
 
-  - name: ecsCluster
-    type: cluster
-    integration: "stephAWS"
-    pointer:
-      sourceName : "ECSCluster" #name of the cluster we are deploying
-      region: "us-east-1"
+  # - name: ecsCluster
+  #   type: cluster
+  #   integration: "stephAWS"
+  #   pointer:
+  #     sourceName : "ECSCluster" #name of the cluster we are deploying
+  #     region: "us-east-1"
       
-  - name: test-cluster
-    type: cluster
-    integration: "stephAWS"
-    pointer:
-      sourceName : "test-cluster" #name of the cluster we are deploying
-      region: "us-east-1"
+  # - name: test-cluster
+  #   type: cluster
+  #   integration: "stephAWS"
+  #   pointer:
+  #     sourceName : "test-cluster" #name of the cluster we are deploying
+  #     region: "us-east-1"
       
-  - name: gkeCluster
-    type: cluster
-    integration: "stephGKE"
-    pointer:
-      sourceName : "steph-cluster-1" #name of the cluster we are deploying
-      region: "us-central1-a"    
+  # - name: gkeCluster
+  #   type: cluster
+  #   integration: "stephGKE"
+  #   pointer:
+  #     sourceName : "steph-cluster-1" #name of the cluster we are deploying
+  #     region: "us-central1-a"    
       
-  - name: tritonCluster
-    type: cluster
-    integration: "stephTriton"
-    pointer:
-      region: "us-east-1"          
+  # - name: tritonCluster
+  #   type: cluster
+  #   integration: "stephTriton"
+  #   pointer:
+  #     region: "us-east-1"          
       
   # - name: dclCluster
   #   type: cluster
