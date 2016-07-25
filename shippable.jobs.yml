@@ -24,11 +24,11 @@ jobs:
   #     - IN: samplePython
   #     - IN: triggerSamplePythonCI
 
-  - name: gkeDeploy
-    type: gkeDeploy
-    steps:
-      - IN: gkeCluster
-      - IN: manifest1
+  # - name: gkeDeploy
+  #   type: gkeDeploy
+  #   steps:
+  #     - IN: gkeCluster
+  #     - IN: manifest1
       # - IN: manifest2
       # - IN: params1
       #   applyTo: 
@@ -37,19 +37,19 @@ jobs:
       #   applyTo: 
       #     - manifest2
       # - IN: params3
-      - IN: triggerGKE
+      # - IN: triggerGKE
       # - IN: dockerOptions1
-      - TASK: managed
-        deployMethod: upgrade
+      # - TASK: managed
+      #   deployMethod: upgrade
 
-  - name: ecsDeploy
-    type: ecsDeploy
-    steps:
-      - IN: manifest1
+  # - name: ecsDeploy
+  #   type: ecsDeploy
+  #   steps:
+  #     - IN: manifest1
       # - IN: manifest2
       # - IN: release1
-      - IN: ecsCluster
-      - IN: triggerECS
+      # - IN: ecsCluster
+      # - IN: triggerECS
       # - IN: replicas2
       #   applyTo: 
       #     - manifest1
@@ -59,16 +59,16 @@ jobs:
       #     - nginx-image
       # - IN: dockerOptions2
       # - OUT: nginx-image
-      - TASK: managed
-        deployMethod: upgrade
+      # - TASK: managed
+      #   deployMethod: upgrade
   
-  - name: tripubDeploy
-    type: tripubDeploy
-    steps:
-      - IN: manifest2
-      - IN: ecsCluster
-      - IN: triggerTripub
-      - TASK: managed
+  # - name: tripubDeploy
+  #   type: tripubDeploy
+  #   steps:
+  #     - IN: manifest2
+  #     - IN: ecsCluster
+  #     - IN: triggerTripub
+  #     - TASK: managed
       
   # - name: ecs-service2
   #   type: ecsDeploy
