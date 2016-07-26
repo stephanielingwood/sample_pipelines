@@ -17,7 +17,7 @@ triggers:
   - name: triggerECS
     type: trigger
     pointer:
-      counter: 7
+      counter: 8
 
   - name: triggerECS2
     type: trigger
