@@ -38,7 +38,7 @@ jobs:
       #     - manifest2
       # - IN: params3
       - IN: triggerGKE
-      - IN: replicas1
+      - IN: replicas2
       - TASK: managed
         deployMethod: upgrade
 
