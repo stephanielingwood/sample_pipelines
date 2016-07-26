@@ -7,7 +7,7 @@ triggers:
   - name: trigger2
     type: trigger
     pointer:
-      counter: 2
+      counter: 3
       
   - name: triggerGKE
     type: trigger
