@@ -70,16 +70,18 @@ jobs:
   #     - IN: triggerTripub
   #     - TASK: managed
       
-  # - name: ecs-service2
-  #   type: ecsDeploy
-  #   steps:
+  - name: ecs-service2
+    type: ecsDeploy
+    steps:
   #     - IN: ecs-service1
-  #     - IN: manifest2
-  #     - IN: ecsCluster
-  #     - IN: replicas3
+      - IN: manifest2
+      - IN: ecsCluster
+      - IN: replicas3
+      - IN: triggerECS2
       # - IN: params3
       # - IN: dockerOptions3
-      # - TASK: managed
+      - TASK: managed
+        deployMethod: upgrade
       
   # - name: dcl-service1
   #   type: dclDeploy
