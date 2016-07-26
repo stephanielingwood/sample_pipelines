@@ -50,7 +50,7 @@ jobs:
       # - IN: release1
       - IN: ecsCluster
       - IN: triggerECS
-      # - IN: replicas2
+      - IN: replicas2
       #   applyTo: 
       #     - manifest1
       #     - manifest2
