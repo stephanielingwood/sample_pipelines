@@ -22,7 +22,7 @@ triggers:
   - name: triggerECS2
     type: trigger
     pointer:
-      counter: 3
+      counter: 4
   
   - name: triggerRelease1
     type: trigger
