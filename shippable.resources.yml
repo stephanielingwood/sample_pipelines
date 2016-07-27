@@ -111,6 +111,11 @@ resources:
     type: dockerOptions
     version:
       cpuShares: 1
+      
+  - name: badDockerOptions
+    type: dockerOptions
+    version:
+      user: 1234
   
   - name: version3
     type: version
