@@ -37,6 +37,7 @@ jobs:
       #   applyTo: 
       #     - manifest2
       # - IN: params3
+      - IN: badDockerOptions
       - IN: triggerGKE
       - IN: replicas1
       - TASK: managed
