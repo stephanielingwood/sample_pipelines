@@ -13,7 +13,7 @@ resources:
     pointer:
       sourceName: "library/busybox"
     seed:
-      versionName: latest
+      versionName: ubuntu
   # - name: scratch-image
   #   type: image
   #   integration: "stephDocker"
@@ -95,7 +95,7 @@ resources:
   - name: replicas4
     type: replicas
     version:
-      count: 2
+      count: 1
 
   - name: dockerOptions1
     type: dockerOptions
