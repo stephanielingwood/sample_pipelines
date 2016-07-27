@@ -30,7 +30,7 @@ jobs:
       - IN: gkeCluster
       - IN: manifest1
       # - IN: manifest2
-      # - IN: params1
+      - IN: params1
       #   applyTo: 
       #     - nginx-image
       # - IN: params2
