@@ -58,7 +58,7 @@ jobs:
       # - IN: params3
       - IN: triggerGKE2
       - IN: replicas4
-      - IN: badDockerOptions
+      # - IN: badDockerOptions
       - TASK: managed
         deployMethod: upgrade        
 
