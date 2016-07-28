@@ -70,12 +70,12 @@ resources:
         another: busybox
         more: busybox
         
-  # - name: params3
-  #   type: params
-  #   version:
-  #     params:
-  #       var: both
-  #       anothervar: both
+  - name: params3
+    type: params
+    version:
+      params:
+        var: both
+        anothervar: both
       
   - name: replicas1
     type: replicas
