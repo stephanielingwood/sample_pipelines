@@ -1,12 +1,13 @@
 jobs:
-  - name: manifest1
-    type: manifest
-    steps:
-      - IN: nginx-image
-      - IN: trigger1
+  # - name: manifest1
+  #   type: manifest
+  #   steps:
+  #     - IN: nginx-image
+  #     - IN: trigger1
+  #     - TASK: managed
       # - IN: replicas1
       # - IN: dockerOptions1
-      - TASK: managed
+
 
   # - name: manifest2
   #   type: manifest
