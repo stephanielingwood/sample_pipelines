@@ -1,19 +1,19 @@
 resources:
-  - name: nginx-image
-    type: image
-    integration: "stephDocker"
-    pointer:
-      sourceName: "library/nginx"
-    seed:
-      versionName: latest
+  # - name: nginx-image
+  #   type: image
+  #   integration: "stephDocker"
+  #   pointer:
+  #     sourceName: "library/nginx"
+  #   seed:
+  #     versionName: latest
       
-  - name: busybox-image
-    type: image
-    integration: "stephDocker"
-    pointer:
-      sourceName: "library/busybox"
-    seed:
-      versionName: ubuntu
+  # - name: busybox-image
+  #   type: image
+  #   integration: "stephDocker"
+  #   pointer:
+  #     sourceName: "library/busybox"
+  #   seed:
+  #     versionName: ubuntu
   # - name: scratch-image
   #   type: image
   #   integration: "stephDocker"
@@ -23,12 +23,12 @@ resources:
       # seed:
       #   versionName: latest
 
-  - name: ecsCluster
-    type: cluster
-    integration: "stephAWS"
-    pointer:
-      sourceName : "ECSCluster" #name of the cluster we are deploying
-      region: "us-east-1"
+  # - name: ecsCluster
+  #   type: cluster
+  #   integration: "stephAWS"
+  #   pointer:
+  #     sourceName : "ECSCluster" #name of the cluster we are deploying
+  #     region: "us-east-1"
       
   # - name: test-cluster
   #   type: cluster
@@ -37,12 +37,12 @@ resources:
   #     sourceName : "test-cluster" #name of the cluster we are deploying
   #     region: "us-east-1"
       
-  - name: gkeCluster
-    type: cluster
-    integration: "stephGKE"
-    pointer:
-      sourceName : "steph-cluster-1" #name of the cluster we are deploying
-      region: "us-central1-a"    
+  # - name: gkeCluster
+  #   type: cluster
+  #   integration: "stephGKE"
+  #   pointer:
+  #     sourceName : "steph-cluster-1" #name of the cluster we are deploying
+  #     region: "us-central1-a"    
       
   # - name: tritonCluster
   #   type: cluster
@@ -77,71 +77,71 @@ resources:
   #       var: both
   #       anothervar: both
       
-  - name: replicas1
-    type: replicas
-    version:
-      count: 0
+  # - name: replicas1
+  #   type: replicas
+  #   version:
+  #     count: 0
   
-  - name: replicas2
-    type: replicas
-    version:
-      count: 3
+  # - name: replicas2
+  #   type: replicas
+  #   version:
+  #     count: 3
       
-  - name: replicas3
-    type: replicas
-    version:
-      count: 33
+  # - name: replicas3
+  #   type: replicas
+  #   version:
+  #     count: 33
       
-  - name: replicas4
-    type: replicas
-    version:
-      count: 0
+  # - name: replicas4
+  #   type: replicas
+  #   version:
+  #     count: 0
 
-  - name: dockerOptions1
-    type: dockerOptions
-    version:
-      memory: 113
+  # - name: dockerOptions1
+  #   type: dockerOptions
+  #   version:
+  #     memory: 113
       
-  - name: dockerOptions2
-    type: dockerOptions
-    version:
-      memory: 222
+  # - name: dockerOptions2
+  #   type: dockerOptions
+  #   version:
+  #     memory: 222
       
-  - name: dockerOptions3
-    type: dockerOptions
-    version:
-      cpuShares: 1
+  # - name: dockerOptions3
+  #   type: dockerOptions
+  #   version:
+  #     cpuShares: 1
       
-  - name: badDockerOptions
-    type: dockerOptions
-    version:
-      user: yayString
+  # - name: badDockerOptions
+  #   type: dockerOptions
+  #   version:
+  #     user: yayString
   
-  - name: version3
-    type: version
-    seed:
-      versionName: "1.0.124"
+  # - name: version3
+  #   type: version
+  #   seed:
+  #     versionName: "1.0.124"
       
-  - name: version4
-    type: version
-    seed:
-      versionName: "1.0.124"
+  # - name: version4
+  #   type: version
+  #   seed:
+  #     versionName: "1.0.124"
       
   # - name: kickstarter
   #   type: kickStart
   #   pointer:
   #     counter: 3
   
-  - name: samplePython
-    type: gitRepo
-    integration: stephGithub
-    pointer:
-      sourceName: "stephanielingwood/sample_python"
-      branch: "master"
+  # - name: samplePython
+  #   type: gitRepo
+  #   integration: stephGithub
+  #   pointer:
+  #     sourceName: "stephanielingwood/sample_python"
+  #     branch: "master"
       
-  - name: sampleNode
-    type: gitRepo
-    integration: stephGithub
-    pointer:
-      sourceName: "stephanielingwood/sample_node"
-      branch: "master"
+  # - name: sampleNode
+  #   type: gitRepo
+  #   integration: stephGithub
+  #   pointer:
+  #     sourceName: "stephanielingwood/sample_node"
+  #     branch: "master"
