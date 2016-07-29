@@ -8,15 +8,15 @@ jobs:
       # - IN: dockerOptions1
       - TASK: managed
 
-  - name: manifest2
-    type: manifest
-    steps:
+  # - name: manifest2
+  #   type: manifest
+  #   steps:
       # - IN: params2
       # - IN: manifest1
       # - IN: replicas2
-      - IN: busybox-image
-      - IN: trigger2
-      - TASK: managed      
+      # - IN: busybox-image
+      # - IN: trigger2
+      # - TASK: managed      
 
   # - name: samplePythonJob
   #   type: runCI
@@ -24,25 +24,6 @@ jobs:
   #     - IN: samplePython
   #     - IN: triggerSamplePythonCI
 
-  - name: gkeDeploy
-    type: gkeDeploy
-    steps:
-      - IN: gkeCluster
-      - IN: manifest1
-      # - IN: manifest2
-      - IN: params1
-      #   applyTo: 
-      #     - nginx-image
-      # - IN: params2
-      #   applyTo: 
-      #     - manifest2
-      # - IN: params3
-      # - IN: badDockerOptions
-      - IN: triggerGKE
-      - IN: replicas1
-      - TASK: managed
-        deployMethod: upgrade
-        
   - name: gkeDeploy2
     type: deploy
     steps:
@@ -62,15 +43,15 @@ jobs:
       - TASK: managed
         deployMethod: upgrade        
 
-  - name: ecsDeploy
-    type: deploy
-    steps:
-      - IN: manifest1
+  # - name: ecsDeploy
+  #   type: deploy
+  #   steps:
+  #     - IN: manifest1
       # - IN: manifest2
       # - IN: release1
-      - IN: ecsCluster
-      - IN: triggerECS
-      - IN: replicas2
+      # - IN: ecsCluster
+      # - IN: triggerECS
+      # - IN: replicas2
       #   applyTo: 
       #     - manifest1
       #     - manifest2
@@ -79,8 +60,8 @@ jobs:
       #     - nginx-image
       # - IN: dockerOptions2
       # - OUT: nginx-image
-      - TASK: managed
-        deployMethod: upgrade
+      # - TASK: managed
+      #   deployMethod: upgrade
   
   # - name: tripubDeploy
   #   type: tripubDeploy
@@ -90,21 +71,8 @@ jobs:
   #     - IN: triggerTripub
   #     - TASK: managed
       
-  - name: ecs-service2
-    type: ecsDeploy
-    steps:
-  #     - IN: ecs-service1
-      - IN: manifest2
-      - IN: ecsCluster
-      - IN: replicas3
-      - IN: triggerECS2
-      # - IN: params3
-      # - IN: dockerOptions3
-      - TASK: managed
-        deployMethod: upgrade
-      
   # - name: dcl-service1
-  #   type: dclDeploy
+  #   type: deploy
   #   steps:
   #     - IN: manifest2
   #     - IN: dclCluster
@@ -125,13 +93,13 @@ jobs:
   #     - IN: triggerSamplePythonCI
   #     - TASK: managed
   
-  - name: release1
-    type: release
-    steps:
-      - IN: version3
-      - IN: manifest1
-      - IN: triggerRelease1
-      - TASK: managed
+  # - name: release1
+  #   type: release
+  #   steps:
+  #     - IN: version3
+  #     - IN: manifest1
+  #     - IN: triggerRelease1
+  #     - TASK: managed
         # bump: major
 
   # - name: release3
