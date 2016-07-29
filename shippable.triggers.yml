@@ -1,45 +1,45 @@
 triggers:
-  - name: trigger1
-    type: trigger
-    pointer:
-      counter: 12
+  # - name: trigger1
+  #   type: trigger
+  #   pointer:
+  #     counter: 12
       
-  - name: trigger2
-    type: trigger
-    pointer:
-      counter: 15
+  # - name: trigger2
+  #   type: trigger
+  #   pointer:
+  #     counter: 15
       
-  - name: triggerGKE
-    type: trigger
-    pointer:
-      counter: 29
+  # - name: triggerGKE
+  #   type: trigger
+  #   pointer:
+  #     counter: 29
   
-  - name: triggerGKE2
-    type: trigger
-    pointer:
-      counter: 44
+  # - name: triggerGKE2
+  #   type: trigger
+  #   pointer:
+  #     counter: 44
   
-  - name: triggerECS
-    type: trigger
-    pointer:
-      counter: 9
+  # - name: triggerECS
+  #   type: trigger
+  #   pointer:
+  #     counter: 9
 
-  - name: triggerECS2
-    type: trigger
-    pointer:
-      counter: 7
+  # - name: triggerECS2
+  #   type: trigger
+  #   pointer:
+  #     counter: 7
   
-  - name: triggerRelease1
-    type: trigger
-    pointer:
-      counter: 1
+  # - name: triggerRelease1
+  #   type: trigger
+  #   pointer:
+  #     counter: 1
   
-  - name: triggerSamplePythonCI
-    type: trigger
-    pointer:
-      counter: 1
+  # - name: triggerSamplePythonCI
+  #   type: trigger
+  #   pointer:
+  #     counter: 1
       
-  - name: triggerTripub
-    type: trigger
-    pointer:
-      counter: 1
+  # - name: triggerTripub
+  #   type: trigger
+  #   pointer:
+  #     counter: 1
