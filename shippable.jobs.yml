@@ -1,10 +1,10 @@
 jobs:
-  - name: manifest1
-    type: manifest
-    steps:
-      - IN: nginx-image
-      - IN: trigger1
-      - TASK: managed
+  # - name: manifest1
+  #   type: manifest
+  #   steps:
+  #     - IN: nginx-image
+  #     - IN: trigger1
+  #     - TASK: managed
       # - IN: replicas1
       # - IN: dockerOptions1
 
@@ -25,11 +25,11 @@ jobs:
   #     - IN: samplePython
   #     - IN: triggerSamplePythonCI
 
-  - name: gkeDeploy2
-    type: deploy
-    steps:
-      - IN: gkeCluster
-      - IN: manifest2
+  # - name: gkeDeploy2
+  #   type: deploy
+  #   steps:
+  #     - IN: gkeCluster
+  #     - IN: manifest2
       # - IN: manifest2
       # - IN: params1
       #   applyTo: 
@@ -41,8 +41,8 @@ jobs:
       # - IN: triggerGKE2
       # - IN: replicas4
       # - IN: badDockerOptions
-      - TASK: managed
-        deployMethod: upgrade        
+      # - TASK: managed
+      #   deployMethod: upgrade        
 
   # - name: ecsDeploy
   #   type: deploy
