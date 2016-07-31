@@ -5,7 +5,7 @@ jobs:
       - IN: nginx-image
       - IN: triggerManifest1
       - TASK: managed
-      # - IN: replicas1
+      - IN: replicas1
       # - IN: dockerOptions1
 
 
