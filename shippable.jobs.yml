@@ -97,7 +97,7 @@ jobs:
   - name: release1
     type: release
     steps:
-      - IN: version2
+      # - IN: version2
       - IN: manifest1
       - IN: triggerRelease1
       - TASK: managed
