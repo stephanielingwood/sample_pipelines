@@ -117,12 +117,12 @@ resources:
   #   version:
   #     user: yayString
   
-  # - name: version3
-  #   type: version
-  #   seed:
-  #     versionName: "1.0.124"
+  - name: version1
+    type: version
+    seed:
+      versionName: "1.0.124"
       
-  # - name: version4
+  # - name: version2
   #   type: version
   #   seed:
   #     versionName: "1.0.124"
