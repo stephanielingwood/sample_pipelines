@@ -5,7 +5,7 @@ resources:
     pointer:
       sourceName: "library/nginx"
     seed:
-      versionName: latest
+      versionName: master.10
       
   # - name: busybox-image
   #   type: image
