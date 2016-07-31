@@ -103,6 +103,14 @@ jobs:
       - TASK: managed
         # bump: major
 
+  - name: release2
+    type: release
+    steps:
+      # - IN: version2
+      - IN: manifest1
+      - IN: triggerRelease2
+      - TASK: managed
+
   # - name: release3
   #   type: release
   #   steps:
