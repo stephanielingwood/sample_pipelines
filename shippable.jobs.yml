@@ -98,7 +98,7 @@ jobs:
     type: release
     steps:
       - IN: release2
-      - IN: manifest1
+      # - IN: manifest1
       - IN: triggerRelease1
       - TASK: managed
         # bump: major
