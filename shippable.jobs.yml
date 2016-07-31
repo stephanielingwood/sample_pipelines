@@ -106,7 +106,7 @@ jobs:
   - name: release2
     type: release
     steps:
-      # - IN: version2
+      - IN: version2
       - IN: manifest1
       - IN: triggerRelease2
       - TASK: managed
