@@ -122,10 +122,10 @@ resources:
     seed:
       versionName: "1.0.124"
       
-  # - name: version2
-  #   type: version
-  #   seed:
-  #     versionName: "1.0.124"
+  - name: version2
+    type: version
+    seed:
+      versionName: "2.0.222"
       
   # - name: kickstarter
   #   type: kickStart
