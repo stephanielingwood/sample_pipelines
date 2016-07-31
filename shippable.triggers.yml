@@ -34,6 +34,11 @@ triggers:
     pointer:
       counter: 12
   
+  - name: triggerRelease2
+    type: trigger
+    pointer:
+      counter: 1
+  
   # - name: triggerSamplePythonCI
   #   type: trigger
   #   pointer:
