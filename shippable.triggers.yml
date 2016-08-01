@@ -19,10 +19,10 @@ triggers:
   #   pointer:
   #     counter: 44
   
-  # - name: triggerECS
-  #   type: trigger
-  #   pointer:
-  #     counter: 9
+  - name: triggerECS
+    type: trigger
+    pointer:
+      counter: 1
 
   # - name: triggerECS2
   #   type: trigger
