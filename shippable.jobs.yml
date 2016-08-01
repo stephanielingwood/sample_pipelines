@@ -8,9 +8,9 @@ jobs:
       # - IN: replicas1
       # - IN: dockerOptions1
       on_success:
-      - NOTIFY: stephSlack
+      - NOTIFY: slackNotification
       on_failure:
-      - NOTIFY: stephSlack
+      - NOTIFY: slackNotification
 
 
   # - name: manifest2
