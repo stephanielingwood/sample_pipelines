@@ -5,8 +5,7 @@ jobs:
       - IN: nginx-image
       - IN: triggerManifest1
       - TASK: managed
-      - IN: badDockerOptions
-      # - IN: dockerOptions1
+      - IN: dockerOptions1
     on_success:
       - NOTIFY: slackNotification
     on_failure:
