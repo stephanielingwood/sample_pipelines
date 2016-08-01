@@ -112,10 +112,10 @@ resources:
   #   version:
   #     cpuShares: 1
       
-  # - name: badDockerOptions
-  #   type: dockerOptions
-  #   version:
-  #     user: yayString
+  - name: badDockerOptions
+    type: dockerOptions
+    version:
+      user: yayString
   
   - name: version1
     type: version
