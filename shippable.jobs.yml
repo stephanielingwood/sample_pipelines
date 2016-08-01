@@ -3,10 +3,14 @@ jobs:
     type: manifest
     steps:
       - IN: nginx-image
-      - IN: triggerManifest1
+      - IN: triggerManifest14
       - TASK: managed
       # - IN: replicas1
       # - IN: dockerOptions1
+      on_success:
+      - NOTIFY: stephSlack
+      on_failure:
+      - NOTIFY: stephSlack
 
 
   # - name: manifest2
