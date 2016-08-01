@@ -7,10 +7,10 @@ jobs:
       - TASK: managed
       # - IN: replicas1
       # - IN: dockerOptions1
-      on_success:
-        - NOTIFY: slackNotification
-      on_failure:
-        - NOTIFY: slackNotification
+    on_success:
+      - NOTIFY: slackNotification
+    on_failure:
+      - NOTIFY: slackNotification
 
 
   # - name: manifest2
