@@ -2,7 +2,7 @@ triggers:
   - name: triggerManifest1
     type: trigger
     pointer:
-      counter: 23
+      counter: 24
       
   # - name: triggerManifest2
   #   type: trigger
