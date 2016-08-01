@@ -48,14 +48,14 @@ jobs:
       # - TASK: managed
       #   deployMethod: upgrade        
 
-  # - name: ecsDeploy
-  #   type: deploy
-  #   steps:
-  #     - IN: manifest1
+  - name: ecsDeploy
+    type: deploy
+    steps:
+      - IN: manifest1
       # - IN: manifest2
       # - IN: release1
       # - IN: ecsCluster
-      # - IN: triggerECS
+      - IN: triggerECS
       # - IN: replicas2
       #   applyTo: 
       #     - manifest1
@@ -67,6 +67,12 @@ jobs:
       # - OUT: nginx-image
       # - TASK: managed
       #   deployMethod: upgrade
+      - IN: badDockerOptions
+      # - IN: dockerOptions1
+    on_success:
+      - NOTIFY: slackNotification
+    on_failure:
+      - NOTIFY: slackNotification
   
   # - name: tripubDeploy
   #   type: tripubDeploy
