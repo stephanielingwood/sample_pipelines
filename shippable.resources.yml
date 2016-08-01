@@ -151,4 +151,4 @@ resources:
     integration: stephSlack
     pointer:
       recipients:
--      "@stephanielingwood"
+        - "@stephanielingwood"
