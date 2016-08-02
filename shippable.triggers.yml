@@ -4,10 +4,10 @@ triggers:
     pointer:
       counter: 28
       
-  # - name: triggerManifest2
-  #   type: trigger
-  #   pointer:
-  #     counter: 15
+  - name: triggerManifest2
+    type: trigger
+    pointer:
+      counter: 15
       
   # - name: triggerGKE
   #   type: trigger
