@@ -42,7 +42,7 @@ resources:
     type: cluster
     integration: "stephGKE"
     pointer:
-      sourceName : "steph-cluster-WRONG" #name of the cluster we are deploying; should be steph-cluster-1
+      sourceName : "steph-cluster-1" #name of the cluster we are deploying; should be steph-cluster-1
       region: "us-central1-a"    
       
   - name: tritonCluster
