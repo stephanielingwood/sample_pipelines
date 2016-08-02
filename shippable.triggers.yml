@@ -47,4 +47,4 @@ triggers:
   - name: triggerTripub
     type: trigger
     pointer:
-      counter: 2
+      counter: 3
