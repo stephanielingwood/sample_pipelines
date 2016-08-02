@@ -15,8 +15,8 @@ jobs:
   - name: manifest2
     type: manifest
     steps:
-      - IN: params2
-      - IN: manifest1
+      # - IN: params2
+      # - IN: manifest1
       # - IN: replicas2
       - IN: busybox-image
       - IN: triggerManifest2
