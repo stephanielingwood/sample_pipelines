@@ -97,10 +97,10 @@ resources:
   #   version:
   #     count: 0
 
-  # - name: dockerOptions1
-  #   type: dockerOptions
-  #   version:
-  #     memory: 113
+  - name: dockerOptions1
+    type: dockerOptions
+    version:
+      memory: 113
       
   # - name: dockerOptions2
   #   type: dockerOptions
