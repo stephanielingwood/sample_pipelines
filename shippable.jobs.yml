@@ -73,13 +73,13 @@ jobs:
     on_failure:
       - NOTIFY: slackNotification
   
-  # - name: tripubDeploy
-  #   type: tripubDeploy
-  #   steps:
-  #     - IN: manifest2
-  #     - IN: ecsCluster
-  #     - IN: triggerTripub
-  #     - TASK: managed
+  - name: tripubDeploy
+    type: deploy
+    steps:
+      - IN: manifest2
+      - IN: ecsCluster
+      - IN: triggerTripub
+      - TASK: managed
       
   # - name: dcl-service1
   #   type: deploy
