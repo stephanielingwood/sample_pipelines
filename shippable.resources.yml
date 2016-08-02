@@ -45,11 +45,11 @@ resources:
       sourceName : "steph-cluster-WRONG" #name of the cluster we are deploying; should be steph-cluster-1
       region: "us-central1-a"    
       
-  # - name: tritonCluster
-  #   type: cluster
-  #   integration: "stephTriton"
-  #   pointer:
-  #     region: "us-east-1"          
+  - name: tritonCluster
+    type: cluster
+    integration: "stephTriton"
+    pointer:
+      region: "us-east-1"          
       
   # - name: dclCluster
   #   type: cluster
