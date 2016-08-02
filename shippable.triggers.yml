@@ -14,10 +14,10 @@ triggers:
   #   pointer:
   #     counter: 29
   
-  # - name: triggerGKE2
-  #   type: trigger
-  #   pointer:
-  #     counter: 44
+  - name: triggerGKE2
+    type: trigger
+    pointer:
+      counter: 44
   
   - name: triggerECS
     type: trigger
