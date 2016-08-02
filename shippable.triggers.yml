@@ -44,7 +44,7 @@ triggers:
   #   pointer:
   #     counter: 1
       
-  # - name: triggerTripub
-  #   type: trigger
-  #   pointer:
-  #     counter: 1
+  - name: triggerTripub
+    type: trigger
+    pointer:
+      counter: 1
