@@ -47,7 +47,7 @@ resources:
       
   - name: tritonCluster
     type: cluster
-    integration: "stephTriton"
+    integration: "stephTripub"
     pointer:
       region: "us-east-1"          
       
