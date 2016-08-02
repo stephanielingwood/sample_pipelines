@@ -24,12 +24,12 @@ resources:
       # seed:
       #   versionName: latest
 
-  # - name: ecsCluster
-  #   type: cluster
-  #   integration: "stephAWS"
-  #   pointer:
-  #     sourceName : "ECSCluster" #name of the cluster we are deploying
-  #     region: "us-east-1"
+  - name: ecsCluster
+    type: cluster
+    integration: "stephAWS"
+    pointer:
+      sourceName : "ECSCluster" #name of the cluster we are deploying
+      region: "us-east-1"
       
   # - name: test-cluster
   #   type: cluster
