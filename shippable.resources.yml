@@ -37,12 +37,12 @@ resources:
   #     sourceName : "test-cluster" #name of the cluster we are deploying
   #     region: "us-east-1"
       
-  # - name: gkeCluster
-  #   type: cluster
-  #   integration: "stephGKE"
-  #   pointer:
-  #     sourceName : "steph-cluster-1" #name of the cluster we are deploying
-  #     region: "us-central1-a"    
+  - name: gkeCluster
+    type: cluster
+    integration: "stephGKE"
+    pointer:
+      sourceName : "steph-cluster-1" #name of the cluster we are deploying
+      region: "us-central1-a"    
       
   # - name: tritonCluster
   #   type: cluster
