@@ -35,7 +35,7 @@ jobs:
       - IN: manifest2
       - IN: triggerGKE2
       - TASK: managed
-        deployMethod: upgrade        
+        # deployMethod: upgrade        
       # - IN: manifest2
       # - IN: params1
       #   applyTo: 
