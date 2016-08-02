@@ -77,9 +77,10 @@ jobs:
     type: deploy
     steps:
       - IN: manifest2
-      - IN: ecsCluster
+      - IN: tritonCluster
       - IN: triggerTripub
       - TASK: managed
+        deployMethod: upgrade
       
   # - name: dcl-service1
   #   type: deploy
