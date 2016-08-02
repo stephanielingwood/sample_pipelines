@@ -7,13 +7,14 @@ resources:
     seed:
       versionName: latest
       
-  # - name: busybox-image
-  #   type: image
-  #   integration: "stephDocker"
-  #   pointer:
-  #     sourceName: "library/busybox"
-  #   seed:
-  #     versionName: ubuntu
+  - name: busybox-image
+    type: image
+    integration: "stephDocker"
+    pointer:
+      sourceName: "library/busybox"
+    seed:
+      versionName: ubuntu
+      
   # - name: scratch-image
   #   type: image
   #   integration: "stephDocker"
