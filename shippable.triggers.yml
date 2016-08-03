@@ -7,7 +7,7 @@ triggers:
   - name: triggerManifest2
     type: trigger
     pointer:
-      counter: 16
+      counter: 17
       
   # - name: triggerGKE
   #   type: trigger
