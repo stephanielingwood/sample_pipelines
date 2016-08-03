@@ -74,14 +74,14 @@ jobs:
     # on_failure:
     #   - NOTIFY: slackNotification
   
-  - name: tripubDeploy
-    type: deploy
-    steps:
-      - IN: manifest2
-      - IN: tritonCluster
-      - IN: triggerTripub
-      - TASK: managed
-        deployMethod: upgrade
+  # - name: tripubDeploy
+  #   type: deploy
+  #   steps:
+  #     - IN: manifest2
+  #     - IN: tritonCluster
+  #     - IN: triggerTripub
+  #     - TASK: managed
+  #       deployMethod: upgrade
       
   # - name: dclService
   #   type: deploy
