@@ -78,10 +78,10 @@ resources:
   #       var: both
   #       anothervar: both
       
-  # - name: replicas1
-  #   type: replicas
-  #   version:
-  #     count: 0
+  - name: replicas1
+    type: replicas
+    version:
+      count: 2
   
   # - name: replicas2
   #   type: replicas
