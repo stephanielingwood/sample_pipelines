@@ -51,11 +51,11 @@ resources:
     pointer:
       region: "us-east-1"          
       
-  # - name: dclCluster
-  #   type: cluster
-  #   integration: "dclAidan"
-  #   pointer:
-  #     sourceName : "DockerCloudCluster" #name of the cluster we are deploying
+  - name: dclCluster
+    type: cluster
+    integration: "aidanDcl"
+    pointer:
+      sourceName : "DockerCloudCluster" #name of the cluster we are deploying
   
   # - name: params1
   #   type: params
