@@ -83,13 +83,13 @@ jobs:
       - TASK: managed
         deployMethod: upgrade
       
-  - name: dclService
-    type: deploy
-    steps:
-      - IN: manifest2
-      - IN: dclCluster
-      - TASK: managed
-        deployMethod: upgrade
+  # - name: dclService
+  #   type: deploy
+  #   steps:
+  #     - IN: manifest2
+  #     - IN: dclCluster
+  #     - TASK: managed
+  #       deployMethod: upgrade
       
   # - name: dcl-service2
   #   type: dclDeploy
