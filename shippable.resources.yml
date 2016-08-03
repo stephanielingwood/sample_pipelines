@@ -45,11 +45,11 @@ resources:
       sourceName : "steph-cluster-1" #name of the cluster we are deploying; should be steph-cluster-1
       region: "us-central1-a"    
       
-  - name: tritonCluster
-    type: cluster
-    integration: "stephTripub"
-    pointer:
-      region: "us-east-1"          
+  # - name: tritonCluster
+  #   type: cluster
+  #   integration: "stephTripub"
+  #   pointer:
+  #     region: "us-east-1"          
       
   # - name: dclCluster
   #   type: cluster
@@ -147,9 +147,9 @@ resources:
   #     sourceName: "stephanielingwood/sample_node"
   #     branch: "master"
 
-  - name: slackNotification
-    type: notification
-    integration: stephSlack
-    pointer:
-      recipients:
-        - "@stephanielingwood"
+  # - name: slackNotification
+  #   type: notification
+  #   integration: stephSlack
+  #   pointer:
+  #     recipients:
+  #       - "@stephanielingwood"
