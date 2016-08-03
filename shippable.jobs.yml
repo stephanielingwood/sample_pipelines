@@ -6,10 +6,10 @@ jobs:
       - IN: triggerManifest1
       - TASK: managed
       - IN: dockerOptions1
-    on_success:
-      - NOTIFY: slackNotification
-    on_failure:
-      - NOTIFY: slackNotification
+    # on_success:
+    #   - NOTIFY: slackNotification
+    # on_failure:
+    #   - NOTIFY: slackNotification
 
 
   - name: manifest2
@@ -69,10 +69,10 @@ jobs:
       #   deployMethod: upgrade
       - IN: badDockerOptions
       # - IN: dockerOptions1
-    on_success:
-      - NOTIFY: slackNotification
-    on_failure:
-      - NOTIFY: slackNotification
+    # on_success:
+    #   - NOTIFY: slackNotification
+    # on_failure:
+    #   - NOTIFY: slackNotification
   
   - name: tripubDeploy
     type: deploy
