@@ -33,7 +33,7 @@ jobs:
     steps:
       - IN: gkeCluster
       - IN: manifest2
-      - IN: replicas1
+      # - IN: replicas1
       - IN: triggerGKE2
       - TASK: managed
         deployMethod: upgrade     
@@ -103,7 +103,7 @@ jobs:
     type: runCI
     steps:
       - IN: samplePython
-      - OUT: nginx-image
+      - OUT: busybox-image
       - IN: triggerSamplePythonCI
       - TASK: managed
   
