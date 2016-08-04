@@ -36,7 +36,7 @@ jobs:
       - IN: replicas1
       - IN: triggerGKE2
       - TASK: managed
-        deployMethod: blueGreen      
+        deployMethod: upgrade     
       # - IN: manifest2
       # - IN: params1
       #   applyTo: 
