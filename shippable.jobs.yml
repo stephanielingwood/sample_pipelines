@@ -99,13 +99,13 @@ jobs:
   #     - IN: dclCluster
   #     - TASK: managed
       
-  # - name: run-sample_python
-  #   type: runCI
-  #   steps:
-  #     - IN: samplePython
-  #     # - OUT: nginx-image
-  #     - IN: triggerSamplePythonCI
-  #     - TASK: managed
+  - name: run-sample_python
+    type: runCI
+    steps:
+      - IN: samplePython
+      - OUT: nginx-image
+      - IN: triggerSamplePythonCI
+      - TASK: managed
   
   - name: release1
     type: release
