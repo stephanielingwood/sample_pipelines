@@ -110,8 +110,8 @@ jobs:
   - name: release1
     type: release
     steps:
-      - IN: release2
-      # - IN: manifest1
+      # - IN: release2
+      - IN: manifest1
       - IN: triggerRelease1
       - TASK: managed
         # bump: major
@@ -120,7 +120,7 @@ jobs:
     type: release
     steps:
       - IN: version2
-      - IN: manifest1
+      - IN: manifest2
       - IN: triggerRelease2
       - TASK: managed
 
