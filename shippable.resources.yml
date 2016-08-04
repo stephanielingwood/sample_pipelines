@@ -147,9 +147,9 @@ resources:
   #     sourceName: "stephanielingwood/sample_node"
   #     branch: "master"
 
-  # - name: slackNotification
-  #   type: notification
-  #   integration: stephSlack
-  #   pointer:
-  #     recipients:
-  #       - "@stephanielingwood"
+  - name: slackNotification
+    type: notification
+    integration: stephSlack
+    pointer:
+      recipients:
+        - "@stephanielingwood"
