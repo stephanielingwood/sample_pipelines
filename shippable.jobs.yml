@@ -6,8 +6,8 @@ jobs:
       - IN: triggerManifest1
       - TASK: managed
       # - IN: dockerOptions1
-    # on_start:
-    #   - NOTIFY: slackNotification
+    on_start:
+      - NOTIFY: slackNotification
     on_success:
       - NOTIFY: slackNotification
     on_failure:
