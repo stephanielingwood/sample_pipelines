@@ -57,7 +57,8 @@ jobs:
       - IN: manifest1
       # - IN: manifest2
       # - IN: release1
-      # - IN: ecsCluster
+      - IN: stephLB
+      - IN: ecsCluster
       - IN: triggerECS
       # - IN: replicas2
       #   applyTo: 
@@ -68,9 +69,9 @@ jobs:
       #     - nginx-image
       # - IN: dockerOptions2
       # - OUT: nginx-image
-      # - TASK: managed
-      #   deployMethod: upgrade
-      - IN: badDockerOptions
+      - TASK: managed
+        deployMethod: upgrade
+      # - IN: badDockerOptions
       # - IN: dockerOptions1
     # on_success:
     #   - NOTIFY: slackNotification
