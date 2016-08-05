@@ -70,7 +70,7 @@ jobs:
       # - IN: dockerOptions2
       # - OUT: nginx-image
       - TASK: managed
-        deployMethod: blueGreen
+        deployMethod: upgrade
       # - IN: badDockerOptions
       # - IN: dockerOptions1
     # on_success:
