@@ -57,7 +57,7 @@ jobs:
       - IN: manifest1
       # - IN: manifest2
       # - IN: release1
-      # - IN: stephLB
+      - IN: stephLB
       - IN: ecsCluster
       - IN: triggerECS
       # - IN: replicas2
