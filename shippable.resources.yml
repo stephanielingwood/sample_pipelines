@@ -34,7 +34,7 @@ resources:
   - name: stephLB
     type: loadBalancer
     pointer:
-      sourceName: steph-lb-1
+      sourceName: steph-lb-2
       
   # - name: test-cluster
   #   type: cluster
