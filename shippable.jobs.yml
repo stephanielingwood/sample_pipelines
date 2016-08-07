@@ -106,9 +106,9 @@ jobs:
     type: runCI
     steps:
       - IN: samplePython
-      - OUT: busybox-image
       - IN: triggerSamplePythonCI
       - TASK: managed
+      - OUT: busybox-image
   
   - name: release1
     type: release
