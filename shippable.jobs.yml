@@ -143,7 +143,7 @@ jobs:
         - script: "echo 'anotherProperty=foo' >>  /build/state/nginx-image.env" 
         - script: "echo 'hello world'"
       - OUT: nginx-image
-      - IN: samplePython
+      - IN: busybox-image
 
   # - name: sh-sample-python
   #   type: runSh
