@@ -133,6 +133,18 @@ jobs:
   #     - IN: version3
   #     - TASK: managed
 
+  - name: outrunsh
+    type: runSh
+    steps:
+      - TASK:
+        - script: "mkdir -p /build/state/" 
+        - script: "touch /build/state/nginx-image.env" 
+        - script: "echo 'versionName=latest' >>  /build/state/nginx-image.env" 
+        - script: "echo 'anotherProperty=foo' >>  /build/state/nginx-image.env" 
+        - script: "echo 'hello world'"
+      - OUT: nginx-image
+      - IN: samplePython
+
   # - name: sh-sample-python
   #   type: runSh
   #   steps:
