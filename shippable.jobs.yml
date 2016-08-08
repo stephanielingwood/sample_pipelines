@@ -8,10 +8,10 @@ jobs:
       # - IN: dockerOptions1
     # on_start:
     #   - NOTIFY: slackNotification
-    on_success:
-      - NOTIFY: slackNotification
-    on_failure:
-      - NOTIFY: slackNotification
+    # on_success:
+    #   - NOTIFY: slackNotification
+    # on_failure:
+    #   - NOTIFY: slackNotification
 
 
   - name: manifest2
