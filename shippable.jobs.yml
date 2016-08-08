@@ -141,7 +141,8 @@ jobs:
         - script: "touch /build/state/nginx-image.env" 
         - script: "echo 'versionName=latest' >>  /build/state/nginx-image.env" 
         - script: "echo 'anotherProperty=foo' >>  /build/state/nginx-image.env" 
-        - script: "echo 'hello world'"
+        - script: "echo '========================hello world'"
+        - script: "cat /build/state/nginx-image.env"
       - OUT: nginx-image
       - IN: busybox-image
 
