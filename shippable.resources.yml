@@ -68,12 +68,11 @@ resources:
       params:
         secure: LN/U31fdT6qiHMWfWbr/LtW3up8/7pntrAPtQIa9HJQmq0BiZaNUVirwqB+3ZiRXjef9FZuOUPG0QFIMlxYHXqrRxq6TeteZBhTnfX2pjmbi+FSFTDJd9ZXc2iXXB/79w4LCwDBVcnD0eiGPDSky/Akt61w/zw/cIJbJdkkf95EtfNWTOffv6kkFMtV0SWuUPZXjOuHgTUS3xthnElxH6EfjUG9jx1tMK6b8srqTUEkbAUkO80clGNsqhgaVNVaMlpoTjkfoXwQmPDS+DjTw7Pi8ol/NHl2dXG27mZE3m1E9t0TPZy6k4+Q+xepNcJCDChL1Njh8KHLW31qJ29sS2g==
         
-  # - name: params2
-  #   type: params
-  #   version:
-  #     params:
-  #       another: busybox
-  #       more: busybox
+  - name: params2
+    type: params
+    version:
+      params:
+        secure: cbt5dLV+ZxyT3uH6T0XG+byw8P7aaXU4qYhqWjbYVVET5DwvAdSMDkAsF0nOlZZhGhJ2dec6WJNigPYhBsEvhAouxWpCDoG4XltLeP21CMyuJPzR+5pUZi7omsOSS3DX5SI4UaKhKk0qpdg4AjJSxYDnl5GXuVq5a/YgUi1ewjp50aUnaqSqnN0UhFHiTRZAIOg1nQ+BajNyUQPJ+hoEbb3rDEYGHm9+J2+yHOXBNWYOdmCtBxVZ7vq64EvYXQ+0t8WUVhPHTCyI30ikXtCW/DVPxU/w7JXLTpvchmHjGL/oQWHUe5kbZPAfiQL7dNMJVmFab/tAwSbDmaqNWXPUMw==
         
   # - name: params3
   #   type: params
