@@ -66,8 +66,7 @@ resources:
     type: params
     version:
       params:
-        foo: nginx
-        api_url: nginx2
+        secure: KWQZyDqdhqk6mZdPRlNi+Uc39MiFYTGX4sYmBqvHw1BbTE4ezJwsBgKyy5QQADRUu6RR+h+xBZAtX2bJJSmzTu1soWJxcVwAW7YWbDAxhc2N0LTICoIsHpehdmACRtU9vrjV2P3eQyzsu9DE2KQuQ1gdADygOjksiByBxgwOOZanLaxCxQioA+mR2qnKfGb7KjUPnSLWbSabYjpB4E3qnU2Y4ZPD2yJu5AATm7PXSPCVYUFzIN+kZ+7T+eLP8q7Vmw9D0JM9T1qDpncZs6CgHK56NS3VF5SMRl4ctWHdo1L3X0+WRCdzsgDJQo+Nlv8kJZm3OGWc6YCP2hlCHUdY7w== 
         
   # - name: params2
   #   type: params
