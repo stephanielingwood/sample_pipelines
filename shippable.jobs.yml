@@ -60,7 +60,7 @@ jobs:
       - IN: stephLB
       - IN: ecsCluster
       - IN: triggerECS
-      - IN: replicas2
+      - IN: params1
         applyTo: 
           - manifest1
       #     - manifest2
