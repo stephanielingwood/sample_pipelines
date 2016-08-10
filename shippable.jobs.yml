@@ -60,9 +60,9 @@ jobs:
       - IN: stephLB
       - IN: ecsCluster
       - IN: triggerECS
-      # - IN: replicas2
-      #   applyTo: 
-      #     - manifest1
+      - IN: replicas2
+        applyTo: 
+          - manifest1
       #     - manifest2
       # - IN: params1
       #   applyTo:
@@ -70,7 +70,7 @@ jobs:
       # - IN: dockerOptions2
       # - OUT: nginx-image
       - TASK: managed
-        deployMethod: blueGreen
+        deployMethod: upgrade
       # - IN: badDockerOptions
       # - IN: dockerOptions1
     # on_success:
