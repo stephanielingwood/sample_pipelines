@@ -62,12 +62,12 @@ resources:
   #   pointer:
   #     sourceName : "DockerCloudCluster" #name of the cluster we are deploying
   
-  # - name: params1
-  #   type: params
-  #   version:
-  #     params:
-  #       foo: nginx
-  #       api_url: nginx2
+  - name: params1
+    type: params
+    version:
+      params:
+        foo: nginx
+        api_url: nginx2
         
   # - name: params2
   #   type: params
