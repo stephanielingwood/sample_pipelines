@@ -4,6 +4,7 @@ jobs:
     steps:
       - IN: nginx-image
       - IN: triggerManifest1
+      - IN: params2
       - TASK: managed
       # - IN: dockerOptions1
     # on_start:
