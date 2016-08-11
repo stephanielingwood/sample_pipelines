@@ -55,7 +55,7 @@ jobs:
   - name: ecsDeploy
     type: deploy
     steps:
-      - IN: manifest1
+      - IN: manifest2
       # - IN: manifest2
       # - IN: release1
       - IN: stephLB
