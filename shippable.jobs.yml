@@ -58,12 +58,12 @@ jobs:
       - IN: manifest2
       # - IN: manifest2
       # - IN: release1
-      - IN: stephLB
+      # - IN: stephLB
       - IN: ecsCluster
       - IN: triggerECS
-      - IN: params1
-        applyTo: 
-          - manifest1
+      # - IN: params1
+      #   applyTo: 
+      #     - manifest1
       #     - manifest2
       # - IN: params1
       #   applyTo:
