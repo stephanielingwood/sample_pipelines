@@ -52,14 +52,14 @@ jobs:
       # - IN: replicas4
       # - IN: badDockerOptions
 
-  # - name: ecsDeploy
-  #   type: deploy
-  #   steps:
-  #     - IN: manifest2
+  - name: ecsDeploy
+    type: deploy
+    steps:
+      - IN: manifest1
       # - IN: manifest2
       # - IN: release1
       # - IN: stephLB
-      # - IN: ecsCluster
+      - IN: ecsCluster
       # - IN: triggerECS
       # - IN: params1
       #   applyTo: 
@@ -70,8 +70,8 @@ jobs:
       #     - nginx-image
       # - IN: dockerOptions2
       # - OUT: nginx-image
-      # - TASK: managed
-      #   deployMethod: upgrade
+      - TASK: managed
+        deployMethod: upgrade
       # - IN: badDockerOptions
       # - IN: dockerOptions1
     # on_success:
