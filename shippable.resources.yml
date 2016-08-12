@@ -13,18 +13,18 @@ resources:
     pointer:
       sourceName : "ECSCluster" #name of the cluster we are deploying
       region: "us-east-1"
-      
+
   - name: params1
     type: params
     version:
       params:
-        secure: XIW2O01WrMjijphJ9/iF6r6InXjtZI0w9ynH6cbfvcSAQRbL75oGdRVfX8gOWe3B5iD7SDGgW3OI66Qatkin3pbTXWWDlivGvKeAhPU2efMee1bzQb3kvXe0D/yHvBLV+ws/CQfRd6IB/iTQxxCcOY/FrfOywLsuLUiMqQUzlNugezGBrSKGxCLwJBQEA01kp5S6nODDYiaM+xGBnz/3R7R0V2CjfYndLWYzCwcsEExmLfUdh0vYwoHIF7dPaQprMuzHCilcSH56IRBaSfOOogyjFgVm2CCSVmfR/YOx/DHD/l3KkxNJH1INZfMXmN1fcVLrGuIfto8AElTzb8QtgQ==
-        
+        secure: cd8SZLd7ZyQysgeuVn3MiveHAjAFcs5r3gofnaYBYOExIQf3QpPmcPaeDTMEBq33VYMa5rDKMiPSlNF3msDiXj6mrS+ll62dsf16Lzn42jtkuk15h3ApvuVKrAIRJ2tUxwJyApVxnsRLcMzTjN5bg05QDMRnwKnPG9KhwSQTAknc/AGt7x2tpXYDU2e/yWdhtYmvPl/YqfpWoxZwPcaYXEs628DyA1lkTZm6eUlcT/JKvdijmc+XikO1k7f/alnvQrmWs/3zj+wkbugwIC+nuOlCerOZhS5kyTq9uJPju+BPPnAFMaK8Ua8xLhi76E7WWNqQECfj8icx5UDJeUnC6g==
+
   - name: params2
     type: params
     version:
       params:
-        secure: FInL2yBvFSX9jrfbLEqUly/STVGIcQGj55CZf2X/9l92tnEQ8amMi5L3Hj3Dqx9i/EXQ38Sx+YN2oL4AGEYdfCn41BVqAUQeEqHxyqsHtav2/FAzFIMy/5iwybElABr3zAkwNJONVOiNu3kNnZoZwYjKtUG5qOIIuC2HyPwn0JnXB7jy7AdcbvmyW3VrVXw4l/tOj7FgpTgajXUW3pxvGFH5T/bv8lE518wqFYKeOhxaWUG+oAmiRfiznqFNbp2MAtCvbG1nhMZTTPL6sAwJ+cT3GDShVtXLBiFt5ZrTR1Tr7XBwBdP7bi03GmYHjqI/lVocaQk8+rzPMFm1geFx1Q==
-        
-        
-        
+        secure: LEiHNEZ/S4dHfvWze9vBWKvm6P6W8BDhbR87N5wZ09FAKufc/C2g1fhDrdv2H34CMASnrdrt6ZwwVARfcDT7lBWTg0Uy+Pve0j1uxsWOqWFiqPjuraCxvwpZpIFBLU+qL1P6KocaD83z4/3EgfiHq5NJFXNwfmkT4vrDKRLgUEJENHF3VIiKTXfF+P7Fk2v4J5u/stCoNH7fYetPuL22SFZNOr9UrvLP9KA7PxQd5KptN81wQWvmSdkh3+6dO4POEO2FaOogsu4J75AIqWAA+GQrbeGnkOLuPEPq8dzmeWbXxdmWEcldrlUTufg7ZmnQFwNKaXzeJSgsSt4+MXL0og==
+
+
+
