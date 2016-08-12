@@ -12,8 +12,8 @@ jobs:
     steps:
       - IN: manifest1
       - IN: ecsCluster
-      # - IN: params2
-      #   applyTo:
-      #     - manifest1
+      - IN: params2
+        applyTo:
+          - manifest1
       - TASK: managed
         deployMethod: upgrade
