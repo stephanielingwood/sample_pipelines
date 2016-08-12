@@ -1,0 +1,5 @@
+triggers:
+  - name: triggerManifest1
+    type: trigger
+    pointer:
+      counter: 1
