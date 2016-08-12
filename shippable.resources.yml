@@ -1,28 +1,28 @@
 resources:
-   - name: nginx-image
-      type: image
-      integration: "stephDocker"
-      pointer:
-         sourceName: "library/nginx"
-      seed:
-         versionName: latest
+  - name: nginx-image
+    type: image
+    integration: "stephDocker"
+    pointer:
+      sourceName: "library/nginx"
+    seed:
+      versionName: latest
 
-   - name: ecsCluster
-      type: cluster
-      integration: "stephAWS"
-      pointer:
-         sourceName : "ECSCluster" #name of the cluster we are deploying
-         region: "us-east-1"
+  - name: ecsCluster
+    type: cluster
+    integration: "stephAWS"
+    pointer:
+      sourceName : "ECSCluster" #name of the cluster we are deploying
+      region: "us-east-1"
       
-   - name: params1
-      type: params
-      version:
-         params:
-            secure: XIW2O01WrMjijphJ9/iF6r6InXjtZI0w9ynH6cbfvcSAQRbL75oGdRVfX8gOWe3B5iD7SDGgW3OI66Qatkin3pbTXWWDlivGvKeAhPU2efMee1bzQb3kvXe0D/yHvBLV+ws/CQfRd6IB/iTQxxCcOY/FrfOywLsuLUiMqQUzlNugezGBrSKGxCLwJBQEA01kp5S6nODDYiaM+xGBnz/3R7R0V2CjfYndLWYzCwcsEExmLfUdh0vYwoHIF7dPaQprMuzHCilcSH56IRBaSfOOogyjFgVm2CCSVmfR/YOx/DHD/l3KkxNJH1INZfMXmN1fcVLrGuIfto8AElTzb8QtgQ==
+  - name: params1
+    type: params
+    version:
+      params:
+        secure: XIW2O01WrMjijphJ9/iF6r6InXjtZI0w9ynH6cbfvcSAQRbL75oGdRVfX8gOWe3B5iD7SDGgW3OI66Qatkin3pbTXWWDlivGvKeAhPU2efMee1bzQb3kvXe0D/yHvBLV+ws/CQfRd6IB/iTQxxCcOY/FrfOywLsuLUiMqQUzlNugezGBrSKGxCLwJBQEA01kp5S6nODDYiaM+xGBnz/3R7R0V2CjfYndLWYzCwcsEExmLfUdh0vYwoHIF7dPaQprMuzHCilcSH56IRBaSfOOogyjFgVm2CCSVmfR/YOx/DHD/l3KkxNJH1INZfMXmN1fcVLrGuIfto8AElTzb8QtgQ==
         
-   - name: params2
-      type: params
-      version:
-         params:
-            secure: FInL2yBvFSX9jrfbLEqUly/STVGIcQGj55CZf2X/9l92tnEQ8amMi5L3Hj3Dqx9i/EXQ38Sx+YN2oL4AGEYdfCn41BVqAUQeEqHxyqsHtav2/FAzFIMy/5iwybElABr3zAkwNJONVOiNu3kNnZoZwYjKtUG5qOIIuC2HyPwn0JnXB7jy7AdcbvmyW3VrVXw4l/tOj7FgpTgajXUW3pxvGFH5T/bv8lE518wqFYKeOhxaWUG+oAmiRfiznqFNbp2MAtCvbG1nhMZTTPL6sAwJ+cT3GDShVtXLBiFt5ZrTR1Tr7XBwBdP7bi03GmYHjqI/lVocaQk8+rzPMFm1geFx1Q==
+  - name: params2
+    type: params
+    version:
+      params:
+        secure: FInL2yBvFSX9jrfbLEqUly/STVGIcQGj55CZf2X/9l92tnEQ8amMi5L3Hj3Dqx9i/EXQ38Sx+YN2oL4AGEYdfCn41BVqAUQeEqHxyqsHtav2/FAzFIMy/5iwybElABr3zAkwNJONVOiNu3kNnZoZwYjKtUG5qOIIuC2HyPwn0JnXB7jy7AdcbvmyW3VrVXw4l/tOj7FgpTgajXUW3pxvGFH5T/bv8lE518wqFYKeOhxaWUG+oAmiRfiznqFNbp2MAtCvbG1nhMZTTPL6sAwJ+cT3GDShVtXLBiFt5ZrTR1Tr7XBwBdP7bi03GmYHjqI/lVocaQk8+rzPMFm1geFx1Q==
         
