@@ -1,5 +1,4 @@
 jobs:
-
   - name: manifest1
     type: manifest
     steps:
@@ -7,12 +6,14 @@ jobs:
       - IN: triggerManifest1
       - IN: params1
       - TASK: managed
-      
-  - name: ecsDeploy
+
+  - name: ecsDeployOrg
     type: deploy
     steps:
       - IN: manifest1
       - IN: ecsCluster
-      - IN: params2
-        applyTo: 
-          - manifest1
+      # - IN: params2
+      #   applyTo:
+      #     - manifest1
+      - TASK: managed
+        deployMethod: upgrade

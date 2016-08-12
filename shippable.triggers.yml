@@ -2,4 +2,4 @@ triggers:
   - name: triggerManifest1
     type: trigger
     pointer:
-      counter: 34
+      counter: 1
