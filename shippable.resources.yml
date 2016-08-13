@@ -66,14 +66,14 @@ resources:
     type: params
     version:
       params:
-        secure: zta5kECFNLmioO1k/Wj92LoyCItcrhMlSiOMZS/a36pCHLGg/541hglQTmJuNjUlQ1zBd74cH24zEd///k2vWIH6PdEbgkxEvThpk2T6UhowblA41CuCbSTU8njqA5OoTXEAlMa8OXhsqCHl/Z0ahUZh8Rb2nHWmtZUQJA2wM0qrvAVBxJtydMNr+Hysdx03HPsGnkaZ0yPrZu1uIkg/a1++hkx/sVMnz660M4z8hV+W1HqPFT01lun7VGy6xMFECIs0Iy+GNnRTpcwMcK6k2gr1GVo2TMB5nhLtmWO0c7wSVb4KXzYS3ZW8nyUYI/jcjn2dYVYfWQ6Kmi24jLn5vw==
+        foo: bar
         
   - name: params2
     type: params
     version:
       params:
-        secure: Yqf9aGw7cSRTCx9XmiaG489Lm4eP1szIBH11q3numCA+tMEhWmpmEJTfHvQ9p+ac9yte1sX7TMy7gV3YGLtdJGr8zthyyKNerzm4rHm3qulJHUfRY/iXEjHn63MhBegQK3eIBmTGrPmpEXbBSPopT7cBEWWAviSsteppq3TWFsSef15Rx8wZrWT0/bIPSXfQWBvRWoNOim3NIHIvWcfjTuTKTY/rcV3POlI0ickbg0+6/z/b0//grJC51mTo6HfOVVPxJjXrm1YH7UR0Ay7xTq3FeGmDQ0fSwtlKNjRw/nokNiZihhdg9nkTcQgnGZLojxPqTWKgK97PtQaku/HooA==
-  
+        fooMeTwice: bar
+        
   # - name: params3
   #   type: params
   #   version:
