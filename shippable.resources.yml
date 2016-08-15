@@ -5,7 +5,7 @@ resources:
     pointer:
       sourceName: "library/nginx"
     seed:
-      versionName: myTag
+      versionName: myTagToo
       
   - name: busybox-image
     type: image
