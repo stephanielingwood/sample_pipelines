@@ -137,7 +137,7 @@ jobs:
   - name: outrunsh
     type: runSh
     steps:
-      - IN: nginx-image
+      - IN: busybox-image
       - TASK:
         - script: "mkdir -p /build/state/" 
         - script: "touch /build/state/nginx-image.env" 
