@@ -141,7 +141,7 @@ jobs:
       - TASK:
         - script: "mkdir -p /build/state/" 
         - script: "touch /build/state/nginx-image.env" 
-        - script: "echo 'versionName=1' >>  /build/state/nginx-image.env" 
+        - script: "echo 'versionName=2' >>  /build/state/nginx-image.env" 
         - script: "cat /build/state/nginx-image.env"
       - OUT: nginx-image
 
