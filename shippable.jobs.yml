@@ -31,15 +31,15 @@ jobs:
   #     - IN: samplePython
   #     - IN: triggerSamplePythonCI
 
-  - name: gkeDeploy2
-    type: deploy
-    steps:
-      - IN: gkeCluster
-      - IN: manifest2
-      - IN: replicas1
-      - IN: triggerGKE2
-      - TASK: managed
-        deployMethod: upgrade     
+  # - name: gkeDeploy2
+  #   type: deploy
+  #   steps:
+  #     - IN: gkeCluster
+  #     - IN: manifest2
+  #     - IN: replicas1
+  #     - IN: triggerGKE2
+  #     - TASK: managed
+  #       deployMethod: upgrade     
       # - IN: manifest2
       # - IN: params1
       #   applyTo: 
