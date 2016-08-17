@@ -1,12 +1,12 @@
 triggers:
   - name: triggerManifest1
     type: trigger
-    pointer:
+    version:
       counter: 34
       
   - name: triggerManifest2
     type: trigger
-    pointer:
+    version:
       counter: 18
       
   # - name: triggerGKE
@@ -16,12 +16,12 @@ triggers:
   
   - name: triggerGKE2
     type: trigger
-    pointer:
+    version:
       counter: 50
   
   - name: triggerECS
     type: trigger
-    pointer:
+    version:
       counter: 2
 
   # - name: triggerECS2
@@ -31,20 +31,20 @@ triggers:
   
   - name: triggerRelease1
     type: trigger
-    pointer:
+    version:
       counter: 12
   
   - name: triggerRelease2
     type: trigger
-    pointer:
+    version:
       counter: 1
   
   - name: triggerSamplePythonCI
     type: trigger
-    pointer:
+    version:
       counter: 1
       
   - name: triggerTripub
     type: trigger
-    pointer:
+    version:
       counter: 3
