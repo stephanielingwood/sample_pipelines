@@ -103,13 +103,13 @@ jobs:
   #     - IN: dclCluster
   #     - TASK: managed
       
-  - name: run-sample_python
-    type: runCI
-    steps:
-      - IN: samplePython
-      - IN: triggerSamplePythonCI
-      - TASK: managed
-      - OUT: busybox-image
+  # - name: run-sample_python
+  #   type: runCI
+  #   steps:
+  #     - IN: samplePython
+  #     - IN: triggerSamplePythonCI
+  #     - TASK: managed
+  #     - OUT: busybox-image
   
   - name: release1
     type: release
