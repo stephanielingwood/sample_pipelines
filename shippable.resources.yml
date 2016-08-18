@@ -5,7 +5,7 @@ resources:
     pointer:
       sourceName: "library/nginx"
     seed:
-      versionName: two
+      versionName: three
       
   - name: busybox-image
     type: image
@@ -129,7 +129,7 @@ resources:
   - name: version2
     type: version
     seed:
-      versionName: "3.0.222"
+      versionName: "2.0.222"
       
   # - name: kickstarter
   #   type: kickStart
