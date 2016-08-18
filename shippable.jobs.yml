@@ -25,6 +25,11 @@ jobs:
       - IN: triggerManifest2
       - TASK: managed      
 
+  - name: manifestIntoManifest
+    type: manifest
+    steps:
+      - IN: manifest1
+
   # - name: samplePythonJob
   #   type: runCI
   #   steps:
@@ -55,9 +60,10 @@ jobs:
   - name: ecsDeploy
     type: deploy
     steps:
-      - IN: manifest1
+      - IN: manifest2
+      - IN: deployInput
       # - IN: manifest2
-      # - IN: release1
+      - IN: release1
       # - IN: stephLB
       - IN: ecsCluster
       # - IN: triggerECS
@@ -79,6 +85,14 @@ jobs:
     # on_failure:
     #   - NOTIFY: slackNotification
   
+  - name: deployInput
+    type: deploy
+    steps:
+      - IN: manifest1
+      - IN: ecsCluster
+      - TASK: managed
+        deployMethod: upgrade
+        
   # - name: tripubDeploy
   #   type: deploy
   #   steps:
@@ -111,20 +125,21 @@ jobs:
   #     - TASK: managed
   #     - OUT: busybox-image
   
-  # - name: release1
-  #   type: release
-  #   steps:
+  - name: release1
+    type: release
+    steps:
       # - IN: release2
-      # - IN: manifest1
-      # - IN: triggerRelease1
-      # - TASK: managed
-        # bump: major
+      - IN: manifest1
+      - IN: triggerRelease1
+      - TASK: managed
+        bump: major
 
   - name: release2
     type: release
     steps:
-      - IN: version2
-      # - IN: manifest2
+      - IN: release1
+      - IN: deployInput
+      - IN: manifest2
       - IN: triggerRelease2
       - TASK: managed
 
