@@ -111,13 +111,13 @@ jobs:
   #     - TASK: managed
   #     - OUT: busybox-image
   
-  - name: release1
-    type: release
-    steps:
+  # - name: release1
+  #   type: release
+  #   steps:
       # - IN: release2
-      - IN: manifest1
+      # - IN: manifest1
       # - IN: triggerRelease1
-      - TASK: managed
+      # - TASK: managed
         # bump: major
 
   - name: release2
