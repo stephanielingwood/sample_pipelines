@@ -129,6 +129,7 @@ jobs:
     type: release
     steps:
       # - IN: release2
+      - IN: version1
       - IN: manifest1
       - IN: triggerRelease1
       - TASK: managed
@@ -137,6 +138,7 @@ jobs:
   - name: release2
     type: release
     steps:
+      - IN: version2
       - IN: release1
       - IN: deployInput
       - IN: manifest2
