@@ -3,7 +3,7 @@ jobs:
     type: manifest
     steps:
       - IN: nginx-image
-      - IN: triggerManifest1
+      # - IN: triggerManifest1
       # - IN: params1
       - TASK: managed
       # - IN: dockerOptions1
