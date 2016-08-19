@@ -31,10 +31,10 @@ jobs:
       - IN: busybox-image
       - TASK: managed   
 
-  - name: manifestIntoManifest
-    type: manifest
-    steps:
-      - IN: manifest1
+  # - name: manifestIntoManifest
+  #   type: manifest
+  #   steps:
+  #     - IN: manifest1
 
   # - name: samplePythonJob
   #   type: runCI
