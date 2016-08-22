@@ -9,7 +9,7 @@ resources:
       
   - name: busybox-image
     type: image
-    integration: "stephDocker"
+    integration: "stephDockerNO"
     pointer:
       sourceName: "library/busybox"
     seed:
