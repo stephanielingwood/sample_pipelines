@@ -18,7 +18,7 @@ jobs:
   - name: badManifest
     type: manifest
     steps:
-      - IN: nginx-image
+      - IN: scratch-image
         versionNumber: 1234567
 
   - name: manifest2
