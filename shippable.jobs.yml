@@ -2,11 +2,11 @@ jobs:
   - name: manifest1
     type: manifest
     steps:
-      # - IN: nginx-image
+      - IN: nginx-image
       #   versionNumber: 1202
       # - IN: triggerManifest1
       # - IN: params1
-      - IN: newManifest
+      # - IN: newManifest
       - TASK: managed
       # - IN: dockerOptions1
     # on_start:
