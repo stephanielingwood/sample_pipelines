@@ -15,6 +15,11 @@ jobs:
     # on_failure:
     #   - NOTIFY: slackNotification
 
+  - name: badManifest
+    type: manifest
+    steps:
+      - IN: nginx-image
+        versionNumber: 1234567
 
   - name: manifest2
     type: manifest
