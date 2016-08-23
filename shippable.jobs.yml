@@ -73,9 +73,9 @@ jobs:
     type: deploy
     steps:
       - IN: manifest2
-      - IN: deployInput
+      # - IN: deployInput
       # - IN: manifest2
-      - IN: release1
+      # - IN: release1
       # - IN: stephLB
       - IN: ecsCluster
       # - IN: triggerECS
