@@ -20,9 +20,8 @@ resources:
     integration: "stephDocker"
     pointer:
       sourceName: "library/scratch"
-      isPull: false
-      seed:
-        versionName: latest
+    seed:
+      versionName: latest
 
   - name: ecsCluster
     type: cluster
