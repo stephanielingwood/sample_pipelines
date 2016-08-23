@@ -69,13 +69,13 @@ jobs:
       # - IN: replicas4
       # - IN: badDockerOptions
 
-  # - name: ecsDeploy
-  #   type: deploy
-  #   steps:
-  #     - IN: manifest2
-  #     - IN: ecsCluster
-  #     - TASK: managed
-  #       deployMethod: upgrade      
+  - name: ecsDeploy
+    type: deploy
+    steps:
+      - IN: manifest2
+      - IN: ecsCluster
+      - TASK: managed
+        deployMethod: upgrade      
       # - IN: deployInput
       # - IN: manifest2
       # - IN: release1
