@@ -16,10 +16,10 @@ jobs:
     # on_failure:
     #   - NOTIFY: slackNotification
 
-  - name: newManifest
-    type: manifest
-    steps:
-      - IN: scratch-image
+  # - name: newManifest
+  #   type: manifest
+  #   steps:
+  #     - IN: scratch-image
 
   - name: manifest2
     type: manifest
