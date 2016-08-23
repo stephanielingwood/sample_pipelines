@@ -1,11 +1,11 @@
 resources:
-  # - name: nginx-image
-  #   type: image
-  #   integration: "stephDocker"
-  #   pointer:
-  #     sourceName: "library/nginx"
-  #   seed:
-  #     versionName: onebeta
+  - name: nginx-image
+    type: image
+    integration: "stephDocker"
+    pointer:
+      sourceName: "library/nginx"
+    seed:
+      versionName: onebeta
       
   - name: busybox-image
     type: image
