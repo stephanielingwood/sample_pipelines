@@ -6,7 +6,7 @@ jobs:
       #   versionNumber: 1202
       # - IN: triggerManifest1
       # - IN: params1
-      # - IN: newManifest
+      - IN: newManifest1
       - TASK: managed
       # - IN: dockerOptions1
     # on_start:
@@ -16,10 +16,10 @@ jobs:
     # on_failure:
     #   - NOTIFY: slackNotification
 
-  # - name: newManifest
-  #   type: manifest
-  #   steps:
-  #     - IN: scratch-image
+  - name: newManifest1
+    type: manifest
+    steps:
+      - IN: scratch-image
 
   - name: manifest2
     type: manifest
