@@ -1,11 +1,11 @@
 resources:
-  - name: nginx-image
-    type: image
-    integration: "stephDocker"
-    pointer:
-      sourceName: "library/nginx"
-    seed:
-      versionName: onebeta
+  # - name: nginx-image
+  #   type: image
+  #   integration: "stephDocker"
+  #   pointer:
+  #     sourceName: "library/nginx"
+  #   seed:
+  #     versionName: onebeta
       
   - name: busybox-image
     type: image
@@ -15,14 +15,14 @@ resources:
     seed:
       versionName: latest
       
-  # - name: scratch-image
-  #   type: image
-  #   integration: "stephDockerNO"
-  #   pointer:
-  #     sourceName: "library/scratch"
-  #     isPull: false
-  #     seed:
-  #       versionName: latest
+  - name: scratch-image
+    type: image
+    integration: "stephDockerNO"
+    pointer:
+      sourceName: "library/scratch"
+      isPull: false
+      seed:
+        versionName: latest
 
   - name: ecsCluster
     type: cluster
