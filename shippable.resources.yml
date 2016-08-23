@@ -17,7 +17,7 @@ resources:
       
   - name: scratch-image
     type: image
-    integration: "stephDockerNO"
+    integration: "stephDocker"
     pointer:
       sourceName: "library/scratch"
       isPull: false
