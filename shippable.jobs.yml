@@ -3,7 +3,7 @@ jobs:
     type: manifest
     steps:
       # - IN: nginx-image
-      # - IN: outrunsh
+      - IN: outrunsh
         # versionNumber: 1202
       # - IN: triggerManifest1
       # - IN: params1
@@ -55,8 +55,8 @@ jobs:
     type: deploy
     steps:
       - IN: gkeCluster
-      - IN: manifest2
-      # - IN: manifest1
+      # - IN: manifest2
+      - IN: manifest1
       - IN: dockerOptions1
       - IN: params1
       # - IN: replicas2
@@ -174,12 +174,17 @@ jobs:
     type: runSh
     steps:
       - IN: busybox-image
+      - IN: nginx-image
+      - IN: params1
+        applyTo:
+          - nginx-image
       - TASK:
         - script: "mkdir -p /build/state/" 
         - script: "touch /build/state/nginx-image.env" 
         - script: "echo 'versionName=2' >>  /build/state/nginx-image.env" 
         - script: "cat /build/state/nginx-image.env"
       - OUT: nginx-image
+      - OUT: busybox-image
 
   # - name: sh-sample-python
   #   type: runSh
