@@ -83,7 +83,7 @@ resources:
   - name: replicas1
     type: replicas
     version:
-      count: 3
+      count: 2
   
   - name: replicas2
     type: replicas
@@ -103,7 +103,7 @@ resources:
   - name: dockerOptions1
     type: dockerOptions
     version:
-      memory: 100
+      memory: 50
       
   # - name: dockerOptions2
   #   type: dockerOptions
