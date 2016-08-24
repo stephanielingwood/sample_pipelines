@@ -2,8 +2,8 @@ jobs:
   - name: manifest1
     type: manifest
     steps:
-      # - IN: nginx-image
-      - IN: outrunsh
+      - IN: nginx-image
+      # - IN: outrunsh
         # versionNumber: 1202
       # - IN: triggerManifest1
       # - IN: params1
@@ -28,6 +28,7 @@ jobs:
       # - IN: params2
       # - IN: manifest1
       # - IN: replicas2
+      - IN: scratch-image
       - IN: busybox-image
       - IN: triggerManifest2
       - TASK: managed      
