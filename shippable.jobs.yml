@@ -146,7 +146,7 @@ jobs:
   
   - name: release1
     type: release
-    # steps:
+    steps:
       # - IN: release2
       # - IN: version1
       # - IN: manifest3
