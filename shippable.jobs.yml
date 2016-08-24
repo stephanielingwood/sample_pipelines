@@ -74,11 +74,12 @@ jobs:
     steps:
       # - IN: manifest2
       - IN: ecsCluster
+      - IN: deployInput
+      - IN: release1
       - TASK: managed
         deployMethod: upgrade      
-      - IN: deployInput
       # - IN: manifest2
-      - IN: release1
+
       # - IN: stephLB
       # - IN: triggerECS
       # - IN: params2
