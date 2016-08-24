@@ -58,7 +58,7 @@ jobs:
       - IN: manifest1
       - IN: dockerOptions1
       - IN: params1
-      - IN: replicas1
+      # - IN: replicas1
       - IN: triggerGKE
       - TASK: managed
   #       deployMethod: upgrade     
