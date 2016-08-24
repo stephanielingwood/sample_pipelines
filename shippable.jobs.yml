@@ -55,7 +55,7 @@ jobs:
       - IN: gkeCluster
       - IN: manifest2
       - IN: dockerOptions1
-      # - IN: replicas1
+      - IN: replicas1
       - IN: triggerGKE
       - TASK: managed
         deployMethod: upgrade     
