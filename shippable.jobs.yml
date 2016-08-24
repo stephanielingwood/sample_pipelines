@@ -72,13 +72,13 @@ jobs:
   - name: ecsDeploy
     type: deploy
     steps:
-      - IN: manifest2
+      # - IN: manifest2
       - IN: ecsCluster
       - TASK: managed
         deployMethod: upgrade      
-      # - IN: deployInput
+      - IN: deployInput
       # - IN: manifest2
-      # - IN: release1
+      - IN: release1
       # - IN: stephLB
       # - IN: triggerECS
       # - IN: params2
