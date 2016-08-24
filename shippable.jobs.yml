@@ -59,7 +59,7 @@ jobs:
       # - IN: manifest1
       - IN: dockerOptions1
       - IN: params1
-      - IN: replicas2
+      # - IN: replicas2
       - IN: triggerGKE
       - TASK: managed
         deployMethod: upgrade     
@@ -136,13 +136,13 @@ jobs:
   #     - IN: dclCluster
   #     - TASK: managed
       
-  - name: run-sample_python
-    type: runCI
-    steps:
-      - IN: samplePython
-      - IN: triggerSamplePythonCI
-      - TASK: managed
-      - OUT: busybox-image
+  # - name: run-sample_python
+  #   type: runCI
+  #   steps:
+  #     - IN: samplePython
+  #     - IN: triggerSamplePythonCI
+  #     - TASK: managed
+  #     - OUT: busybox-image
   
   - name: release1
     type: release
