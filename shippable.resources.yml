@@ -83,12 +83,12 @@ resources:
   - name: replicas1
     type: replicas
     version:
-      count: 2
+      count: 0
   
   - name: replicas2
     type: replicas
     version:
-      count: 3
+      count: 2
       
   # - name: replicas3
   #   type: replicas
