@@ -29,6 +29,7 @@ jobs:
       # - IN: manifest1
       # - IN: replicas2
       # - IN: scratch-image
+      - IN: replicas1
       - IN: busybox-image
       - IN: triggerManifest2
       - TASK: managed      
@@ -58,10 +59,10 @@ jobs:
       # - IN: manifest1
       - IN: dockerOptions1
       - IN: params1
-      - IN: replicas1
+      - IN: replicas2
       - IN: triggerGKE
       - TASK: managed
-  #       deployMethod: upgrade     
+        deployMethod: upgrade     
       # - IN: manifest2
       # - IN: params1
       #   applyTo: 
