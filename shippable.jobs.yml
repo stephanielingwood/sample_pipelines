@@ -148,9 +148,9 @@ jobs:
     type: release
     steps:
       # - IN: release2
-      - IN: version1
-      - IN: manifest3
-      - IN: triggerRelease1
+      # - IN: version1
+      # - IN: manifest3
+      # - IN: triggerRelease1
       - TASK: managed
         bump: major
 
