@@ -9,12 +9,7 @@ triggers:
     version:
       counter: 18
       
-  # - name: triggerGKE
-  #   type: trigger
-  #   pointer:
-  #     counter: 29
-  
-  - name: triggerGKE2
+  - name: triggerGKE
     type: trigger
     version:
       counter: 50
