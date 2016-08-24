@@ -2,7 +2,8 @@ jobs:
   - name: manifest1
     type: manifest
     steps:
-      - IN: nginx-image
+      # - IN: nginx-image
+      - IN: outrunsh
         # versionNumber: 1202
       # - IN: triggerManifest1
       # - IN: params1
