@@ -2,8 +2,8 @@ jobs:
   - name: manifest1
     type: manifest
     steps:
-      # - IN: nginx-image
-      - IN: outrunsh
+      - IN: nginx-image
+      # - IN: outrunsh
         # versionNumber: 1202
       # - IN: triggerManifest1
       # - IN: params1
@@ -174,8 +174,8 @@ jobs:
   - name: outrunsh
     type: runSh
     steps:
-      - IN: busybox-image
-      - IN: nginx-image]
+      # - IN: busybox-image
+      - IN: nginx-image
       - TASK:
         - script: "mkdir -p /build/state/" 
         - script: "touch /build/state/nginx-image.env" 
