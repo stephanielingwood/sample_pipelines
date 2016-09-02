@@ -30,10 +30,10 @@ resources:
       sourceName : "ECSCluster" #name of the cluster we are deploying
       region: "us-east-1"
   
-  # - name: stephLB
-  #   type: loadBalancer
-  #   pointer:
-  #     sourceName: steph-lb-2
+  - name: stephLB
+    type: loadBalancer
+    pointer:
+      sourceName: steph-lb-2
       
   # - name: test-cluster
   #   type: cluster
