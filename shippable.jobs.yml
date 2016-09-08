@@ -31,16 +31,16 @@ jobs:
   #     - IN: samplePython
   #     - IN: triggerSamplePythonCI
 
-  - name: gkeDeploy2
-    type: deploy
-    steps:
-      - IN: gkeCluster
-      - IN: manifest1
+  # - name: gkeDeploy2
+  #   type: deploy
+  #   steps:
+  #     - IN: gkeCluster
+  #     - IN: manifest1
       # - IN: dockerOptions1
       # - IN: params1
-      - IN: triggerGKE
-      - TASK: managed
-        deployMethod: upgrade     
+      # - IN: triggerGKE
+      # - TASK: managed
+      #   deployMethod: upgrade     
 
   - name: ecsDeploy
     type: deploy
