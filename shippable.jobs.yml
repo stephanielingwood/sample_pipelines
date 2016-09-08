@@ -36,8 +36,8 @@ jobs:
     steps:
       - IN: gkeCluster
       - IN: manifest1
-      - IN: dockerOptions1
-      - IN: params1
+      # - IN: dockerOptions1
+      # - IN: params1
       - IN: triggerGKE
       - TASK: managed
         deployMethod: upgrade     
