@@ -46,7 +46,7 @@ jobs:
     type: deploy
     steps:
       - IN: manifest2
-  #     - IN: ecsCluster
+      - IN: ecsCluster
       # - IN: deployInput
       # - IN: release1
       - TASK: managed
