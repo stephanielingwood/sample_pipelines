@@ -42,15 +42,15 @@ jobs:
       - TASK: managed
         deployMethod: upgrade     
 
-  # - name: ecsDeploy
-  #   type: deploy
-  #   steps:
-  #     - IN: manifest2
+  - name: ecsDeploy
+    type: deploy
+    steps:
+      - IN: manifest2
   #     - IN: ecsCluster
       # - IN: deployInput
       # - IN: release1
-      # - TASK: managed
-      #   deployMethod: upgrade      
+      - TASK: managed
+        deployMethod: upgrade      
 
       # - IN: stephLB
       # - IN: triggerECS
