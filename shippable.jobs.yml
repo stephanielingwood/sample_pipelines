@@ -74,6 +74,7 @@ jobs:
     type: deploy
     steps:
       - IN: manifest1
+      - IN: replicas1
       - IN: ecsCluster
       - TASK: managed
         deployMethod: upgrade
