@@ -21,6 +21,7 @@ jobs:
     type: manifest
     steps:
       - IN: replicas1
+      - IN: nginx-image
       - IN: busybox-image
       - IN: triggerManifest2
       - TASK: managed      
