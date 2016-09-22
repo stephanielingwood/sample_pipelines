@@ -1,14 +1,11 @@
 jobs:
   - name: manifest1
     type: manifest
-    # steps:
-      # - IN: nginx-image
-      # - IN: outrunsh
-        # versionNumber: 1202
-      # - IN: triggerManifest1
-      # - IN: params1
-      # - TASK: managed
-      # - IN: dockerOptions1
+    steps:
+      - IN: manifest2
+      - IN: triggerManifest1
+      - IN: params1
+      - TASK: managed
     # on_start:
     #   - NOTIFY: slackNotification
     # on_success:
@@ -21,6 +18,14 @@ jobs:
     steps:
       - IN: busybox-image
       - IN: triggerManifest2
+      - IN: replicas1
+      - TASK: managed      
+
+  - name: manifest3
+    type: manifest
+    steps:
+      - IN: scratch-image
+      - IN: replicas2
       - TASK: managed      
 
   # - name: samplePythonJob
@@ -40,33 +45,14 @@ jobs:
   #     - TASK: managed
   #       deployMethod: upgrade     
 
-  # - name: ecsDeploy
-  #   type: deploy
-  #   steps:
-  #     - IN: manifest2
-  #     - IN: ecsCluster
-      # - IN: deployInput
-      # - IN: release1
-      # - TASK: managed
-      #   deployMethod: upgrade      
-
-      # - IN: stephLB
-      # - IN: triggerECS
-      # - IN: params2
-      #   applyTo: 
-      #     - manifest1
-      #     - manifest2
-      # - IN: params1
-      #   applyTo:
-      #     - nginx-image
-      # - IN: dockerOptions2
-      # - OUT: nginx-image
-      # - IN: badDockerOptions
-      # - IN: dockerOptions1
-    # on_success:
-    #   - NOTIFY: slackNotification
-    # on_failure:
-    #   - NOTIFY: slackNotification
+  - name: ecsDeploy
+    type: deploy
+    steps:
+      - IN: manifest1
+      - IN: ecsCluster
+      - IN: deployInput
+      - TASK: managed
+        deployMethod: upgrade      
   
   - name: deployInput
     type: deploy
@@ -112,10 +98,10 @@ jobs:
   - name: release1
     type: release
     steps:
-      # - IN: release2
-      # - IN: version1
-      # - IN: manifest3
-      # - IN: triggerRelease1
+      - IN: ecsDeploy
+      - IN: version1
+      - IN: release2
+      - IN: triggerRelease1
       - TASK: managed
       #   bump: major
 
@@ -123,8 +109,7 @@ jobs:
     type: release
     steps:
       - IN: version2
-      - IN: release1
-      - IN: deployInput
+      - IN: manifest3
       - IN: triggerRelease2
       - TASK: managed
 
