@@ -24,7 +24,7 @@ jobs:
   - name: manifest3
     type: manifest
     steps:
-      - IN: scratch-image
+      - IN: nginx-image
       - IN: replicas2
       - TASK: managed      
       
@@ -52,7 +52,7 @@ jobs:
     type: deploy
     steps:
       - IN: gkeCluster
-      - IN: manifest2
+      - IN: manifest3
       - IN: triggerGKE
       - TASK: managed
         deployMethod: replace     
