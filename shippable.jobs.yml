@@ -35,7 +35,6 @@ jobs:
       - IN: replicas2
       - TASK: managed      
 
-
   # - name: samplePythonJob
   #   type: runCI
   #   steps:
