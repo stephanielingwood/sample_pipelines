@@ -35,6 +35,13 @@ jobs:
       - IN: replicas2
       - TASK: managed      
 
+  - name: manifest5
+    type: manifest
+    steps:
+      - IN: scratch-image
+      - IN: replicas2
+      - TASK: managed      
+
   # - name: samplePythonJob
   #   type: runCI
   #   steps:
@@ -108,6 +115,7 @@ jobs:
       - IN: ecsDeploy
       - IN: version1
       - IN: release2
+      - IN: manifest5
       - IN: triggerRelease1
       - TASK: managed
       #   bump: major
