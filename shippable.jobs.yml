@@ -18,14 +18,12 @@ jobs:
     steps:
       - IN: busybox-image
       - IN: triggerManifest2
-      - IN: replicas1
       - TASK: managed      
 
   - name: manifest3
     type: manifest
     steps:
       - IN: nginx-image
-      - IN: replicas2
       - TASK: managed      
       
   - name: manifest4
@@ -52,7 +50,7 @@ jobs:
     type: deploy
     steps:
       - IN: gkeCluster
-      - IN: manifest3
+      - IN: manifest2
       - IN: triggerGKE
       - TASK: managed
         deployMethod: replace     
