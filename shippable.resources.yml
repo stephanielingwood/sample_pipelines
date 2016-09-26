@@ -142,12 +142,12 @@ resources:
       sourceName: "stephanielingwood/sample_python"
       branch: "noMatrix"
       
-  # - name: sampleNode
-  #   type: gitRepo
-  #   integration: stephGithub
-  #   pointer:
-  #     sourceName: "stephanielingwood/sample_node"
-  #     branch: "master"
+  - name: sampleNode
+    type: gitRepo
+    integration: stephGithub
+    pointer:
+      sourceName: "stephanielingwood/sample_node"
+      branch: 
 
   - name: slackNotification
     type: notification
