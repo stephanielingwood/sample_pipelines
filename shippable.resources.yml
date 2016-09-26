@@ -148,6 +148,8 @@ resources:
     pointer:
       sourceName: "stephanielingwood/sample_node"
       branches: 
+        only:
+          - 42
 
   - name: slackNotification
     type: notification
