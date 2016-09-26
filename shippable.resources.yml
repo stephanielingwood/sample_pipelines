@@ -147,7 +147,7 @@ resources:
     integration: stephGithub
     pointer:
       sourceName: "stephanielingwood/sample_node"
-      branch: 
+      branches: 
 
   - name: slackNotification
     type: notification
