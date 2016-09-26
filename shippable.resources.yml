@@ -150,7 +150,7 @@ resources:
       branches: 
         except:
           - myBranch
-      buildOnCommit: 42
+      buildOnRelease: 42
 
   - name: slackNotification
     type: notification
