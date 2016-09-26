@@ -142,11 +142,11 @@ resources:
       sourceName: "stephanielingwood/sample_python"
       branch: "noMatrix"
       
-  - name: sampleNode
-    type: gitRepo
-    integration: stephGithub
-    pointer:
-      sourceName: "stephanielingwood/sample_node"
+ # - name: sampleNode
+ #   type: gitRepo
+ #   integration: stephGithub
+ #   pointer:
+ #     sourceName: "stephanielingwood/sample_node"
  #     branches: 
  #       only:
  #         - master
