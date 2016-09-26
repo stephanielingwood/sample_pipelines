@@ -153,7 +153,7 @@ resources:
           - master
         except:
           - dev
-      buildOnCommit: true
+      buildOnCommit: false
       builOnRelease: false
       buildOnTagPush: false
       buildOnPullRequest: false
