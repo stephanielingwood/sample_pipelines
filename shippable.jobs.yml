@@ -156,4 +156,4 @@ jobs:
     steps:
       - IN: sampleNode
       - TASK: managed
-        script: ls
+        - script: ls
