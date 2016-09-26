@@ -150,3 +150,10 @@ jobs:
   #     IN: samplePython
   #     TASK: managed
   #       script: ls
+  
+    - name: sh-sampleNode
+      type: runSh
+      steps:
+        - IN: sampleNode
+        - TASK: managed
+          script: ls
