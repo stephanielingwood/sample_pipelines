@@ -155,7 +155,7 @@ resources:
       buildOnCommit: true
       builOnRelease: false
       buildOnTagPush: false
-      buildOnPullRequest: 42
+      buildOnPullRequest: false
 
   - name: slackNotification
     type: notification
