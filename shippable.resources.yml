@@ -148,9 +148,13 @@ resources:
     pointer:
       sourceName: "stephanielingwood/sample_node"
       branches: 
+        only:
+          - master
         except:
           - myBranch
-      buildOnRelease: 42
+      buildOnCommit: true
+      builOnRelease: false
+      buildOnTagPush: 42
 
   - name: slackNotification
     type: notification
