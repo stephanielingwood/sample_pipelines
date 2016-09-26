@@ -154,7 +154,8 @@ resources:
           - myBranch
       buildOnCommit: true
       builOnRelease: false
-      buildOnTagPush: 42
+      buildOnTagPush: false
+      buildOnPullRequest: 442
 
   - name: slackNotification
     type: notification
