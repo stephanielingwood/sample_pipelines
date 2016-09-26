@@ -149,9 +149,9 @@ resources:
       sourceName: "stephanielingwood/sample_node"
       branches: 
         only:
-          - 82
+          - master
         except:
-          - 82
+          - dev
       buildOnCommit: 42
       builOnRelease: 42
       buildOnTagPush: 42
