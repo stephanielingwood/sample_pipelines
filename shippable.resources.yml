@@ -152,7 +152,7 @@ resources:
           - master
         except:
           - dev
-      buildOnCommit: 42
+      buildOnCommit: true
       builOnRelease: 42
       buildOnTagPush: 42
       buildOnPullRequest: 42
