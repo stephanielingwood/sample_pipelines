@@ -149,7 +149,8 @@ resources:
       sourceName: "stephanielingwood/sample_node"
       branches: 
         except:
-          - 42
+          - myBranch
+      buildOnCommit: 42
 
   - name: slackNotification
     type: notification
