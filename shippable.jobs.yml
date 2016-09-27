@@ -62,6 +62,7 @@ jobs:
     type: deploy
     steps:
       - IN: manifest4
+      - IN: dockerOptions1
       - IN: stephLB
       - IN: ecsCluster
       - TASK: managed
