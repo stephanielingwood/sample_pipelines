@@ -162,12 +162,12 @@ resources:
       sourceName: "stephanielingwood/sample_node"
       buildOnPullRequest: true
       
-#  - name: sample_node_bitbucket
-#    type: gitRepo
-#    integration: stephBitbucket
-#    pointer:
-#      sourceName: "stephanietest/sample_node"
-#      buildOnPullRequest: true      
+  - name: sample_node_bitbucket
+    type: gitRepo
+    integration: stephBitbucket
+    pointer:
+      sourceName: "stephanietest/sample_node"
+      buildOnPullRequest: true      
 
   - name: slackNotification
     type: notification
