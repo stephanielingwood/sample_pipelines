@@ -147,13 +147,13 @@ resources:
     integration: stephGithub
     pointer:
       sourceName: "stephanielingwood/sample_node"
-      branches: 
-        except:
-          - execScript
+#      branches: 
+#        except:
+#          - execScript
       buildOnCommit: false
       buildOnRelease: false
 #      buildOnTagPush: false
-      buildOnPullRequest: false
+#      buildOnPullRequest: false
 
   - name: slackNotification
     type: notification
