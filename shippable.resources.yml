@@ -151,8 +151,6 @@ resources:
       branches: 
         only:
           - master
-        except:
-          - dev
       buildOnCommit: false
       builOnRelease: false
       buildOnTagPush: false
