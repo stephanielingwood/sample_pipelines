@@ -155,6 +155,13 @@ resources:
 #      buildOnTagPush: false
       buildOnPullRequest: true
 
+  - name: sample_node_gitlab
+    type: gitRepo
+    integration: stephGitlab
+    pointer:
+      sourceName: "stephanielingwood/sample_node"
+      buildOnPullRequest: true
+
   - name: slackNotification
     type: notification
     integration: stephSlack
