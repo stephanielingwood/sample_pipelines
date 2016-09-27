@@ -153,7 +153,7 @@ resources:
       buildOnCommit: false
       buildOnRelease: false
 #      buildOnTagPush: false
-      buildOnPullRequest: false
+      buildOnPullRequest: true
 
   - name: slackNotification
     type: notification
