@@ -166,7 +166,7 @@ resources:
     type: gitRepo
     integration: stephBitbucket
     pointer:
-      sourceName: "stephanielingwood/sample_node"
+      sourceName: "stephanietest/sample_node"
       buildOnPullRequest: true      
 
   - name: slackNotification
