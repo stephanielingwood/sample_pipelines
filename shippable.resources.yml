@@ -150,7 +150,7 @@ resources:
       branch: master
       branches: 
         except:
-          - master
+          - execScript
       buildOnCommit: false
       builOnRelease: false
       buildOnTagPush: false
