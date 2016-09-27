@@ -33,7 +33,7 @@ resources:
   - name: stephLB
     type: loadBalancer
     pointer:
-      sourceName: steph-lb-2
+      sourceName: steph-lb-1
       
   # - name: test-cluster
   #   type: cluster
@@ -129,12 +129,7 @@ resources:
     type: version
     seed:
       versionName: "2.0.222"
-      
-  # - name: kickstarter
-  #   type: kickStart
-  #   pointer:
-  #     counter: 3
-  
+
   - name: samplePython
     type: gitRepo
     integration: stephGithub
