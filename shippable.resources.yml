@@ -147,7 +147,6 @@ resources:
     integration: stephGithub
     pointer:
       sourceName: "stephanielingwood/sample_node"
-      branch: master
       branches: 
         except:
           - execScript
