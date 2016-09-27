@@ -150,8 +150,8 @@ resources:
       branches: 
         except:
           - execScript
-      buildOnCommit: false
-      buildOnRelease: false
+      buildOnCommit: true
+      buildOnRelease: true
       buildOnTagPush: false
       buildOnPullRequest: false
 
