@@ -61,7 +61,7 @@ jobs:
   - name: ecsDeploy
     type: deploy
     steps:
-      - IN: manifest3
+      - IN: manifest4
       - IN: ecsCluster
       - TASK: managed
         deployMethod: replace      
