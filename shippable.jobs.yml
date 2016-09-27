@@ -61,11 +61,10 @@ jobs:
   - name: ecsDeploy
     type: deploy
     steps:
-      - IN: manifest1
+      - IN: manifest3
       - IN: ecsCluster
-      - IN: deployInput
       - TASK: managed
-        deployMethod: upgrade      
+        deployMethod: replace      
   
   - name: deployInput
     type: deploy
