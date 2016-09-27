@@ -37,6 +37,7 @@ jobs:
   - name: manifest5
     type: manifest
     steps:
+      - IN: sample_node
       - IN: scratch-image
       - IN: replicas2
       - TASK: managed      
@@ -136,7 +137,6 @@ jobs:
     steps:
       # - IN: busybox-image
       - IN: nginx-image
-      - IN: sample_node
       - TASK:
         - script: "mkdir -p /build/state/" 
         - script: "touch /build/state/nginx-image.env" 
