@@ -150,9 +150,9 @@ resources:
       branches: 
         except:
           - execScript
-      buildOnCommit: true
-      buildOnRelease: true
-      buildOnTagPush: false
+#      buildOnCommit: true
+#      buildOnRelease: true
+#      buildOnTagPush: false
       buildOnPullRequest: false
 
   - name: slackNotification
