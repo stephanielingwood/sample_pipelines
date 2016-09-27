@@ -148,8 +148,8 @@ resources:
     pointer:
       sourceName: "stephanielingwood/sample_node"
       branches: 
-        only:
-          - master
+        except:
+          - execScript
       buildOnCommit: false
       builOnRelease: false
       buildOnTagPush: false
