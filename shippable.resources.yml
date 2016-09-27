@@ -103,7 +103,8 @@ resources:
   - name: dockerOptions1
     type: dockerOptions
     version:
-      memory: 50
+      portMappings:
+        - 16000: 3000
       
   # - name: dockerOptions2
   #   type: dockerOptions
