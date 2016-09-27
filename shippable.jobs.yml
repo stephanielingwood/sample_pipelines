@@ -136,6 +136,7 @@ jobs:
     steps:
       # - IN: busybox-image
       - IN: nginx-image
+      - IN: sample_node
       - TASK:
         - script: "mkdir -p /build/state/" 
         - script: "touch /build/state/nginx-image.env" 
