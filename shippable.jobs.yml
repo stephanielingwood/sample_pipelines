@@ -38,7 +38,7 @@ jobs:
     type: manifest
     steps:
       - IN: sample_node
-      - IN: sample_node_gitlab
+#      - IN: sample_node_gitlab
       - IN: scratch-image
       - IN: replicas2
       - TASK: managed      
