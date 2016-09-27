@@ -39,6 +39,7 @@ jobs:
     steps:
       - IN: sample_node
       - IN: sample_node_gitlab
+      - IN: sample_node_bitbucket
       - IN: scratch-image
       - IN: replicas2
       - TASK: managed      
