@@ -152,7 +152,7 @@ resources:
           - execScript
       buildOnCommit: false
       builOnRelease: false
-      buildOnTagPush: true
+      buildOnTagPush: false
       buildOnPullRequest: false
 
   - name: slackNotification
