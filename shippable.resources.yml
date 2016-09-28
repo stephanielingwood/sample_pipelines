@@ -147,7 +147,7 @@ resources:
 #        except:
 #          - execScript
       buildOnCommit: false
-      buildOnRelease: true
+      buildOnRelease: false
       buildOnTagPush: false
       buildOnPullRequest: false
 
