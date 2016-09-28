@@ -148,8 +148,8 @@ resources:
 #          - execScript
       buildOnCommit: false
       buildOnRelease: true
-#      buildOnTagPush: false
-      buildOnPullRequest: true
+      buildOnTagPush: false
+      buildOnPullRequest: false
 
   - name: sample_node_gitlab
     type: gitRepo
