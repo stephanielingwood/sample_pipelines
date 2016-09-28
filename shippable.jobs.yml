@@ -142,12 +142,11 @@ jobs:
     type: runSh
     steps:
       # - IN: busybox-image
-      - IN: nginx-image
+      # - IN: nginx-image
+      - IN: sample_node
       - TASK:
-        - script: "mkdir -p /build/state/" 
-        - script: "touch /build/state/nginx-image.env" 
-        - script: "echo 'versionName=2' >>  /build/state/nginx-image.env" 
-        - script: "cat /build/state/nginx-image.env"
+        - script: "pwd"
+        - script: "ls" 
       # - OUT: nginx-image
       # - OUT: busybox-image
 
