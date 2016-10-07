@@ -23,11 +23,19 @@ resources:
     seed:
       versionName: latest
 
-  - name: sample-node-quay-private
+  - name: sample-node-quay-private-image
     type: image
     integration: "shippableQuay"
     pointer:
       sourceName: "quay.io/shippablequay/sample_node_01"
+    seed:
+      versionName: latest
+
+  - name: busybox-gcr-private-image
+    type: image
+    integration: "stephGKE"
+    pointer:
+      sourceName: "gcr.io/testgcrproject/busybox"
     seed:
       versionName: latest
 
