@@ -43,11 +43,11 @@ jobs:
       - IN: replicas2
       - TASK: managed      
 
-  # - name: samplePythonJob
-  #   type: runCI
-  #   steps:
-  #     - IN: samplePython
-  #     - IN: triggerSamplePythonCI
+  - name: manifestQuayPrivate
+    type: manifest
+    steps:
+      - IN: sample-node-quay-private
+      - TASK: managed  
 
   - name: gkeDeploy
     type: deploy
@@ -84,7 +84,7 @@ jobs:
   - name: tripubDeploy
     type: deploy
     steps:
-      - IN: manifest3
+      - IN: manifestQuayPrivate
       - IN: tritonCluster
       - IN: triggerTripub
       - TASK: managed
