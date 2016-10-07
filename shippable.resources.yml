@@ -33,7 +33,7 @@ resources:
 
   - name: busybox-gcr-private-image
     type: image
-    integration: "stephGKE"
+    integration: "stephGCR"
     pointer:
       sourceName: "gcr.io/testgcrproject/busybox"
     seed:
