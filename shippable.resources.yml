@@ -27,7 +27,7 @@ resources:
     type: image
     integration: "shippableQuay"
     pointer:
-      sourceName: "shippablequay/sample_node_01"
+      sourceName: "quay.io/shippablequay/sample_node_01"
     seed:
       versionName: latest
 
