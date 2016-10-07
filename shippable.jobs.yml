@@ -49,6 +49,12 @@ jobs:
       - IN: sample-node-quay-private
       - TASK: managed  
 
+  - name: manifestGcrPrivate
+    type: manifest
+    steps:
+      - IN: busybox-gcr-private-image
+      - TASK: managed
+
   - name: gkeDeploy
     type: deploy
     steps:
@@ -84,7 +90,7 @@ jobs:
   - name: tripubDeploy
     type: deploy
     steps:
-      - IN: manifestQuayPrivate
+      - IN: manifestGcrPrivate
       - IN: tritonCluster
       - IN: triggerTripub
       - TASK: managed
