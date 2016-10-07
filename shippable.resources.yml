@@ -23,6 +23,14 @@ resources:
     seed:
       versionName: latest
 
+  - name: sample-node-quay-private
+    type: image
+    integration: "shippableQuay"
+    pointer:
+      sourceName: "shippablequay/sample_node_01"
+    seed:
+      versionName: latest
+
   - name: ecsCluster
     type: cluster
     integration: "stephAWS"
