@@ -35,7 +35,7 @@ resources:
     type: image
     integration: "stephGCR"
     pointer:
-      sourceName: "gcr.io/testGCRproject/busybox"
+      sourceName: "gcr.io/testgcrproject/busybox"
     seed:
       versionName: latest
 
