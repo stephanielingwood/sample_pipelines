@@ -24,7 +24,7 @@ jobs:
     type: manifest
     steps:
       - IN: nginx-image
-      - IN: params1
+#      - IN: params1
       - TASK: managed      
       
   - name: manifest4
