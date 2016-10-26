@@ -20,6 +20,7 @@ jobs:
       - IN: triggerManifest2
       - TASK: managed      
 
+
   - name: manifest3
     type: manifest
     steps:
