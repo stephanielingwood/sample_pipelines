@@ -122,7 +122,7 @@ jobs:
   - name: release1
     type: release
     steps:
-      - IN: ecsDeploy
+#      - IN: ecsDeploy
       - IN: version1
       - IN: release2
       - IN: manifest5
@@ -134,7 +134,7 @@ jobs:
     type: release
     steps:
       - IN: version2
-      - IN: manifest4
+#      - IN: manifest4
       - IN: triggerRelease2
       - TASK: managed
 
