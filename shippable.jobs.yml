@@ -69,14 +69,14 @@ jobs:
     type: deploy
     steps:
       - IN: manifest4
-#      - IN: dockerOptions1
+      - IN: dockerOptions1
       - IN: stephLB
         applyTo:
          - manifest: manifest4
            image: scratch-image
       - IN: ecsCluster
       - TASK: managed
-        deployMethod: replace      
+        deployMethod: upgrade      
   
   - name: deployInput
     type: deploy
