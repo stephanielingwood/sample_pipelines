@@ -71,10 +71,10 @@ jobs:
       - IN: manifest4
       - IN: dockerOptions1
       - IN: stephLB
-        applyTo:
-         - manifest: manifest4
-           image: scratch-image
-           port: 3000
+#        applyTo:
+ #        - manifest: manifest4
+  #         image: scratch-image
+   #        port: 3000
       - IN: ecsCluster
       - TASK: managed
         deployMethod: upgrade      
