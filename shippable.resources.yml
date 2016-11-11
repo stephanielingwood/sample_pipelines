@@ -120,7 +120,7 @@ resources:
     type: dockerOptions
     version:
       portMappings:
-        - 16000:3000
+        - 16000:3001
       
   # - name: dockerOptions2
   #   type: dockerOptions
