@@ -74,6 +74,7 @@ jobs:
         applyTo:
          - manifest: manifest4
            image: scratch-image
+           port: 3000
       - IN: ecsCluster
       - TASK: managed
         deployMethod: upgrade      
