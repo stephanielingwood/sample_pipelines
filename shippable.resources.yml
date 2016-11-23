@@ -189,4 +189,7 @@ resources:
       recipients:
         - "@stephanielingwood"
         
-  
+ - name: timeResource
+   type: time
+   seed:
+     interval: "*/2 * * 2 *"
