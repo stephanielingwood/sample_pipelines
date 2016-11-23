@@ -44,11 +44,11 @@ jobs:
       - IN: replicas2
       - TASK: managed      
 
-  - name: manifestQuayPrivate
-    type: manifest
-    steps:
-      - IN: sample-node-quay-private
-      - TASK: managed  
+#  - name: manifestQuayPrivate
+#    type: manifest
+#    steps:
+#      - IN: sample-node-quay-private
+#      - TASK: managed  
 
   - name: manifestGcrPrivate
     type: manifest
