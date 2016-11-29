@@ -1,11 +1,11 @@
 jobs:
-#  - name: manifest1
-#    type: manifest
-#    steps:
-#      - IN: manifest2
-#      - IN: triggerManifest1
-#      - IN: params1
-#      - TASK: managed
+  - name: manifest1
+    type: manifest
+    steps:
+      - IN: manifest2
+      - IN: triggerManifest1
+      - IN: params1
+      - TASK: managed
     # on_start:
     #   - NOTIFY: slackNotification
     # on_success:
