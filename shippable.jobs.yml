@@ -4,7 +4,7 @@ jobs:
     steps:
       - IN: manifest2
       - IN: triggerManifest1
-      - IN: params1
+#      - IN: params1
       - TASK: managed
     # on_start:
     #   - NOTIFY: slackNotification
