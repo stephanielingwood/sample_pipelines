@@ -68,10 +68,10 @@ jobs:
   - name: ecsDeploy
     type: deploy
     steps:
-      - IN: manifest4
+#      - IN: manifest4
       - IN: manifest3
       - IN: dockerOptions1
-      - IN: replicas1
+      - IN: replicas2
       - IN: stephLB
         applyTo:
          - manifest: manifest4
