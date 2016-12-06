@@ -69,7 +69,7 @@ jobs:
     type: deploy
     steps:
 #      - IN: manifest4
-      - IN: manifest3
+      - IN: manifest4
       - IN: dockerOptions1
 #      - IN: replicas1
       - IN: stephLB
