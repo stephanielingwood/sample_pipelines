@@ -93,7 +93,7 @@ jobs:
   - name: tripubDeploy
     type: deploy
     steps:
-      - IN: manifest3
+      - IN: manifest2
       - IN: tritonCluster
       - IN: triggerTripub
       - TASK: managed
