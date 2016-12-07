@@ -63,7 +63,7 @@ jobs:
       - IN: manifest3
       - IN: triggerGKE
       - TASK: managed
-        deployMethod: replace     
+        deployMethod: upgrade     
 
   - name: ecsDeploy
     type: deploy
