@@ -64,7 +64,7 @@ resources:
     pointer:
       sourceName : "steph-cluster-1" #name of the cluster we are deploying; should be steph-cluster-1
       region: "us-central1-b"
-#      namespace: "default"
+      namespace: "namespace1"
       
   - name: tritonCluster
     type: cluster
