@@ -60,6 +60,7 @@ jobs:
     steps:
       - IN: gkeCluster
       - IN: manifest3
+      - IN: replicas1
       - IN: triggerGKE
       - TASK: managed
         deployMethod: upgrade    
