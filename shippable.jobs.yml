@@ -61,7 +61,7 @@ jobs:
     steps:
       - IN: gkeCluster
       - IN: manifest3
-      - IN: replicas2
+#      - IN: replicas2
       - IN: triggerGKE
       - TASK: managed
         deployMethod: blueGreen
