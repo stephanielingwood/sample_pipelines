@@ -60,17 +60,17 @@ jobs:
     type: deploy
     steps:
       - IN: gkeCluster
-      - IN: manifest3
+      - IN: manifest4
 #      - IN: replicas2
       - IN: triggerGKE
       - TASK: managed
-        deployMethod: upgrade
+        deployMethod: blueGreen
 
   - name: gkeDeployUseExistingNamespace
     type: deploy
     steps:
       - IN: gkeCluster
-      - IN: manifest2
+      - IN: manifest3
       - IN: triggerGKE
       - TASK: managed
         deployMethod: upgrade  
