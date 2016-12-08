@@ -65,7 +65,7 @@ jobs:
       - TASK: managed
         deployMethod: upgrade     
 
-  - name: gkeDeployNewWitExistinghNamespace2
+  - name: gkeDeployUseExistingNamespace
     type: deploy
     steps:
       - IN: gkeCluster
