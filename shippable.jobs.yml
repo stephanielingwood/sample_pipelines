@@ -65,14 +65,14 @@ jobs:
       - TASK: managed
         deployMethod: upgrade     
 
-  - name: gkeDeployUseExistingNamespace
-    type: deploy
-    steps:
-      - IN: gkeCluster
-      - IN: manifest2
-      - IN: triggerGKE
-      - TASK: managed
-        deployMethod: upgrade  
+#  - name: gkeDeployUseExistingNamespace
+#    type: deploy
+#    steps:
+#      - IN: gkeCluster
+#      - IN: manifest2
+#      - IN: triggerGKE
+#      - TASK: managed
+#        deployMethod: upgrade  
 
   - name: gkeDeployNoNamespaceSpecd
     type: deploy
