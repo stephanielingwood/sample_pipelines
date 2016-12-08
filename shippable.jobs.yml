@@ -62,7 +62,7 @@ jobs:
       - IN: manifest2
       - IN: triggerGKE
       - TASK: managed
-        deployMethod: blue-green     
+        deployMethod: blueGreen     
 
   - name: gkeDeployUseExistingNamespace
     type: deploy
