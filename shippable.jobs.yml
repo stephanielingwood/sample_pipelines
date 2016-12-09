@@ -64,7 +64,7 @@ jobs:
 #      - IN: replicas2
       - IN: triggerGKE
       - TASK: managed
-        deployMethod: blueGreen
+        deployMethod: upgrade
 
   - name: gkeDeployUseExistingNamespace
     type: deploy
