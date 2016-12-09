@@ -60,7 +60,7 @@ jobs:
     type: deploy
     steps:
       - IN: gkeCluster
-      - IN: manifest4
+      - IN: manifest3
 #      - IN: replicas2
       - IN: triggerGKE
       - TASK: managed
