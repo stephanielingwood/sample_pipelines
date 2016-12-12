@@ -13,7 +13,6 @@ jobs:
     # on_failure:
     #   - NOTIFY: slackNotification
 
-
   - name: manifest2
     type: manifest
     steps:
@@ -65,34 +64,6 @@ jobs:
       - IN: triggerGKE
       - TASK: managed
         deployMethod: blueGreen
-        
-
-  - name: gkeDeployUseExistingNamespace
-    type: deploy
-    steps:
-      - IN: gkeCluster
-      - IN: manifest3
-      - IN: triggerGKE
-      - TASK: managed
-        deployMethod: upgrade  
-
-  - name: gkeDeployNewNamespaceSpecd
-    type: deploy
-    steps:
-      - IN: gkeCluster
-      - IN: manifest2
-      - IN: triggerGKE
-      - TASK: managed
-        deployMethod: upgrade  
-
-  - name: gkeDeployNoNamespaceSpecd
-    type: deploy
-    steps:
-      - IN: gkeCluster
-      - IN: manifest2
-      - IN: triggerGKE
-      - TASK: managed
-        deployMethod: upgrade  
 
   - name: ecsDeploy
     type: deploy
@@ -109,15 +80,6 @@ jobs:
       - IN: ecsCluster
       - TASK: managed
         deployMethod: upgrade      
-  
-  - name: deployInput
-    type: deploy
-    steps:
-      - IN: manifest3
-      - IN: replicas1
-      - IN: ecsCluster
-      - TASK: managed
-        deployMethod: upgrade
         
   - name: tripubDeploy
     type: deploy
@@ -135,22 +97,7 @@ jobs:
   #     - IN: dclCluster
   #     - TASK: managed
   #       deployMethod: upgrade
-      
-  # - name: dcl-service2
-  #   type: dclDeploy
-  #   steps:
-  #     - IN: dcl-service1
-  #     - IN: dclCluster
-  #     - TASK: managed
-      
-  # - name: run-sample_python
-  #   type: runCI
-  #   steps:
-  #     - IN: samplePython
-  #     - IN: triggerSamplePythonCI
-  #     - TASK: managed
-  #     - OUT: busybox-image
-  
+
   - name: release1
     type: release
     steps:
@@ -161,20 +108,6 @@ jobs:
       - IN: triggerRelease1
       - TASK: managed
       #   bump: major
-
-  - name: release2
-    type: release
-    steps:
-      - IN: version2
-#      - IN: manifest4
-      - IN: triggerRelease2
-      - TASK: managed
-
-  # - name: release3
-  #   type: release
-  #   steps:
-  #     - IN: version3
-  #     - TASK: managed
 
   - name: outrunsh
     type: runSh
