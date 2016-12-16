@@ -6,12 +6,12 @@ jobs:
       - IN: triggerManifest1
 #      - IN: params1
       - TASK: managed
-    # on_start:
-    #   - NOTIFY: slackNotification
-    # on_success:
-    #   - NOTIFY: slackNotification
-    # on_failure:
-    #   - NOTIFY: slackNotification
+     on_start:
+       - NOTIFY: slackNotification
+     on_success:
+       - NOTIFY: slackNotification
+     on_failure:
+       - NOTIFY: slackNotification
 
   - name: manifest2
     type: manifest
