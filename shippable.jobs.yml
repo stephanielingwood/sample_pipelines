@@ -118,6 +118,7 @@ jobs:
       - TASK:
         - script: "pwd"
         - script: "ls" 
+        - script: "printenv"
       # - OUT: nginx-image
       # - OUT: busybox-image
 
