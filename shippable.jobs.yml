@@ -112,8 +112,8 @@ jobs:
   - name: outrunsh
     type: runSh
     steps:
-      # - IN: busybox-image
-      # - IN: nginx-image
+      - IN: ecsCluster
+      - IN: nginx-image
       - IN: sample_node
       - TASK:
         - script: "pwd"
