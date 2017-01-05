@@ -13,15 +13,7 @@ resources:
     pointer:
       sourceName: "library/busybox"
     seed:
-      versionName: latest
-      
-  - name: "busybox image"
-    type: image
-    integration: "stephDocker"
-    pointer:
-      sourceName: "library/busybox"
-    seed:
-      versionName: latest      
+      versionName: latest    
       
   - name: scratch-image
     type: image
