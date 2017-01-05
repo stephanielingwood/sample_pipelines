@@ -115,7 +115,6 @@ jobs:
       - IN: ecsCluster
       - IN: nginx-image
       - IN: sample_node
-      - IN: "busybox image"
       - TASK:
         - script: "pwd"
         - script: "ls" 
