@@ -160,9 +160,7 @@ resources:
     integration: stephGithub
     pointer:
       sourceName: "stephanielingwood/sample_node"
-#      branches: 
-#        except:
-#          - execScript
+      branch: master
       buildOnCommit: false
       buildOnRelease: false
       buildOnTagPush: false
