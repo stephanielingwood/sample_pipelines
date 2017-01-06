@@ -192,3 +192,7 @@ resources:
     type: time
     seed:
       interval: "*/2 * * 2 *"
+
+  - name: stephEmail
+    type: integration
+    integration: stephEmail 
