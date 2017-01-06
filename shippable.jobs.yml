@@ -115,6 +115,8 @@ jobs:
       - IN: ecsCluster
       - IN: nginx-image
       - IN: sample_node
+      - IN: replicas2
+      - IN: dockerOptions1
       - TASK:
         - script: "pwd"
         - script: "ls" 
