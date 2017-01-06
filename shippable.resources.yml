@@ -196,3 +196,7 @@ resources:
   - name: stephEmail
     type: integration
     integration: stephEmail 
+
+  - name: stephNodeCluster
+    type: integration
+    integration: stephNodeCluster 
