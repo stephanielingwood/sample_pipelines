@@ -122,7 +122,7 @@ jobs:
       - TASK:
         - script: "pwd"
         - script: "ls" 
-        - script: "printenv"
+     #   - script: "printenv"
         - script: echo "============================"
         - script: echo "STEPHNODECLUSTER_INTEGRATION_PRIVATEKEY"
       # - OUT: nginx-image
