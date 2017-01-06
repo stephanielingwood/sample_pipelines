@@ -124,7 +124,7 @@ jobs:
         - script: "ls" 
      #   - script: "printenv"
         - script: echo "============================"
-        - script: echo "STEPHNODECLUSTER_INTEGRATION_PRIVATEKEY"
+        - script: echo $STEPHNODECLUSTER_INTEGRATION_PRIVATEKEY
       # - OUT: nginx-image
       # - OUT: busybox-image
 
