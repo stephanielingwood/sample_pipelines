@@ -123,8 +123,8 @@ jobs:
         - script: "pwd"
         - script: "ls" 
         - script: "printenv"
-        - echo "============================"
-        - echo "STEPHNODECLUSTER_INTEGRATION_PRIVATEKEY"
+        - script: echo "============================"
+        - script: echo "STEPHNODECLUSTER_INTEGRATION_PRIVATEKEY"
       # - OUT: nginx-image
       # - OUT: busybox-image
 
