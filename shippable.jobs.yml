@@ -118,6 +118,7 @@ jobs:
       - IN: replicas2
       - IN: dockerOptions1
       - IN: stephEmail
+      - IN: stephNodeCluster
       - TASK:
         - script: "pwd"
         - script: "ls" 
