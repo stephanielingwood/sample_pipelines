@@ -1,4 +1,36 @@
 resources:
+  - name: gkeService
+    type: loadBalancer
+    integration: stephGKE
+    pointer:
+      sourceName: my-service
+      method: LoadBalancer
+      namespace: default
+    version:
+      ports:
+        - name: port3000
+          protocol: TCP
+          port: 3000
+          targetPort: 3000
+          nodePort: 3001
+        - name: port4000
+          protocol: TCP
+          port: 4000
+          targetPort: 4000
+          nodePort: 4001
+      selector:
+        label: my-label
+
+      clusterIP: None
+      externalIPs:
+        - 0.0.0.0
+      sessionAffinity: None
+      loadBalancerIP: 8.8.8.8
+      loadBalancerSourceRanges:
+        - "10.180.0.0/16" 
+        - "10.245.0.0/24"
+      externalName: gkeService 
+
   - name: nginx-image
     type: image
     integration: "stephDocker"
