@@ -119,17 +119,11 @@ jobs:
   - name: outrunsh
     type: runSh
     steps:
-      - IN: ecsCluster
-      - IN: nginx-image
-      - IN: sample_node
-      - IN: replicas2
-      - IN: dockerOptions1
-      - IN: stephEmail
-      - IN: stephNodeCluster
+      - IN: gkeProvisionService
       - TASK:
         - script: "pwd"
         - script: "ls" 
-        - script: "printenv"
+    #    - script: "printenv"
     #    - script: echo "============================"
      #   - script: echo $STEPHNODECLUSTER_INTEGRATION_PRIVATEKEY
       # - OUT: nginx-image
