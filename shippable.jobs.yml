@@ -64,6 +64,7 @@ jobs:
   - name: gkeDeploy
     type: deploy
     steps:
+      - IN: gkeProvisionService
       - IN: gkeCluster
       - IN: manifest4
 #      - IN: replicas2
