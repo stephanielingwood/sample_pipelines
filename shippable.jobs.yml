@@ -61,16 +61,16 @@ jobs:
       - IN: gkeService
       - TASK: managed
 
-#  - name: gkeDeploy
-#    type: deploy
-#    steps:
-#      - IN: gkeProvisionService
-#      - IN: gkeCluster
+  - name: gkeDeploy
+    type: deploy
+    steps:
+      - IN: gkeProvisionService
+      - IN: gkeCluster
 #      - IN: manifest4
 #      - IN: replicas2
 #      - IN: triggerGKE
-#      - TASK: managed
-#       deployMethod: blueGreen
+      - TASK: managed
+       deployMethod: upgrade
 
   - name: ecsDeploy
     type: deploy
