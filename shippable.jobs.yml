@@ -55,6 +55,12 @@ jobs:
       - IN: busybox-gcr-private-image
       - TASK: managed
 
+  - name: gkeProvisionService
+    type: provision
+    steps:
+      - IN: gkeService
+      - TASK: managed
+
   - name: gkeDeploy
     type: deploy
     steps:
