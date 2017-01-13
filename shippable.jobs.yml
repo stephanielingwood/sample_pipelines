@@ -88,14 +88,14 @@ jobs:
       - TASK: managed
         deployMethod: upgrade      
         
-  - name: tripubDeploy
-    type: deploy
-    steps:
-      - IN: manifest4
-      - IN: tritonCluster
-      - IN: triggerTripub
-      - TASK: managed
-        deployMethod: replace
+#  - name: tripubDeploy
+#    type: deploy
+#    steps:
+#      - IN: manifest4
+#      - IN: tritonCluster
+#      - IN: triggerTripub
+#      - TASK: managed
+#        deployMethod: replace
       
   # - name: dclService
   #   type: deploy
