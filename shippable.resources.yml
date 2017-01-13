@@ -52,7 +52,7 @@ resources:
     type: cluster
     integration: "stephGKE"
     pointer:
-      sourceName : "steph-cluster-1" #name of the cluster to which we are deploying; should be steph-cluster-1
+      sourceName : "steph-cluster-1" #name of the cluster to which we are deploying
       region: "us-central1-b"
       namespace: "namespace2"
       
