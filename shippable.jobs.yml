@@ -71,13 +71,13 @@ jobs:
 #      - TASK: managed
 #        deployMethod: replace
       
-  - name: dclService
-    type: deploy
-    steps:
-      - IN: manifest1
-      - IN: dclCluster
-      - TASK: managed
-        deployMethod: upgrade
+#  - name: dclService
+#    type: deploy
+#    steps:
+#      - IN: manifest1
+#      - IN: dclCluster
+#      - TASK: managed
+#        deployMethod: upgrade
 
 #  - name: ecsDeployWithLB
 #    type: deploy
