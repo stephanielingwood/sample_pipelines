@@ -75,7 +75,6 @@ jobs:
     type: deploy
     steps:
       - IN: manifest1
-      - IN: replicas0
       - IN: dclCluster
       - TASK: managed
         deployMethod: upgrade
