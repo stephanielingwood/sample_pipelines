@@ -70,7 +70,7 @@ resources:
       
   - name: ddcCluster
     type: cluster
-    integration: "stephDDC"
+    integration: "shippableTestDDC"
     pointer:
       sourceName : "vishnu-ddc-02" #name of the nodecluster to which we are deploying  
  
