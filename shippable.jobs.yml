@@ -1,10 +1,10 @@
 jobs:
+
+# ==================== manifests
   - name: manifest1
     type: manifest
     steps:
-      - IN: manifest2
-      - IN: triggerManifest1
-#      - IN: params1
+      - IN: nginx-image
       - TASK: managed
 #     on_start:
 #       - NOTIFY: slackNotification
@@ -17,65 +17,71 @@ jobs:
     type: manifest
     steps:
       - IN: busybox-image
-      - IN: triggerManifest2
       - TASK: managed      
 
   - name: manifest3
     type: manifest
     steps:
-      - IN: nginx-image
-#      - IN: params1
+      - IN: scratch-image
       - TASK: managed      
       
-  - name: manifest4
+  - name: manifestIntoManifest
     type: manifest
     steps:
-      - IN: scratch-image
+      - IN: manifest1
+      - IN: manifest2
       - IN: replicas2
       - TASK: managed      
-
-  - name: manifest5
-    type: manifest
-    steps:
-      - IN: sample_node
-      - IN: sample_node_gitlab
-      - IN: scratch-image
-      - IN: replicas2
-      - TASK: managed      
-
+   
 #  - name: manifestQuayPrivate
 #    type: manifest
 #    steps:
 #      - IN: sample-node-quay-private
 #      - TASK: managed  
 
-  - name: manifestGcrPrivate
-    type: manifest
-    steps:
-      - IN: busybox-gcr-private-image
-      - TASK: managed
+#  - name: manifestGcrPrivate
+#    type: manifest
+#    steps:
+#      - IN: busybox-gcr-private-image
+#      - TASK: managed
 
-  - name: gkeProvisionService
-    type: provision
-    steps:
-      - IN: gkeService
-      - TASK: managed
 
+# ==================== deploys
   - name: gkeDeploy
     type: deploy
     steps:
-      - IN: gkeProvisionService
+      - IN: manifest1
       - IN: gkeCluster
-#      - IN: manifest4
-#      - IN: replicas2
-#      - IN: triggerGKE
+        deployMethod: upgrade
+
+  - name: ecsDeploy
+    type: deploy
+    steps:
+      - IN: manifest1
+      - IN: ecsCluster
+      - TASK: managed
+        deployMethod: upgrade      
+        
+  - name: tripubDeploy
+    type: deploy
+    steps:
+      - IN: manifest1
+      - IN: tritonCluster
+      - TASK: managed
+        deployMethod: replace
+      
+  - name: dclService
+    type: deploy
+    steps:
+      - IN: manifest1
+      - IN: dclCluster
       - TASK: managed
         deployMethod: upgrade
 
-#  - name: ecsDeploy
+#  - name: ecsDeployWithLB
 #    type: deploy
 #    steps:
-#      - IN: manifest4
+#      - IN: manifest2
 #      - IN: stephLB
 #        applyTo:
 #         - manifest: manifest4
@@ -83,25 +89,18 @@ jobs:
 #           port: 3001
 #      - IN: ecsCluster
 #      - TASK: managed
-#        deployMethod: upgrade      
-        
-#  - name: tripubDeploy
-#    type: deploy
-#    steps:
-#      - IN: manifest4
-#      - IN: tritonCluster
-#      - IN: triggerTripub
-#      - TASK: managed
-#        deployMethod: replace
-      
-  # - name: dclService
-  #   type: deploy
-  #   steps:
-  #     - IN: manifest2
-  #     - IN: dclCluster
-  #     - TASK: managed
-  #       deployMethod: upgrade
+#        deployMethod: upgrade   
 
+
+# ==================== provisions
+  - name: gkeProvisionService
+    type: provision
+    steps:
+      - IN: gkeService
+      - TASK: managed
+
+
+# ==================== release
   - name: release1
     type: release
     steps:
@@ -113,18 +112,16 @@ jobs:
       - TASK: managed
       #   bump: major
 
-  - name: outrunsh
+
+# ==================== runSh
+  - name: runSh
     type: runSh
     steps:
       - IN: gkeProvisionService
       - TASK:
         - script: "pwd"
         - script: "ls" 
-    #    - script: "printenv"
-    #    - script: echo "============================"
-     #   - script: echo $STEPHNODECLUSTER_INTEGRATION_PRIVATEKEY
       # - OUT: nginx-image
-      # - OUT: busybox-image
 
   # - name: sh-sample-python
   #   type: runSh
