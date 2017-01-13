@@ -72,21 +72,18 @@ jobs:
       - TASK: managed
         deployMethod: upgrade
 
-  - name: ecsDeploy
-    type: deploy
-    steps:
+#  - name: ecsDeploy
+#    type: deploy
+#    steps:
 #      - IN: manifest4
-      - IN: manifest4
-      - IN: dockerOptions1
-#      - IN: replicas1
-      - IN: stephLB
-        applyTo:
-         - manifest: manifest4
-           image: scratch-image
-           port: 3001
-      - IN: ecsCluster
-      - TASK: managed
-        deployMethod: upgrade      
+#      - IN: stephLB
+#        applyTo:
+#         - manifest: manifest4
+#           image: scratch-image
+#           port: 3001
+#      - IN: ecsCluster
+#      - TASK: managed
+#        deployMethod: upgrade      
         
 #  - name: tripubDeploy
 #    type: deploy
