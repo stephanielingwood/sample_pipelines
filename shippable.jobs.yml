@@ -25,13 +25,13 @@ jobs:
       - IN: scratch-image
       - TASK: managed      
       
-  - name: manifestIntoManifest
-    type: manifest
-    steps:
-      - IN: manifest1
-      - IN: manifest2
-      - IN: replicas2
-      - TASK: managed      
+#  - name: manifestIntoManifest
+#    type: manifest
+#    steps:
+#      - IN: manifest1
+#      - IN: manifest2
+#      - IN: replicas2
+#     - TASK: managed      
    
 #  - name: manifestQuayPrivate
 #    type: manifest
