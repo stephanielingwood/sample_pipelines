@@ -48,13 +48,13 @@ resources:
       sourceName : "ECSCluster" #name of the cluster we are deploying
       region: "us-east-1"
       
-  - name: gkeCluster
-    type: cluster
-    integration: "stephGKE"
-    pointer:
-      sourceName : "steph-cluster-1" #name of the cluster we are deploying; should be steph-cluster-1
-      region: "us-central1-b"
-      namespace: "namespace2"
+#  - name: gkeCluster
+#    type: cluster
+#    integration: "stephGKE"
+#    pointer:
+#      sourceName : "steph-cluster-1" #name of the cluster we are deploying; should be steph-cluster-1
+#      region: "us-central1-b"
+#      namespace: "namespace2"
       
   - name: tritonCluster
     type: cluster
