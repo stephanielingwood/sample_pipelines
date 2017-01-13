@@ -71,10 +71,11 @@ jobs:
 #      - TASK: managed
 #        deployMethod: replace
       
-  - name: dclService
+  - name: dclDeploy
     type: deploy
     steps:
       - IN: manifest1
+      - IN: replicas0
       - IN: dclCluster
       - TASK: managed
         deployMethod: upgrade
