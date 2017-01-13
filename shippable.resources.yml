@@ -88,7 +88,7 @@ resources:
         fooMeTwice: bar
 
 # ==================== replicas      
-  - name: replicas1
+  - name: replicas0
     type: replicas
     version:
       count: 0
