@@ -150,27 +150,27 @@ resources:
       buildOnTagPush: false
       buildOnPullRequest: false
 
-  - name: sample_node_gitlab
-    type: gitRepo
-    integration: stephGitlab
-    pointer:
-      sourceName: "stephanielingwood/sample_node"
-      buildOnPullRequest: true
+#  - name: sample_node_gitlab
+#    type: gitRepo
+#    integration: stephGitlab
+#    pointer:
+#      sourceName: "stephanielingwood/sample_node"
+#      buildOnPullRequest: true
       
-  - name: sample_node_bitbucket
-    type: gitRepo
-    integration: stephBitbucket
-    pointer:
-      sourceName: "stephanietest/sample_node"
-      buildOnPullRequest: true      
+#  - name: sample_node_bitbucket
+#    type: gitRepo
+#    integration: stephBitbucket
+#   pointer:
+#      sourceName: "stephanietest/sample_node"
+#      buildOnPullRequest: true      
 
 # ==================== notifications
-  - name: slackNotification
-    type: notification
-    integration: stephSlack
-    pointer:
-      recipients:
-        - "@stephanielingwood"
+#  - name: slackNotification
+#    type: notification
+#    integration: stephSlack
+#    pointer:
+#      recipients:
+#        - "@stephanielingwood"
 
 # ==================== time
   - name: timeResource
@@ -179,10 +179,10 @@ resources:
       interval: "*/2 * * 2 *"
 
 # ==================== integrations
-  - name: stephEmail
-    type: integration
-    integration: stephEmail 
+#  - name: stephEmail
+#    type: integration
+#    integration: stephEmail 
 
-  - name: stephNodeCluster
-    type: integration
-    integration: stephNodeCluster 
+#  - name: stephNodeCluster
+#    type: integration
+#    integration: stephNodeCluster 
