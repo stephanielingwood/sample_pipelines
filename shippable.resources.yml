@@ -45,14 +45,14 @@ resources:
     type: cluster
     integration: "stephAWS"
     pointer:
-      sourceName : "ECSCluster" #name of the cluster we are deploying
+      sourceName : "ECSCluster" #name of the cluster to which we are deploying
       region: "us-east-1"
       
   - name: gkeCluster
     type: cluster
     integration: "stephGKE"
     pointer:
-      sourceName : "steph-cluster-1" #name of the cluster we are deploying; should be steph-cluster-1
+      sourceName : "steph-cluster-1" #name of the cluster to which we are deploying; should be steph-cluster-1
       region: "us-central1-b"
       namespace: "namespace2"
       
@@ -60,13 +60,13 @@ resources:
     type: cluster
     integration: "shippableTestTripub"
     pointer:
-      region: "us-east-1"          
+      region: "us-east-1"   # triton creates an instance for us    
       
   - name: dclCluster
     type: cluster
-    integration: "shippableDockerCloud"
+    integration: "stephDCL"
     pointer:
-      sourceName : "dcl-cock-cluster" #name of the cluster we are deploying
+      sourceName : "dclInstance" #name of the nodecluster to which we are deploying
   
 # ==================== loadBalancers    
   - name: stephLB
