@@ -107,8 +107,7 @@ jobs:
     steps:
 #      - IN: ecsDeploy
       - IN: version1
-      - IN: release2
-      - IN: manifest5
+      - IN: manifest3
       - IN: triggerRelease1
       - TASK: managed
       #   bump: major
