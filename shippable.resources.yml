@@ -72,7 +72,7 @@ resources:
     type: cluster
     integration: "stephDDC"
     pointer:
-#      sourceName : "dclInstance" #name of the nodecluster to which we are deploying  
+      sourceName : "vishnu-ddc-02" #name of the nodecluster to which we are deploying  
  
 # ==================== loadBalancers    
   - name: stephLB
