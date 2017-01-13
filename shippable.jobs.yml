@@ -80,6 +80,14 @@ jobs:
       - TASK: managed
         deployMethod: upgrade
 
+  - name: ddcDeploy
+    type: deploy
+    steps:
+      - IN: manifest1
+      - IN: replicas0
+      - IN: ddcCluster
+      - TASK: managed
+        deployMethod: upgrade
 #  - name: ecsDeployWithLB
 #    type: deploy
 #    steps:
