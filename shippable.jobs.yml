@@ -47,12 +47,12 @@ jobs:
 
 
 # ==================== deploys
-  - name: gkeDeploy
-    type: deploy
-    steps:
-      - IN: manifest1
-      - IN: gkeCluster
-        deployMethod: upgrade
+#  - name: gkeDeploy
+#    type: deploy
+#    steps:
+#      - IN: manifest1
+#      - IN: gkeCluster
+#        deployMethod: upgrade
 
   - name: ecsDeploy
     type: deploy
