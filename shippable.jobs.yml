@@ -127,7 +127,7 @@ jobs:
   - name: runSh
     type: runSh
     steps:
-      - IN: gkeProvisionService
+#      - IN: gkeProvisionService
       - TASK:
         - script: "pwd"
         - script: "ls" 
