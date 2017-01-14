@@ -61,7 +61,7 @@ jobs:
       - IN: replicas0
       - IN: ecsCluster
       - TASK: managed
-       deployMethod: upgrade      
+        deployMethod: upgrade      
         
   - name: tripubDeploy
     type: deploy
