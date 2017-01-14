@@ -103,12 +103,12 @@ jobs:
 
 
 # ==================== provisions
-  - name: gkeProvisionService
-    type: provision
-    steps:
-      - IN: gkeProvisionLoadBalancer
-      - IN: gkeProvisionLoadBalancerToo
-      - TASK: managed
+#  - name: gkeProvisionService
+#    type: provision
+#    steps:
+#      - IN: gkeProvisionLoadBalancer
+#      - IN: gkeProvisionLoadBalancerToo
+#      - TASK: managed
 
 
 # ==================== release
