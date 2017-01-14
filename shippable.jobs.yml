@@ -71,13 +71,13 @@ jobs:
 #      - TASK: managed
 #        deployMethod: replace
       
-  - name: dclDeploy
-    type: deploy
-    steps:
-      - IN: manifest1
-      - IN: dclCluster
-      - TASK: managed
-        deployMethod: upgrade
+#  - name: dclDeploy
+#    type: deploy
+#    steps:
+#      - IN: manifest1
+#      - IN: dclCluster
+#      - TASK: managed
+#        deployMethod: upgrade
 
   - name: ddcDeploy
     type: deploy
