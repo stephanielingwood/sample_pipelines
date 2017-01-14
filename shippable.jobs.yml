@@ -54,14 +54,14 @@ jobs:
 #      - IN: gkeCluster
 #        deployMethod: upgrade
 
-  - name: ecsDeploy
-    type: deploy
-    steps:
-      - IN: manifest1
-      - IN: replicas0
-      - IN: ecsCluster
-      - TASK: managed
-        deployMethod: upgrade      
+#  - name: ecsDeploy
+#    type: deploy
+#    steps:
+#      - IN: manifest1
+#      - IN: replicas0
+#      - IN: ecsCluster
+#      - TASK: managed
+#        deployMethod: upgrade      
         
   - name: tripubDeploy
     type: deploy
