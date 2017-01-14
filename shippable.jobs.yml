@@ -47,37 +47,37 @@ jobs:
 
 
 # ==================== deploys
-#  - name: gkeDeploy
-#    type: deploy
-#    steps:
-#      - IN: manifest1
-#      - IN: gkeCluster
-#        deployMethod: upgrade
+  - name: gkeDeploy
+    type: deploy
+    steps:
+      - IN: manifest1
+      - IN: gkeCluster
+        deployMethod: upgrade
 
-#  - name: ecsDeploy
-#    type: deploy
-#    steps:
-#      - IN: manifest1
-#      - IN: replicas0
-#      - IN: ecsCluster
-#      - TASK: managed
-#       deployMethod: upgrade      
+  - name: ecsDeploy
+    type: deploy
+    steps:
+      - IN: manifest1
+      - IN: replicas0
+      - IN: ecsCluster
+      - TASK: managed
+       deployMethod: upgrade      
         
-#  - name: tripubDeploy
-#    type: deploy
-#    steps:
-#      - IN: manifest1
-#      - IN: tritonCluster
-#      - TASK: managed
-#        deployMethod: replace
+  - name: tripubDeploy
+    type: deploy
+    steps:
+      - IN: manifest1
+      - IN: tritonCluster
+      - TASK: managed
+        deployMethod: replace
       
-#  - name: dclDeploy
-#    type: deploy
-#    steps:
-#      - IN: manifest1
-#      - IN: dclCluster
-#      - TASK: managed
-#        deployMethod: upgrade
+  - name: dclDeploy
+    type: deploy
+    steps:
+      - IN: manifest1
+      - IN: dclCluster
+      - TASK: managed
+        deployMethod: upgrade
 
   - name: ddcDeploy
     type: deploy
