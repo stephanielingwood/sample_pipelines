@@ -80,6 +80,65 @@ resources:
     pointer:
       sourceName: steph-lb-1
 
+  - name: gkeProvisionLoadBalancer
+    type: loadBalancer
+    integration: "stephGKE"
+    pointer:
+      sourceName: "my-load-balancer"
+      method: LoadBalancer
+      namespace: "namespace2"
+      clusterName: "steph-cluster-1"
+      region: "us-central1-b"
+    version:
+      ports:
+        - name: my-port
+          port: 100 
+        #  targetPort: 30100
+        #  nodePort: 31000
+        - name: my-other-port
+          port: 101
+          targetPort: 30101
+      selector:
+        loadBalancer: myLoadBalancer
+  #      otherSelector: value
+  #    clusterIP: test.1.2.3
+  #    externalIPs:
+  #      - test.1.2.3.4
+  #    sessionAffinity: "testAffinity"
+  #    loadBalancerIP: "loadBalancerIP2"
+  #    loadBalancerSourceRanges:
+  #      - 127.0.0.1
+
+  - name: gkeProvisionLoadBalancerToo
+    type: loadBalancer
+    integration: "stephGKE"
+    pointer:
+      sourceName: "my-load-balancer-too"
+      method: LoadBalancer
+      namespace: "namespace2"
+      clusterName: "steph-cluster-1"
+      region: "us-central1-b"
+    version:
+      ports:
+        - name: my-port
+          port: 100 
+        #  targetPort: 30100
+        #  nodePort: 31000
+        - name: my-other-port
+          port: 101
+          targetPort: 30101
+      selector:
+        loadBalancer: myLoadBalancer
+  #      otherSelector: value
+  #    clusterIP: test.1.2.3
+  #    externalIPs:
+  #      - test.1.2.3.4
+  #    sessionAffinity: "testAffinity"
+  #    loadBalancerIP: "loadBalancerIP2"
+  #    loadBalancerSourceRanges:
+  #      - 127.0.0.1
+
+
 # ==================== params
   - name: params1
     type: params
