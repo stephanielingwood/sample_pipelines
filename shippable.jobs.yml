@@ -79,14 +79,14 @@ jobs:
 #      - TASK: managed
 #        deployMethod: upgrade
 
-#  - name: ddcDeploy
-#    type: deploy
-#    steps:
-#      - IN: manifest1
-#      - IN: replicas0
-#      - IN: ddcCluster
-#      - TASK: managed
-#        deployMethod: upgrade
+  - name: ddcDeploy
+    type: deploy
+    steps:
+      - IN: manifest1
+      - IN: replicas0
+      - IN: ddcCluster
+      - TASK: managed
+        deployMethod: upgrade
 
 #  - name: ecsDeployWithLB
 #    type: deploy
@@ -103,12 +103,12 @@ jobs:
 
 
 # ==================== provisions
-#  - name: gkeProvisionService
-#    type: provision
-#    steps:
-#      - IN: gkeProvisionLoadBalancer
-#      - IN: gkeProvisionLoadBalancerToo
-#      - TASK: managed
+  - name: gkeProvisionService
+    type: provision
+    steps:
+      - IN: gkeProvisionLoadBalancer
+      - IN: gkeProvisionLoadBalancerToo
+      - TASK: managed
 
 
 # ==================== release
