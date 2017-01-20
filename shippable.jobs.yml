@@ -5,8 +5,8 @@ jobs:
     type: manifest
     steps:
       - IN: nginx-image
-      - IN: params1
-      - IN: replicas0      
+#      - IN: params1
+#      - IN: replicas0      
       - TASK: managed
 #     on_start:
 #       - NOTIFY: slackNotification
@@ -19,15 +19,15 @@ jobs:
     type: manifest
     steps:
       - IN: busybox-image
-      - IN: params1
-      - IN: replicas2      
+ #     - IN: params1
+ #     - IN: replicas2      
       - TASK: managed      
 
   - name: manifest3
     type: manifest
     steps:
-      - IN: params1
-      - IN: replicas0
+#      - IN: params1
+#      - IN: replicas0
       - IN: scratch-image
       - TASK: managed      
       
@@ -64,8 +64,8 @@ jobs:
     type: deploy
     steps:
       - IN: manifest1
-      - IN: manifest2
-      - IN: manifest3
+#      - IN: manifest2
+#      - IN: manifest3
       - IN: ecsCluster
       - TASK: managed
         deployMethod: upgrade      
