@@ -58,6 +58,7 @@ jobs:
     type: deploy
     steps:
       - IN: manifest1
+      - IN: manifest2
       - IN: replicas0
       - IN: ecsCluster
       - TASK: managed
