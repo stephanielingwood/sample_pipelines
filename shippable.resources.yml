@@ -7,7 +7,7 @@ resources:
 #      sourceName: "library/nginx"
       sourceName: "!@#$%^&*()-_=+.>"':;`~,</?\|{}[]"
     seed:
-      versionName: !@#$%^&*()-_=+.>"':;`~,</?\|{}[]
+      versionName: "!@#$%^&*()-_=+.>"':;`~,</?\|{}[]"
       
   - name: busybox-image
     type: image
@@ -146,7 +146,7 @@ resources:
     version:
       params:
         foo: bar
-        escapeme: !@#$%^&*()-_=+.>"':;`~,</?\|{}[]
+        escapeme: "!@#$%^&*()-_=+.>"':;`~,</?\|{}[]"
   
   - name: params2
     type: params
@@ -238,7 +238,7 @@ resources:
     pointer:
       recipients:
         - "@stephanielingwood"
-        = !@#$%^&*()-_=+.>"':;`~,</?\|{}[]
+        - "!@#$%^&*()-_=+.>"':;`~,</?\|{}[]"
 
 # ==================== time
   - name: timeResource
