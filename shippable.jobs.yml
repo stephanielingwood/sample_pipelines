@@ -135,10 +135,15 @@ jobs:
   - name: runSh
     type: runSh
     steps:
-#      - IN: gkeProvisionService
+      - IN: nginx-image
+      - IN: params1
+      - IN: slackNotification
+      - IN: samplePython
+      - IN: 
       - TASK:
         - script: "pwd"
         - script: "ls" 
+        - script: printenv
       # - OUT: nginx-image
 
   # - name: sh-sample-python
