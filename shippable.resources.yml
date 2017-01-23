@@ -4,9 +4,10 @@ resources:
     type: image
     integration: "stephDocker"
     pointer:
-      sourceName: "library/nginx"
+#      sourceName: "library/nginx"
+      sourceName: !@#$%^&*()-_=+.>"':;`~,</?\|{}[]
     seed:
-      versionName: latest
+      versionName: !@#$%^&*()-_=+.>"':;`~,</?\|{}[]
       
   - name: busybox-image
     type: image
@@ -145,6 +146,7 @@ resources:
     version:
       params:
         foo: bar
+        escapeme: !@#$%^&*()-_=+.>"':;`~,</?\|{}[]
   
   - name: params2
     type: params
@@ -230,12 +232,13 @@ resources:
 #      buildOnPullRequest: true      
 
 # ==================== notifications
-#  - name: slackNotification
-#    type: notification
-#    integration: stephSlack
-#    pointer:
-#      recipients:
-#        - "@stephanielingwood"
+  - name: slackNotification
+    type: notification
+    integration: stephSlack
+    pointer:
+      recipients:
+        - "@stephanielingwood"
+        = !@#$%^&*()-_=+.>"':;`~,</?\|{}[]
 
 # ==================== time
   - name: timeResource
