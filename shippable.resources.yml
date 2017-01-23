@@ -5,7 +5,7 @@ resources:
     integration: "stephDocker"
     pointer:
 #      sourceName: "library/nginx"
-      sourceName: !@#$%^&*()-_=+.>"':;`~,</?\|{}[]
+      sourceName: "!@#$%^&*()-_=+.>"':;`~,</?\|{}[]"
     seed:
       versionName: !@#$%^&*()-_=+.>"':;`~,</?\|{}[]
       
