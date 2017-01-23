@@ -137,7 +137,7 @@ jobs:
     steps:
       - IN: nginx-image
       - IN: params1
-      - IN: slackNotification
+      - IN: fakeGKEIntegration
       - IN: samplePython
       - TASK:
         - script: "pwd"
