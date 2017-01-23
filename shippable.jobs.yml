@@ -139,7 +139,6 @@ jobs:
       - IN: params1
       - IN: slackNotification
       - IN: samplePython
-      - IN: 
       - TASK:
         - script: "pwd"
         - script: "ls" 
