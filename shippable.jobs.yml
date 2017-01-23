@@ -15,7 +15,6 @@ jobs:
 #     on_failure:
 #       - NOTIFY: slackNotification
 
-
   - name: manifest2
     type: manifest
     steps:
