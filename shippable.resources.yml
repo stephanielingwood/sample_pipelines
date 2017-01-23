@@ -238,7 +238,6 @@ resources:
     pointer:
       recipients:
         - "@stephanielingwood"
-        - "!@#$%^&*()-_=+.>':;`~,</?\\|{}[]"
 
 # ==================== time
   - name: timeResource
@@ -250,6 +249,10 @@ resources:
 #  - name: stephEmail
 #    type: integration
 #    integration: stephEmail 
+
+  - name: fakeGKEIntegration
+    type: integration
+    integration: fakeGKEIntegration
 
 #  - name: stephNodeCluster
 #    type: integration
