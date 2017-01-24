@@ -114,6 +114,7 @@ jobs:
   - name: gkeProvisionService
     type: provision
     steps:
+      - IN: params1
       - IN: gkeProvisionLoadBalancer
       - IN: gkeProvisionLoadBalancerToo
       - TASK: managed
