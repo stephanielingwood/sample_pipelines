@@ -147,6 +147,7 @@ resources:
       params:
         foo: bar
         escapeme: "!@#$%^&*()-_=+.>':;`~,</?\\|{}[]"
+        secure: iiiII8usrFo17spghH+h4jSD4S18CLp+HSSlefLefDB4Tcm6G3PwyHDDAgPA1SsmsO7fJwm/UJYBpbtqLb11fhzAzTyAyAwWG9OuhhVnSPNYA8Tii1FDZYNUSXyQGNHQ0ws4IgHshAgE5dYAYsx9ukHwztZ3RcOF3abnzHv2bQcNjTefIwif82lAEETpsS1QUM34gZ3EAwnLK77jS43Qolw0M/mtEsJkYdTQ2UQiMoeJiSIM/UodniHIvrAfCL/HNT7p+Mm6D/gSgn0tpfZxVIQL2J/1V+QgRopYkBBF+VK76n3aGQDREr2a1Pm1Pj7waohqE4RpsZIUH4xNE3rZDw== 
   
   - name: params2
     type: params
