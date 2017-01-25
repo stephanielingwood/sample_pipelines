@@ -204,7 +204,7 @@ resources:
     integration: stephGithub
     pointer:
       sourceName: "stephanielingwood/sample_python"
-      branch: "noMatrix"
+#      branch: "noMatrix"
       buildOnCommit: true
       buildOnRelease: true
       buildOnTagPush: true
