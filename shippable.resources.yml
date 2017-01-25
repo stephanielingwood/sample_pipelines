@@ -5,9 +5,9 @@ resources:
     integration: "stephDocker"
     pointer:
 #      sourceName: "library/nginx"
-      sourceName: "!@#$%^&*()-_=+.>':;`~,</?\\|{}[]"
+      sourceName: thissourcenameisreallylongcheckitoutaaaa
     seed:
-      versionName: "!@#$%^&*()-_=+.>':;`~,</?\\|{}[]"
+      versionName: bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
       
   - name: busybox-image
     type: image
