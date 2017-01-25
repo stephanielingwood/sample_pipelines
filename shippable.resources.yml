@@ -9,7 +9,6 @@ resources:
     seed:
       versionName: "!@#$%^&*()-_=+.>':;`~,</?\\|{}[]"
       
-      
   - name: busybox-image
     type: image
     integration: "stephDocker"
