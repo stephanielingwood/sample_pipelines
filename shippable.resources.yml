@@ -147,8 +147,6 @@ resources:
       params:
         foo: bar
         escapeme: "!@#$%^&*()-_=+.>':;`~,</?\\|{}[]"
-#        secure: iiiII8usrFo17spghH+h4jSD4S18CLp+HSSlefLefDB4Tcm6G3PwyHDDAgPA1SsmsO7fJwm/UJYBpbtqLb11fhzAzTyAyAwWG9OuhhVnSPNYA8Tii1FDZYNUSXyQGNHQ0ws4IgHshAgE5dYAYsx9ukHwztZ3RcOF3abnzHv2bQcNjTefIwif82lAEETpsS1QUM34gZ3EAwnLK77jS43Qolw0M/mtEsJkYdTQ2UQiMoeJiSIM/UodniHIvrAfCL/HNT7p+Mm6D/gSgn0tpfZxVIQL2J/1V+QgRopYkBBF+VK76n3aGQDREr2a1Pm1Pj7waohqE4RpsZIUH4xNE3rZDw== 
-        secure: llwYxo1/qGdnM9g1ckvPxeG1ECfTnaYva+1MGXYd5grBKrk5VpxlhoxStEzHjIPmBAOeosb7LXvipovfCHkIeLImWnVse+m3kLdguyJQDyJx9dsPiBHwv8BAxLlPj/rEKUUQg5wJ3QD1K1n5PuKO/lPVQ+nYsTNo5zBDfaBP8kYlc9s5cLVoftLHVLb8Knzaj4sAH45u9fxay8XrKVW830PWxutE8NVWmnSFpOAQgWRRz8H/KajJpq5ZL5Hb96rn4/9hBoT2QlU9dACXKdyh2tYtm5F86SOgoD6t28saWQF2hQJWc1DdhPwWHDBjnTZEZybkKGIrAKe1Zs4VrouO9w==
 
   - name: params2
     type: params
