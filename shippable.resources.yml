@@ -206,6 +206,10 @@ resources:
     pointer:
       sourceName: "stephanielingwood/sample_python"
       branch: "noMatrix"
+      buildOnCommit: true
+      buildOnRelease: true
+      buildOnTagPush: true
+      buildOnPullRequest: true      
       
   - name: sample_node
     type: gitRepo
