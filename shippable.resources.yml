@@ -258,6 +258,10 @@ resources:
     type: integration
     integration: fakeGKEIntegration
 
+  - name: awsIntegration
+    type: integration
+    integration: stephAWS
+
 #  - name: stephNodeCluster
 #    type: integration
 #    integration: stephNodeCluster 
