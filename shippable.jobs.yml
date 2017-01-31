@@ -139,10 +139,13 @@ jobs:
       - IN: nginx-image
       - IN: params1
       - IN: fakeGKEIntegration
+      - IN: samplePython
       - IN: awsIntegration
       - TASK:
         - script: "pwd"
         - script: "ls"
+        - script: sudo apt-get install tree
+        - script: tree
         - script: mkdir -p ~/.aws
         - script: AWS_PATH=~/.aws        
         - script: rm -f $AWS_PATH/config
