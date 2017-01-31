@@ -145,6 +145,7 @@ jobs:
         - script: "ls" 
         - script: aws --version
         - script: sudo apt-get install tree
+        - script: cd ..
         - script: tree
       #  - script: aws ecs list-container-instances --cluster ECSCluster
       # - OUT: nginx-image
