@@ -147,11 +147,15 @@ jobs:
       #  - script: sudo apt-get install tree
         - script: mkdir ../.aws
         - script: touch ../.aws/config
-        - script: echo "[default]\nregion=region\noutput=json" > ../.aws/config
+        - script: echo "[default]" >> ../.aws/config
+        - script: echo "region=us-east-1" >> ../.aws/config     
+        - script: echo "output=json" >> ../.aws/config 
         - script: echo "here's the config file:"
         - script: cat ../.aws/config
         - script: touch ../.aws/credentials
-        - script: echo "[default]\naws_access_key_id=$AWSINTEGRATION_INTEGRATION_AWS_ACCESS_KEY_ID\naws_secret_access_key=$AWSINTEGRATION_INTEGRATION_AWS_SECRET_ACCESS_KEY" > ../.aws/credentials
+        - script: echo "[default]" >> ../.aws/credentials
+        - script: echo "aws_access_key_id=$AWSINTEGRATION_INTEGRATION_AWS_ACCESS_KEY_ID" >> ../.aws/credentials
+        - script: echo "aws_secret_access_key=$AWSINTEGRATION_INTEGRATION_AWS_SECRET_ACCESS_KEY" >> ../.aws/credentials
         - script: echo "here's the credentials file:"
         - script: cat ../.aws/credentials
         - script: aws configure --profile default
