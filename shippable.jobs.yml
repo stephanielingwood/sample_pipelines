@@ -145,11 +145,20 @@ jobs:
         - script: "ls" 
         - script: aws --version
       #  - script: sudo apt-get install tree
-        - script: cd ..
+        - script: mkdir ../.aws
+        - script: touch ../.aws/config
+        - script: echo "[default]\nregion=region\noutput=json" > ../.aws/config
+        - script: echo "here's the config file:"
+        - script: cat ../.aws/config
+        - script: touch ../.aws/credentials
+        - script: echo "[default]\naws_access_key_id=$AWSINTEGRATION_INTEGRATION_AWS_ACCESS_KEY_ID\naws_secret_access_key=$AWSINTEGRATION_INTEGRATION_AWS_SECRET_ACCESS_KEY" > ../.aws/credentials
+        - script: echo "here's the credentials file:"
+        - script: cat ../.aws/credentials
+        - script: aws configure --profile default
         - script: pwd
         - script: "ls -a"
         - script: whoami
-      #  - script: aws ecs list-container-instances --cluster ECSCluster
+        - script: aws ecs list-container-instances --cluster ECSCluster
       # - OUT: nginx-image
 
   # - name: sh-sample-python
