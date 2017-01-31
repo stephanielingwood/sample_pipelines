@@ -146,7 +146,7 @@ jobs:
         - script: "ls"
         - script: sudo apt-get install tree
         - script: tree
-        - script: cat $SAMPLEPYTHON_PATH/shippable.yml
+        - script: cat $SAMPLEPYTHON_PATH/gitRepo/shippable.yml
         - script: mkdir -p ~/.aws
         - script: AWS_PATH=~/.aws        
         - script: rm -f $AWS_PATH/config
