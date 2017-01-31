@@ -160,7 +160,7 @@ jobs:
         - script: echo "aws_secret_access_key=$AWSINTEGRATION_INTEGRATION_AWS_SECRET_ACCESS_KEY" >> $AWS_PATH/credentials
         - script: echo "here's the credentials file:"
         - script: cat $AWS_PATH/credentials
-        - script: aws configure --profile default
+       # - script: aws configure --profile default
         - script: pwd
         - script: "ls -a"
         - script: whoami
