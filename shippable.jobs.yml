@@ -139,11 +139,14 @@ jobs:
       - IN: nginx-image
       - IN: params1
       - IN: fakeGKEIntegration
-      - IN: samplePython
+      - IN: awsIntegration
       - TASK:
         - script: "pwd"
         - script: "ls" 
-        - script: printenv
+        - script: aws --version
+        - script: sudo apt-get install tree
+        - script: tree
+      #  - script: aws ecs list-container-instances --cluster ECSCluster
       # - OUT: nginx-image
 
   # - name: sh-sample-python
