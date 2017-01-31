@@ -144,9 +144,10 @@ jobs:
         - script: "pwd"
         - script: "ls" 
         - script: aws --version
-        - script: sudo apt-get install tree
+      #  - script: sudo apt-get install tree
         - script: cd ..
-        - script: ls -a
+        - script: pwd
+        - script: "ls -a"
         - script: whoami
       #  - script: aws ecs list-container-instances --cluster ECSCluster
       # - OUT: nginx-image
