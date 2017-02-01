@@ -1,9 +1,9 @@
 jobs:
 
-  - name: myRunCLIJob
-    type: runSh
+  - name: runCLIJob
+    type: runCLI
     steps:
-      - IN: myCliConfigResource
+      - IN: cliConfigResource2
       - TASK:
         - script: "pwd"
 
