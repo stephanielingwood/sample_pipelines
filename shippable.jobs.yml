@@ -1,5 +1,12 @@
 jobs:
 
+  - name: myRunCLIJob
+    type: runSh
+    steps:
+      - IN: myCliConfigResource
+      - TASK:
+        - script: "pwd"
+
 # ==================== manifests
   - name: manifest1
     type: manifest
