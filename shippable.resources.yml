@@ -1,4 +1,8 @@
 resources:
+  - name: myCliConfigResource
+    type: integration
+    integration: stephAWS
+
 # ==================== images
   - name: nginx-image
     type: image
