@@ -1,6 +1,6 @@
 resources:
-  - name: cliConfigResource
-    type: integration
+  - name: cliConfigResource2
+    type: cliConfig
     integration: stephAWS
 
 # ==================== images
