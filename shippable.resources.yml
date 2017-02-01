@@ -1,5 +1,5 @@
 resources:
-  - name: myCliConfigResource
+  - name: cliConfigResource
     type: integration
     integration: stephAWS
 
