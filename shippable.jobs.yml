@@ -31,7 +31,8 @@ jobs:
 #        - script: eb init "my-application-name" -r "us-east-1" -p "Node.js"
 #        - script: eb terminate --all --force "my-application-name"
 #        - script: aws ecs list-container-instances --cluster ECSCluster
-         - script: echo "hello world"
+        - script: echo "hello world"
+        - script: kubectl get namespaces
 
 
 # ==================== manifests
