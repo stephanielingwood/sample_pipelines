@@ -3,10 +3,29 @@ jobs:
   - name: runCLIJob
     type: runCLI
     steps:
-      - IN: cliConfigResource2
+      - IN: awsConfig
+      - IN: awsIntegration
       - TASK:
         - script: "pwd"
-
+        - script: "ls"
+#        - script: mkdir -p ~/.aws
+#        - script: AWS_PATH=~/.aws        
+#        - script: rm -f $AWS_PATH/config
+#        - script: rm -f $AWS_PATH/credentials
+#        - script: echo "[default]" >> $AWS_PATH/config
+#        - script: echo "region=us-east-1" >> $AWS_PATH/config     
+#       - script: echo "output=json" >> $AWS_PATH/config 
+ #       - script: echo "here's the config file:"
+ #       - script: cat $AWS_PATH/config
+  #      - script: echo "[default]" >> $AWS_PATH/credentials
+#        - script: echo "aws_access_key_id=$AWSINTEGRATION_INTEGRATION_AWS_ACCESS_KEY_ID" >> $AWS_PATH/credentials
+#        - script: echo "aws_secret_access_key=$AWSINTEGRATION_INTEGRATION_AWS_SECRET_ACCESS_KEY" >> $AWS_PATH/credentials
+#        - script: echo "here's the credentials file:"
+#        - script: cat $AWS_PATH/credentials
+        - script: aws configure set aws_access_key_id $AWSINTEGRATION_INTEGRATION_AWS_ACCESS_KEY_ID
+        - script: aws configure set aws_secret_access_key $AWSINTEGRATION_INTEGRATION_AWS_SECRET_ACCESS_KEY
+        - script: aws configure set region us-east-1
+        - script: aws ecs list-container-instances --cluster ECSCluster
 
 # ==================== manifests
   - name: manifest1
