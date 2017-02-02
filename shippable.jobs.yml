@@ -27,7 +27,7 @@ jobs:
         - script: aws configure set region us-east-1
         - script: cat $AWS_PATH/credentials
         - script: cat $AWS_PATH/config
-     #   - script: eb init "my-application-name" -r "us-east-1" -p "Node.js"
+        - script: eb init "my-application-name" -r "us-east-1" -p "Node.js"
         - script: eb terminate --all --force "my-application-name"
         - script: aws ecs list-container-instances --cluster ECSCluster
 
