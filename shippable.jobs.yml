@@ -32,6 +32,7 @@ jobs:
 #        - script: eb terminate --all --force "my-application-name"
 #        - script: aws ecs list-container-instances --cluster ECSCluster
         - script: echo "hello world"
+        - script: docker --version
         - script: kubectl get namespaces
 
 
