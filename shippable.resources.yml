@@ -2,8 +2,12 @@ resources:
   - name: awsConfig
     type: cliConfig
     integration: stephAWS
-    version: 
+    pointer: 
       region: "us-east-1"
+
+  - name: kubernetesConfig
+    type: cliConfig
+    integration: stephGoogleKubernetes
 
 # ==================== images
   - name: nginx-image
