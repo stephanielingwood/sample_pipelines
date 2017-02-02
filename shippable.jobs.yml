@@ -25,7 +25,7 @@ jobs:
         - script: aws configure set aws_access_key_id $AWSINTEGRATION_INTEGRATION_AWS_ACCESS_KEY_ID
         - script: aws configure set aws_secret_access_key $AWSINTEGRATION_INTEGRATION_AWS_SECRET_ACCESS_KEY
         - script: aws configure set region us-east-1
-        - script: eb init my-application-name us-east-1 Node.js
+        - script: eb init "my-application-name" -r "us-east-1" -p "Node.js"
         - script: aws ecs list-container-instances --cluster ECSCluster
 
 # ==================== manifests
