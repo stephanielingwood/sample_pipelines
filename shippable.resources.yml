@@ -9,6 +9,7 @@ resources:
     type: cliConfig
     integration: stephGoogleKubernetes
 
+
 # ==================== images
   - name: nginx-image
     type: image
