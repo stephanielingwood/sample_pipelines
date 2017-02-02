@@ -3,13 +3,14 @@ jobs:
   - name: runCLIJob
     type: runCLI
     steps:
-      - IN: awsConfig
-      - IN: awsIntegration
+#      - IN: awsConfig
+#      - IN: awsIntegration
+      - IN: kubernetesConfig
       - TASK:
         - script: "pwd"
         - script: "ls"
 #        - script: mkdir -p ~/.aws
-        - script: AWS_PATH=~/.aws        
+#        - script: AWS_PATH=~/.aws        
 #        - script: rm -f $AWS_PATH/config
 #        - script: rm -f $AWS_PATH/credentials
 #        - script: echo "[default]" >> $AWS_PATH/config
@@ -22,14 +23,16 @@ jobs:
 #        - script: echo "aws_secret_access_key=$AWSINTEGRATION_INTEGRATION_AWS_SECRET_ACCESS_KEY" >> $AWS_PATH/credentials
 #        - script: echo "here's the credentials file:"
 #        - script: cat $AWS_PATH/credentials
-        - script: aws configure set aws_access_key_id $AWSINTEGRATION_INTEGRATION_AWS_ACCESS_KEY_ID
-        - script: aws configure set aws_secret_access_key $AWSINTEGRATION_INTEGRATION_AWS_SECRET_ACCESS_KEY
-        - script: aws configure set region us-east-1
-        - script: cat $AWS_PATH/credentials
-        - script: cat $AWS_PATH/config
-        - script: eb init "my-application-name" -r "us-east-1" -p "Node.js"
-        - script: eb terminate --all --force "my-application-name"
-        - script: aws ecs list-container-instances --cluster ECSCluster
+#        - script: aws configure set aws_access_key_id $AWSINTEGRATION_INTEGRATION_AWS_ACCESS_KEY_ID
+#        - script: aws configure set aws_secret_access_key $AWSINTEGRATION_INTEGRATION_AWS_SECRET_ACCESS_KEY
+#        - script: aws configure set region us-east-1
+#        - script: cat $AWS_PATH/credentials
+#        - script: cat $AWS_PATH/config
+#        - script: eb init "my-application-name" -r "us-east-1" -p "Node.js"
+#        - script: eb terminate --all --force "my-application-name"
+#        - script: aws ecs list-container-instances --cluster ECSCluster
+         - script: echo "hello world"
+
 
 # ==================== manifests
   - name: manifest1
