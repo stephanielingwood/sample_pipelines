@@ -1,7 +1,9 @@
 resources:
-  - name: cliConfigResource2
+  - name: awsConfig
     type: cliConfig
     integration: stephAWS
+    version: 
+      region: "us-east-1"
 
 # ==================== images
   - name: nginx-image
