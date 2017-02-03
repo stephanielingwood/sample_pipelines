@@ -31,8 +31,9 @@ jobs:
 #        - script: eb terminate --all --force "my-application-name"
 #        - script: aws ecs list-container-instances --cluster ECSCluster
         - script: echo "hello world"
-        - script: docker --version
-        - script: docker pull quay.io/stephanielingwood/busybox:version1
+        - script: which envsubst
+#        - script: docker --version
+#        - script: docker pull quay.io/stephanielingwood/busybox:version1
 
 
 # ==================== manifests
