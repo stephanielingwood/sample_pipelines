@@ -4,7 +4,7 @@ jobs:
     type: runCLI
     steps:
 #      - IN: awsConfig
-      - IN: kubernetesConfig
+      - IN: quayConfig
       - TASK:
         - script: "pwd"
         - script: "ls"
@@ -32,7 +32,7 @@ jobs:
 #        - script: aws ecs list-container-instances --cluster ECSCluster
         - script: echo "hello world"
         - script: docker --version
-        - script: kubectl get namespaces
+        - script: docker pull quay.io/stephanielingwood/busybox:version1
 
 
 # ==================== manifests
