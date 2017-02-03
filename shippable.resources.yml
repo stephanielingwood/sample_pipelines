@@ -8,6 +8,10 @@ resources:
   - name: kubernetesConfig
     type: cliConfig
     integration: stephAWSKubernetes
+    
+  - name: quayConfig
+    type: cliConfig
+    integration: stephQuay
 
 # ==================== images
   - name: nginx-image
