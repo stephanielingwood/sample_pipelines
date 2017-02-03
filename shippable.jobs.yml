@@ -3,6 +3,7 @@ jobs:
   - name: runCLIJob
     type: runCLI
     steps:
+      - IN: kubernetesConfig
       - IN: quayConfig    
       - IN: dockerHubConfig
       - TASK:
@@ -32,9 +33,9 @@ jobs:
 #        - script: aws ecs list-container-instances --cluster ECSCluster
         - script: echo "hello world"
 #        - script: docker --version
-        - script: docker pull stephanielingwood/band-name-generator
-        - script: docker pull quay.io/stephanielingwood/busybox:version1
-
+ #       - script: docker pull stephanielingwood/band-name-generator
+ #       - script: docker pull quay.io/stephanielingwood/busybox:version1
+        - script: kubectl get namespaces
 
 # ==================== manifests
   - name: manifest1
