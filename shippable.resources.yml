@@ -156,7 +156,7 @@ resources:
     version:
       params:
         foo: bar
-        escapeme: "!@#$%^&*()-_=+.>':;`~,</?\\|{}[]"
+        fooMeTwice: bar
 
   - name: params2
     type: params
