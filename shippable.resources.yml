@@ -12,6 +12,10 @@ resources:
   - name: quayConfig
     type: cliConfig
     integration: stephQuay
+    
+  - name: dockerHubConfig
+    type: cliConfig
+    integration: stephDocker
 
 # ==================== images
   - name: nginx-image
