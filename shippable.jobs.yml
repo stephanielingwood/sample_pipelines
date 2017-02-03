@@ -17,7 +17,7 @@ jobs:
 #        - script: docker --version
  #       - script: docker pull stephanielingwood/band-name-generator
  #       - script: docker pull quay.io/stephanielingwood/busybox:version1
-        - script: docker pull 003199252576.dkr.ecr.us-east-1.amazonaws.com/php
+        - script: docker pull 003199252576.dkr.ecr.us-east-1.amazonaws.com/php:5.5
 #        - script: kubectl get namespaces
 
 # ==================== manifests
