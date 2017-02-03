@@ -3,6 +3,12 @@ resources:
     type: cliConfig
     integration: stephAWS
     pointer: 
+      region: "us-west-2"
+      
+  - name: ecrConfig
+    type: cliConfig
+    integration: stephECR
+    pointer:
       region: "us-east-1"
 
   - name: kubernetesConfig
