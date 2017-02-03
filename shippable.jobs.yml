@@ -4,7 +4,7 @@ jobs:
     type: runCLI
     steps:
       - IN: dockerHubConfig
-#      - IN: quayConfig
+      - IN: quayConfig
       - TASK:
         - script: "pwd"
         - script: "ls"
@@ -33,7 +33,7 @@ jobs:
         - script: echo "hello world"
 #        - script: docker --version
         - script: docker pull stephanielingwood/band-name-generator
-#        - script: docker pull quay.io/stephanielingwood/busybox:version1
+        - script: docker pull quay.io/stephanielingwood/busybox:version1
 
 
 # ==================== manifests
