@@ -3,7 +3,7 @@ jobs:
   - name: runCLIJob
     type: runCLI
     steps:
-      - IN: dockerConfig
+      - IN: dockerHubConfig
 #      - IN: quayConfig
       - TASK:
         - script: "pwd"
