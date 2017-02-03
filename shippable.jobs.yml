@@ -13,7 +13,7 @@ jobs:
         - script: "ls"
         - script: eb init "my-application-name" -r "us-west-2" -p "Node.js"
         - script: eb terminate --all --force "my-application-name"
-        - script: aws ecs list-container-instances --cluster my-cluster
+        - script: aws ecs list-clusters
 #        - script: docker --version
  #       - script: docker pull stephanielingwood/band-name-generator
  #       - script: docker pull quay.io/stephanielingwood/busybox:version1
