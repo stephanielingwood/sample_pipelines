@@ -3,7 +3,7 @@ jobs:
   - name: runCLIJob
     type: runCLI
     steps:
-      - IN: ecrConfig
+#      - IN: ecrConfig
       - IN: awsConfig      
 #      - IN: kubernetesConfig
 #      - IN: quayConfig    
