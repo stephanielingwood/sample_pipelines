@@ -9,8 +9,9 @@ jobs:
 #      - IN: quayConfig    
 #      - IN: dockerHubConfig
       - TASK:
+        - script: cat /root/.bashrc
         - script: terraform --version
-        - script: jq
+#        - script: jq
 #        - script: "pwd"
 #        - script: "ls"
 #        - script: eb init "my-application-name" -r "us-west-2" -p "Node.js"
