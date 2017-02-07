@@ -9,6 +9,7 @@ jobs:
 #      - IN: quayConfig    
 #      - IN: dockerHubConfig
       - TASK:
+        - script: echo $PATH
         - script: cat /root/.bashrc
         - script: ls -la /usr/local/bin
         - script: ls -la /usr/local/bin/terraform
