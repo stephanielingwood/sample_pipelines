@@ -10,6 +10,8 @@ jobs:
 #      - IN: dockerHubConfig
       - TASK:
         - script: cat /root/.bashrc
+        - script: ls -la /usr/local/bin
+        - script: ls -la /usr/local/bin/terraform
         - script: terraform --version
 #        - script: jq
 #        - script: "pwd"
