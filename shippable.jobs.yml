@@ -4,7 +4,7 @@ jobs:
     type: runCLI
     steps:
 #      - IN: ecrConfig
-#      - IN: awsConfig      
+      - IN: awsConfig      
 #      - IN: kubernetesConfig
 #      - IN: quayConfig    
 #      - IN: dockerHubConfig
