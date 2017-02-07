@@ -4,21 +4,23 @@ jobs:
     type: runCLI
     steps:
 #      - IN: ecrConfig
-      - IN: awsConfig      
-      - IN: kubernetesConfig
-      - IN: quayConfig    
-      - IN: dockerHubConfig
+#      - IN: awsConfig      
+#      - IN: kubernetesConfig
+#      - IN: quayConfig    
+#      - IN: dockerHubConfig
       - TASK:
-        - script: "pwd"
-        - script: "ls"
-        - script: eb init "my-application-name" -r "us-west-2" -p "Node.js"
-        - script: eb terminate --all --force "my-application-name"
-        - script: aws ecs list-clusters
+        - script: terraform
+        - script: jq
+#        - script: "pwd"
+#        - script: "ls"
+#        - script: eb init "my-application-name" -r "us-west-2" -p "Node.js"
+#        - script: eb terminate --all --force "my-application-name"
+#        - script: aws ecs list-clusters
 #        - script: docker --version
-        - script: docker pull stephanielingwood/band-name-generator
-        - script: docker pull quay.io/stephanielingwood/busybox:version1
-        - script: docker pull 003199252576.dkr.ecr.us-east-1.amazonaws.com/php:5.5
-        - script: kubectl get namespaces
+#        - script: docker pull stephanielingwood/band-name-generator
+#        - script: docker pull quay.io/stephanielingwood/busybox:version1
+#        - script: docker pull 003199252576.dkr.ecr.us-east-1.amazonaws.com/php:5.5
+#        - script: kubectl get namespaces
 
 # ==================== manifests
   - name: manifest1
