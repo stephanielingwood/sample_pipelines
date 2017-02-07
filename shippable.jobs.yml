@@ -10,7 +10,8 @@ jobs:
 #      - IN: dockerHubConfig
       - TASK:
         - script: echo $PATH
-        - script: cat /root/.bashrc
+        - script: whoami
+        - script: cat ~/.bashrc
         - script: ls -la /usr/local/bin
         - script: ls -la /usr/local/bin/terraform
         - script: terraform --version
