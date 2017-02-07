@@ -9,7 +9,7 @@ jobs:
 #      - IN: quayConfig    
 #      - IN: dockerHubConfig
       - TASK:
-#        - script: terraform
+        - script: terraform --version
         - script: jq
 #        - script: "pwd"
 #        - script: "ls"
