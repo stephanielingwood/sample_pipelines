@@ -174,8 +174,12 @@ jobs:
         - script: cd doesntexist
     on_success: 
       - script: echo "on success------------------"
+      - script: cd doesntexist
     on_failure: 
       - script: echo "on failure------------------"
+      - script: cd doesntexist
+    always:
+      - script: echo "always"
 
       # - OUT: nginx-image
 
