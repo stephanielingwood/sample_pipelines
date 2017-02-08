@@ -171,6 +171,7 @@ jobs:
       - TASK:
         - script: "pwd"
         - script: "ls"
+        - script: cd doesntexist
     on_success: 
       - script: echo "on success------------------"
     on_failure: 
