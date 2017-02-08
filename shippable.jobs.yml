@@ -171,24 +171,11 @@ jobs:
       - TASK:
         - script: "pwd"
         - script: "ls"
-        - script: sudo apt-get install tree
-        - script: tree
-        - script: cat $SAMPLEPYTHON_PATH/gitRepo/shippable.yml
-        - script: mkdir -p ~/.aws
-        - script: AWS_PATH=~/.aws        
-        - script: rm -f $AWS_PATH/config
-        - script: rm -f $AWS_PATH/credentials
-        - script: echo "[default]" >> $AWS_PATH/config
-        - script: echo "region=us-east-1" >> $AWS_PATH/config     
-        - script: echo "output=json" >> $AWS_PATH/config 
-        - script: echo "here's the config file:"
-        - script: cat $AWS_PATH/config
-        - script: echo "[default]" >> $AWS_PATH/credentials
-        - script: echo "aws_access_key_id=$AWSINTEGRATION_INTEGRATION_AWS_ACCESS_KEY_ID" >> $AWS_PATH/credentials
-        - script: echo "aws_secret_access_key=$AWSINTEGRATION_INTEGRATION_AWS_SECRET_ACCESS_KEY" >> $AWS_PATH/credentials
-        - script: echo "here's the credentials file:"
-        - script: cat $AWS_PATH/credentials
-        - script: aws ecs list-container-instances --cluster ECSCluster
+    on_success: 
+      - script: echo "on success------------------"
+    on_failure: 
+      - script: echo "on failure------------------"
+
       # - OUT: nginx-image
 
   # - name: sh-sample-python
