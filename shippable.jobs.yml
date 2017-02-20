@@ -172,6 +172,7 @@ jobs:
       - TASK:
         - script: "pwd"
         - script: "ls"
+        - script: printenv
        # - script: cd doesntexist
 #    on_success: 
 #      - script: echo "on success------------------"
