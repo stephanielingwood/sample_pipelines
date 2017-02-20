@@ -165,7 +165,8 @@ jobs:
     steps:
       - IN: nginx-image
       - IN: params1
-      - IN: fakeGKEIntegration
+      - IN: paramsSecure
+#      - IN: fakeGKEIntegration
       - IN: samplePython
       - IN: awsIntegration
       - TASK:
