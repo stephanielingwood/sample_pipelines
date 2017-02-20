@@ -182,7 +182,7 @@ resources:
     type: params
     version:
       params:
-        secure: yQFAJfmMk755UgOK1SsJ67whKThIOi2FWj0UTztLTjx9lOCLOPZXa2l/be0sPSEQqT/BsHXeNkaW47n1t4oRHuaRx1cjBgVXJG9bl4WUntyts4zTqGXJb4tW+4aYq7SSVVzkqbqq8PX3mJ0t5q9CsLEHWjQ9GeaG6ddMxK7nD8YbMqiC0Cb4cT96vh3wsdNJvbOSDQ1DEuq4AUbpYcOywhXDI52rnymSI8XzeCFizmaM7crpU6SSn4/w02zpZU9Tle8RLNseSrX/0MxNuQfyiLw03qcpd4bEOFYLfO8IWS11633asARE5RsZlH0f6YkWOE54rcE14eH8mnMGlUmEXg==
+        secure: BROKENyQFAJfmMk755UgOK1SsJ67whKThIOi2FWj0UTztLTjx9lOCLOPZXa2l/be0sPSEQqT/BsHXeNkaW47n1t4oRHuaRx1cjBgVXJG9bl4WUntyts4zTqGXJb4tW+4aYq7SSVVzkqbqq8PX3mJ0t5q9CsLEHWjQ9GeaG6ddMxK7nD8YbMqiC0Cb4cT96vh3wsdNJvbOSDQ1DEuq4AUbpYcOywhXDI52rnymSI8XzeCFizmaM7crpU6SSn4/w02zpZU9Tle8RLNseSrX/0MxNuQfyiLw03qcpd4bEOFYLfO8IWS11633asARE5RsZlH0f6YkWOE54rcE14eH8mnMGlUmEXg==
 
 # ==================== replicas      
   - name: replicas0
