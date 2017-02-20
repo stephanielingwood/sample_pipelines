@@ -164,23 +164,23 @@ jobs:
     type: runSh
     steps:
       - IN: nginx-image
-      - IN: params1
+#      - IN: params1
       - IN: paramsSecure
 #      - IN: fakeGKEIntegration
-      - IN: samplePython
-      - IN: awsIntegration
+#      - IN: samplePython
+#      - IN: awsIntegration
       - TASK:
         - script: "pwd"
         - script: "ls"
        # - script: cd doesntexist
-    on_success: 
-      - script: echo "on success------------------"
-      - script: cd doesntexist
-    on_failure: 
-      - script: echo "on failure------------------"
-      - script: cd doesntexist
-    always:
-      - script: echo "always"
+#    on_success: 
+#      - script: echo "on success------------------"
+#      - script: cd doesntexist
+#    on_failure: 
+#      - script: echo "on failure------------------"
+#      - script: cd doesntexist
+#    always:
+#      - script: echo "always"
 
       # - OUT: nginx-image
 
