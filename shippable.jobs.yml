@@ -165,9 +165,9 @@ jobs:
     steps:
       - IN: nginx-image
 #      - IN: params1
-      - IN: paramsSecure
+#      - IN: paramsSecure
 #      - IN: fakeGKEIntegration
-#      - IN: samplePython
+      - IN: samplePython
 #      - IN: awsIntegration
       - TASK:
         - script: "pwd"
