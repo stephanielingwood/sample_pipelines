@@ -238,7 +238,7 @@ resources:
       branches: 
         only:
           - master
-          - test
+          - noMatrix
       buildOnCommit: true
       buildOnRelease: true
       buildOnTagPush: true
