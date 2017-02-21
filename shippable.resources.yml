@@ -235,6 +235,10 @@ resources:
     pointer:
       sourceName: "stephanielingwood/sample_python"
 #      branch: "noMatrix"
+      branches: 
+        only:
+          - master
+          - test
       buildOnCommit: true
       buildOnRelease: true
       buildOnTagPush: true
