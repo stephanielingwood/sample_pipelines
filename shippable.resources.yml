@@ -4,7 +4,8 @@ resources:
     integration: stephAWS
     pointer: 
       region: "us-west-2"
-      
+     
+     
 #  - name: ecrConfig
 #    type: cliConfig
 #    integration: stephECR
