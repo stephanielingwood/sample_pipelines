@@ -5,19 +5,13 @@ jobs:
     steps:
 #      - IN: ecrConfig
       - IN: awsConfig      
+      - IN: sample_pipelines
 #      - IN: kubernetesConfig
 #      - IN: quayConfig    
 #      - IN: dockerHubConfig
       - TASK:
-        - script: echo $PATH
-        - script: whoami
-        - script: cat ~/.bashrc
-        - script: ls -la /usr/local/bin
-        - script: ls -la /usr/local/bin/terraform
-        - script: terraform --version
-#        - script: jq
-#        - script: "pwd"
-#        - script: "ls"
+        - ls -la $SAMPLE_PIPELINES_PATH
+#        - script: terraform --version
 #        - script: eb init "my-application-name" -r "us-west-2" -p "Node.js"
 #        - script: eb terminate --all --force "my-application-name"
 #        - script: aws ecs list-clusters
