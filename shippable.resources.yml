@@ -254,6 +254,13 @@ resources:
       buildOnTagPush: false
       buildOnPullRequest: false
 
+  - name: sample_pipelines
+    type: gitRepo
+    integration: stephGithub
+    pointer:
+      sourceName: "stephanielingwood/sample_pipelines"
+      branch: master
+
 #  - name: sample_node_gitlab
 #    type: gitRepo
 #    integration: stephGitlab
