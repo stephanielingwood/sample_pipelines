@@ -10,7 +10,9 @@ jobs:
 #      - IN: quayConfig    
 #      - IN: dockerHubConfig
       - TASK:
+        - echo $SAMPLE_PIPELINES_PATH
         - ls -la $SAMPLE_PIPELINES_PATH
+        - echo "hello world"
 #        - script: terraform --version
 #        - script: eb init "my-application-name" -r "us-west-2" -p "Node.js"
 #        - script: eb terminate --all --force "my-application-name"
