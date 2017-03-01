@@ -21,6 +21,7 @@ jobs:
 #        - script: docker pull 003199252576.dkr.ecr.us-east-1.amazonaws.com/php:5.5
 #        - script: kubectl get namespaces
 
+
 # ==================== manifests
   - name: manifest1
     type: manifest
