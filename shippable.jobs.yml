@@ -11,7 +11,7 @@ jobs:
 #      - IN: dockerHubConfig
       - TASK:
         - script: echo $SAMPLE_PIPELINES_PATH
-        - script: ls -la $SAMPLE_PIPELINES_PATH
+        - script: ls -la $SAMPLE_PIPELINES_PATH/gitRepo
         - script: echo "hello world"
 #        - script: terraform --version
 #        - script: eb init "my-application-name" -r "us-west-2" -p "Node.js"
