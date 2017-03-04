@@ -165,11 +165,16 @@ jobs:
 #      - IN: params1
 #      - IN: paramsSecure
 #      - IN: fakeGKEIntegration
-     # - IN: samplePython
+      - IN: samplePython
+        switch: off
 #      - IN: awsIntegration
       - TASK:
         - script: "pwd"
         - script: ls -la $SAMPLE_PYTHON_RUNCI_STATE
+        - script: source $SAMPLE_PYTHON_RUNCI_STATE/commit.env
+        - script: cd $SAMPLEPYTHON_STATE
+        - script: git reset --hard $COMMIT_SHA
+        - script: ls -la
      #   - script: "ls"
      #   - script: printenv
        # - script: cd doesntexist
