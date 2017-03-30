@@ -53,8 +53,8 @@ resources:
     integration: "stephDocker"
     pointer:
       sourceName: "stephanielingwood/samplepipelinesdemo"
-      seed: 
-        versionName: master.4
+    seed: 
+      versionName: master.4
 
 #  - name: sample-node-quay-private-image
 #    type: image
