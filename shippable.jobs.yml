@@ -152,7 +152,7 @@ jobs:
       - TASK:
         - script: chmod +x ./IN/sample_pipelines/gitRepo/tagAndPushTest.sh
         - script: ls -la ./IN/sample_pipelines/gitRepo
-        - script: ./IN/sample_pipelines/gitRepo/tagAndPushTest.sh stephanielingwood
+        - script: ./IN/sample_pipelines/gitRepo/tagAndPushTest.sh stephanielingwood stephanielingwood
 
   - name: runCLIJob
     type: runCLI
