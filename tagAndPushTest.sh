@@ -72,6 +72,7 @@ add_ssh_key() {
 }
 
 pull_tag_image() {
+  echo "$RES_IMAGE_UP"_INTEGRATION_EMAIL
   sudo docker login -e "$RES_IMAGE_UP"_INTEGRATION_EMAIL -p "$RES_IMAGE_UP"_INTEGRATION_PASSWORD -u "$RES_IMAGE_UP"_INTEGRATION_PASSWORD
 
   echo "Starting Docker tag and push for $PUSH_IMG"
