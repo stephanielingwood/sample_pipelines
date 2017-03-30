@@ -6,7 +6,7 @@ export GH_ORG=$2
 
 export IMAGE_NAME="samplepipelinesdemo"
 export CURR_JOB="tag_push_"$CONTEXT
-export RES_IMAGE="samplepipelinesdemo-image"
+export RES_IMAGE="samplepipelinesdemo_image"
 export UP_TAG_NAME="master.4"
 export RES_VER="testRelease"
 export RES_REPO="samplePython"
