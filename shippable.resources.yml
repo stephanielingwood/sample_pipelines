@@ -48,6 +48,14 @@ resources:
     seed:
       versionName: latest
 
+  - name: samplepipelinesdemo-image
+    type: image
+    integration: "stephDocker"
+    pointer:
+      sourceName: "stephanielingwood/samplepipelinesdemo"
+      seed: 
+        versionName: master.4
+
 #  - name: sample-node-quay-private-image
 #    type: image
 #    integration: "shippableQuay"
@@ -290,6 +298,10 @@ resources:
       interval: "*/2 * * 2 *"
 
 # ==================== integrations
+  - name: stephGithubSsh
+    type: integration
+    integration: stephGithubSsh
+
 #  - name: stephEmail
 #    type: integration
 #    integration: stephEmail 
