@@ -150,6 +150,8 @@ jobs:
       - IN: stephGithubSsh
       - IN: testRelease
       - TASK:
+        - script: chmod +x ./IN/sample_pipelines/gitRepo/tagAndPushTest.sh
+        - script: ls -la ./IN/sample_pipelines/gitRepo
         - script: ./IN/sample_pipelines/gitRepo/tagAndPushTest.sh stephanielingwood
 
   - name: runCLIJob
