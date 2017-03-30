@@ -6,7 +6,7 @@ export GH_ORG=$2
 
 export IMAGE_NAME="samplepipelinesdemo"
 export CURR_JOB="tag_push_"$CONTEXT
-export RES_IMAGE="samplepipelinesdemo_image"
+export RES_IMAGE="samplepipelinesdemo-image"
 export UP_TAG_NAME="master.4"
 export RES_VER="testRelease"
 export RES_REPO="samplePython"
@@ -72,6 +72,8 @@ add_ssh_key() {
 }
 
 pull_tag_image() {
+  sudo docker login -e "$RES_IMAGE_UP"_INTEGRATION_EMAIL -p "$RES_IMAGE_UP"_INTEGRATION_PASSWORD -U "$RES_IMAGE_UP"_INTEGRATION_PASSWORD
+
   echo "Starting Docker tag and push for $PUSH_IMG"
   sudo docker pull $PULL_IMG
 
