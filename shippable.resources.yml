@@ -225,7 +225,7 @@ resources:
   - name: version2
     type: version
     seed:
-      versionName: "2.0.222"
+      versionName: "2.0"
 
 # ==================== gitRepos
   - name: samplePython
