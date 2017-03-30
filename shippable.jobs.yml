@@ -1,27 +1,5 @@
 jobs:
 
-  - name: runCLIJob
-    type: runCLI
-    steps:
-#      - IN: ecrConfig
-      - IN: awsConfig      
-      - IN: sample_pipelines
-#      - IN: kubernetesConfig
-#      - IN: quayConfig    
-#      - IN: dockerHubConfig
-      - TASK:
-        - script: echo $SAMPLE_PIPELINES_PATH
-        - script: ls -la $SAMPLE_PIPELINES_PATH/gitRepo
-        - script: echo "hello world"
-#        - script: terraform --version
-#        - script: eb init "my-application-name" -r "us-west-2" -p "Node.js"
-#        - script: eb terminate --all --force "my-application-name"
-#        - script: aws ecs list-clusters
-#        - script: docker --version
-#        - script: docker pull stephanielingwood/band-name-generator
-#        - script: docker pull quay.io/stephanielingwood/busybox:version1
-#        - script: docker pull 003199252576.dkr.ecr.us-east-1.amazonaws.com/php:5.5
-#        - script: kubectl get namespaces
 
 
 # ==================== manifests
@@ -155,6 +133,47 @@ jobs:
       - TASK: managed
       #   bump: major
 
+  - name: testRelease
+    type: release
+    steps:
+      - IN: version2
+      - TASK: managed
+        bump: patch
+
+# ==================== runCLI
+  - name: tag_push_sample_python
+    type: runCLI
+    steps:
+      - IN: sample_pipelines
+      - IN: samplePython
+      - IN: samplepipelinesdemo-image
+      - IN: stephGithubSsh
+      - IN: testRelease
+      - TASK:
+        - script: ./IN/sample_pipelines/gitRepo/tagAndPushTest.sh stephanielingwood
+
+  - name: runCLIJob
+    type: runCLI
+    steps:
+#      - IN: ecrConfig
+      - IN: awsConfig      
+#      - IN: sample_pipelines
+#      - IN: kubernetesConfig
+#      - IN: quayConfig    
+#      - IN: dockerHubConfig
+      - TASK:
+        - script: echo $SAMPLE_PIPELINES_PATH
+        - script: ls -la $SAMPLE_PIPELINES_PATH/gitRepo
+        - script: echo "hello world"
+#        - script: terraform --version
+#        - script: eb init "my-application-name" -r "us-west-2" -p "Node.js"
+#        - script: eb terminate --all --force "my-application-name"
+#        - script: aws ecs list-clusters
+#        - script: docker --version
+#        - script: docker pull stephanielingwood/band-name-generator
+#        - script: docker pull quay.io/stephanielingwood/busybox:version1
+#        - script: docker pull 003199252576.dkr.ecr.us-east-1.amazonaws.com/php:5.5
+#        - script: kubectl get namespaces
 
 # ==================== runSh
   - name: runSh
