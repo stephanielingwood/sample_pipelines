@@ -1,8 +1,8 @@
 #!/bin/bash -e
 
 export CONTEXT="sample_python"
-# export HUB_ORG=$1
-export GH_ORG=$1
+export HUB_ORG=$1
+export GH_ORG=$2
 
 export IMAGE_NAME="samplepipelinesdemo"
 export CURR_JOB="tag_push_"$CONTEXT
