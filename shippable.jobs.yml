@@ -146,7 +146,7 @@ jobs:
     steps:
       - IN: sample_pipelines
       - IN: samplePython
-      - IN: samplepipelinesdemo-image
+      - IN: samplepipelinesdemo_image
       - IN: stephGithubSsh
       - IN: testRelease
       - TASK:
