@@ -105,8 +105,8 @@ tag_push_repo(){
     git push --delete origin $RES_VER_NAME
   fi
 
-  local version_file=""$RES_VER_NAME".txt"
-  echo $RES_VER_NAME > version_file
+  local version_file="version.txt"
+  echo $RES_VER_NAME > $version_file
 
   git add .
   git commit -m "updating version.txt to $RES_VER_NAME"
