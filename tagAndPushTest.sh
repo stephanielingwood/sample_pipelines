@@ -26,10 +26,8 @@ export RES_GH_SSH_UP=$(echo $RES_GH_SSH | awk '{print toupper($0)}')
 export RES_GH_SSH_META=$(eval echo "$"$RES_GH_SSH_UP"_META")
 
 set_context() {
-  # export PULL_IMG=$HUB_ORG/$IMAGE_NAME:$UP_TAG_NAME
-  export PULL_IMG=$IMAGE_NAME:$UP_TAG_NAME
-  export PUSH_IMG=$IMAGE_NAME:$RES_VER_NAME
-  # export PUSH_IMG=$HUB_ORG/$IMAGE_NAME:$RES_VER_NAME
+  export PULL_IMG=$HUB_ORG/$IMAGE_NAME:$UP_TAG_NAME
+  export PUSH_IMG=$HUB_ORG/$IMAGE_NAME:$RES_VER_NAME
 
   pushd $RES_IMAGE_META
   export IMG_REPO_COMMIT_SHA=$(jq -r '.version.propertyBag.IMG_REPO_COMMIT_SHA' version.json)
