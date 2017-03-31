@@ -107,15 +107,22 @@ tag_push_repo(){
 
   local version_file="version.txt"
   echo $RES_VER_NAME > $version_file
+  cat version.txt
 
   git add .
   git commit -m "updating version.txt to $RES_VER_NAME"
 
+  echo "done with commit"
+
   git push up master
   IMG_REPO_COMMIT_SHA=$(git rev-parse HEAD)
 
+  echo "before tag and push"
+
   git tag $RES_VER_NAME
   git push up $RES_VER_NAME
+
+  echo "after tag and push"
 
   popd
 }
