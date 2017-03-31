@@ -94,41 +94,27 @@ tag_push_repo(){
   git remote -v
   git checkout master
 
-  echo "finished with checkout"
-  
-  # dont checkout the sha here as we are going to edit and we might hit merge
+  # don't checkout the sha here as we are going to edit and we might hit merge
   # conflicts. master should typically not change an also implementing lock on
   # release also will reduce this. Hence this is an acceptable risk
 
   git pull --tags
-  # git checkout $IMG_REPO_COMMIT_SHA
-
-  echo "pulled tags"
 
   if git tag -d $RES_VER_NAME; then
     git push --delete up $RES_VER_NAME
   fi
 
-  echo "after if"
-
   local version_file="version.txt"
   echo $RES_VER_NAME > $version_file
-  cat version.txt
 
   git add .
   git commit -m "updating version.txt to $RES_VER_NAME" || true
 
-  echo "done with commit"
-
   git push up master
   IMG_REPO_COMMIT_SHA=$(git rev-parse HEAD)
 
-  echo "before tag and push"
-
   git tag $RES_VER_NAME
   git push up $RES_VER_NAME
-
-  echo "after tag and push"
 
   popd
 }
