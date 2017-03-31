@@ -116,7 +116,7 @@ tag_push_repo(){
   cat version.txt
 
   git add .
-  git commit -m "updating version.txt to $RES_VER_NAME"
+  git commit -m "updating version.txt to $RES_VER_NAME" || true
 
   echo "done with commit"
 
