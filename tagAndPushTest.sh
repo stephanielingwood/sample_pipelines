@@ -106,7 +106,7 @@ tag_push_repo(){
   echo "pulled tags"
 
   if git tag -d $RES_VER_NAME; then
-    git push --delete origin $RES_VER_NAME
+    git push --delete up $RES_VER_NAME
   fi
 
   echo "after if"
