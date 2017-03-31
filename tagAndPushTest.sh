@@ -94,6 +94,8 @@ tag_push_repo(){
   git remote -v
   git checkout master
 
+  echo "finished with checkout"
+  
   # dont checkout the sha here as we are going to edit and we might hit merge
   # conflicts. master should typically not change an also implementing lock on
   # release also will reduce this. Hence this is an acceptable risk
@@ -101,9 +103,13 @@ tag_push_repo(){
   git pull --tags
   # git checkout $IMG_REPO_COMMIT_SHA
 
+  echo "pulled tags"
+
   if git tag -d $RES_VER_NAME; then
     git push --delete origin $RES_VER_NAME
   fi
+
+  echo "after if"
 
   local version_file="version.txt"
   echo $RES_VER_NAME > $version_file
