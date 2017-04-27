@@ -1,7 +1,5 @@
 jobs:
 
-
-
 # ==================== manifests
   - name: manifest1
     type: manifest
@@ -218,3 +216,10 @@ jobs:
   #     TASK: managed
   #       script: ls
   
+
+# ==================== jenkins
+- name: jenkins                 
+  type: jenkinsJob                 
+  integration: "stephJenkins"
+  pointer:
+    sourceName: "firstjob"
