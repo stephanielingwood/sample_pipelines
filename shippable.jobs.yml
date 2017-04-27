@@ -218,8 +218,8 @@ jobs:
   
 
 # ==================== jenkins
-  - name: jenkins                 
-    type: jenkinsJob                 
-    integration: "stephJenkins"
-    pointer:
-      sourceName: "firstjob"
+#  - name: jenkins                 
+#    type: jenkinsJob                 
+#    integration: "stephJenkins"
+#    pointer:
+#      sourceName: "firstjob"
